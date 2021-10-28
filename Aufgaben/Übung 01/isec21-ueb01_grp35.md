@@ -47,40 +47,42 @@ Sie ermöglicht gegenüber dem Bezahlen mit Bargeld einen effektiveren Zahlungsv
 **Wer könnte der/die Angreifende sein?**
 
 Durch die geringe Informationsdichte sind bereits einige Sicherheitsrisiken ausgeschlossen. 
-Einem Hacker/Cracker wäre es möglich das Guthaben auf dem Chipsatz der Karte zu ändern.
+Einem Hacker/ Cracker wäre es möglich das Guthaben auf dem Chipsatz der Karte zu ändern.
 Daneben ist das Aufbrechen eines Aufladeautomatens möglich. Dort befindet sich zum Kartenguthaben konvertiertes Bargeld. Da diese Automaten aber in der Regel täglich geleert werden, dürfte die Menge des zu erbeutenden Bargeldes nicht besonders groß sein.  Außerdem kann eine weitere Person mit einer geklauten oder verloren gegangenen Karte das Guthaben im Namen des Besitzers ausgeben. Da die Aufladung jedoch immer manuell erfolgt, könnte diese zweite Person, wie beim Bargeld, nur das vorhandene Guthaben verwenden. 
-An dieser Stelle bietet die Mensacard einen weiteren Vorteil. Kommt eine Karte abhanden, kann unkompliziert eine Neue ausgestellt werden. Gegen eine Kaution kann die verlorene Karte gesperrt werden und das Guthaben der alten auf die neue Karte übertragen werden. Somit lässt sich im Gegensatz zum Bargeld auch Verlorenes wiederverwenden.
+An dieser Stelle bietet die Mensacard einen weiteren Vorteil. Kommt eine Karte abhanden, kann unkompliziert eine Neue ausgestellt werden. Gegen eine Kaution kann die verlorene Karte gesperrt werden und das Guthaben der Alten auf die neue Karte übertragen werden. Somit lässt sich im Gegensatz zum Bargeld auch Verlorenes wiederverwenden.
 
 
 
 **Welche Funktionen hat die Mensacard aus Sicht der
 (Geschäfts-)Abläufe, die verteidigt werden müssen?**
 
+Damit die Mensacard ihren Zweck erfüllt, müssen alle Funktionalitäten (für Drucker, Snackautomaten, Waschmaschinen) einwandfrei von den Kunden verwendet werden können, damit ein reibungsloser Ablauf gewährleistet wird. Ansonsten können auch Abläufe jenseits der Mensa betroffen sein.
 
-Dazu zählt die Lehre, denn lange Wartezeiten innerhalb der Mensa können eine kettenartige Auswirkung auf diese haben und dort zu Verspätungen führen. Wenn weitere Funktionalitäten (bspw. die Bedienung von Waschmaschinen) der Mensacard wegfallen, würde dies zu viel Ärger bei Studierenden/ Mitarbeiter*innen führen und es müsste eventuell Zeit und Geld für eine Techniker*in aufgewendet werden. 
 
 
 **Welche anderen Abläufe (außerhalb der Mensa) könnten durch das
 hantieren mit der Mensacard betroffen sein?**
 
+Dazu zählt die Lehre, denn lange Wartezeiten innerhalb der Mensa können eine kettenartige Auswirkung auf diese haben und dort zu Verspätungen führen. Wenn weitere Funktionalitäten (bspw. die Bedienung von Waschmaschinen) der Mensacard wegfallen, würde dies zu viel Ärger bei Studierenden/ Mitarbeiter*innen führen und es müsste eventuell Zeit und Geld für eine Techniker*in aufgewendet werden.  
 
-Damit die Mensacard ihren Zweck erfüllt, müssen alle Funktionalitäten (für Drucker, Snackautomaten, Waschmaschinen) einwandfrei von den Kunden verwendet werden können, damit ein reibungsloser Ablauf gewährleistet wird. Ansonsten können auch Abläufe jenseits der Mensa betroffen sein. 
 
 
 **Welche Gegenstände bzw. Abläufe müssen
 geschützt werden, welche der in der Vorlesung vorgestellten Sicherheitsziele sind
 betroffen: wo geht es um Integrität, wo um Verfügbarkeit usw.?**
 
-
-Vertraulichkeit: Die personenbezogenen Daten und das Guthaben auf der Karte müssen geschützt werden. Der Zugriff muss geschützt werden, damit kein anderer die Karte nutzen kann. 
-Integrität: Die Daten auf der Mensacard müssen vor Veränderungen geschützt sein. 
+Vertraulichkeit: Die personenbezogenen Daten (Erkennungsnummer) und das Guthaben auf der Karte müssen geschützt werden. Der Zugriff muss geschützt werden, damit keine zweite Person die Karte nutzen kann. 
+Integrität: Die Daten auf der Mensacard müssen vor Veränderungen geschützt sein (Beispiel des Hackers/ Crackers). 
 Verfügbarkeit: Alle zur Mensacard gehörenden Dienste sollten einwandfrei funktionieren. 
 Der Ablauf des Bezahlens muss gewährleistet werden (ansonsten ist die Mensacard unnötig bzw. Geldverschwendung).
 Zurechenbarkeit/Verbindlichkeit: Dies ist nur beim Ausstellen der Karte gewährleistet, da hier die Personalien abgeglichen werden. Beim Zahlen mit einer geklauten Karte erfolgt keine Autorisierung durch den Eigentümer der Karte.
 
+
+
 **Was haltet Ihr allgemein von der Vorgehensweise?**
 
-Wir finden diese Vorgehensweise ziemlich praktisch, da das Bezahlen aus eigener Erfahrung durchschnittlich deutlich schneller funktioniert und sich Schlangen möglichst „klein” halten (zumindest im Vergleich zum Bezahlen mit Bargeld). Die Mensacard ist im Vergleich zum Bargeld ausreichend geschützt, da es die Möglichkeit gibt, sein Guthaben nach einem Verlust der Karte wiederzuerlangen und keine sensiblen Informationen gespeichert werden. Des Weiteren muss sich an Snackautomaten oder Druckern kein Behälter für Kleingeld befinden, was ebenfalls praktisch ist und das Risiko von einem  Diebstahl verringert.
+Wir finden diese Vorgehensweise ziemlich praktisch, da das Bezahlen aus eigener Erfahrung durchschnittlich deutlich schneller funktioniert und sich Schlangen möglichst „klein” halten (zumindest im Vergleich zum Bezahlen mit Bargeld). Die Mensacard ist im Vergleich zum Bargeld ausreichend geschützt, da es die Möglichkeit gibt sein Guthaben nach einem Verlust der Karte wiederzuerlangen und keine sensiblen Informationen gespeichert werden. Des Weiteren muss sich an Snackautomaten oder Druckern kein Behälter für Kleingeld befinden, was ebenfalls praktisch ist und das Risiko eines Diebstahls verringert.
+
 
 
 **Was würdet Ihr als Betreiber anders machen?**
