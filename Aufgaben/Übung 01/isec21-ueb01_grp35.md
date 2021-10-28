@@ -48,7 +48,7 @@ Sie ermöglicht gegenüber dem Bezahlen mit Bargeld einen effektiveren Zahlungsv
 
 Durch die geringe Informationsdichte sind bereits einige Sicherheitsrisiken ausgeschlossen. 
 Einem Hacker/Cracker wäre es möglich das Guthaben auf dem Chipsatz der Karte zu ändern.
-Daneben ist das Aufbrechen eines Aufladeautomatens möglich. Dort befindet sich viel zum Kartenguthaben konvertiertes Bargeld. Da diese Automaten aber in der Regel täglich geleert werden, dürfte die Menge des zu erbeutenden Bargeldes nicht besonders groß sein.  Außerdem kann eine weitere Person mit einer geklauten oder verloren gegangenen Karte das Guthaben im Namen des Besitzers ausgeben. Da die Aufladung jedoch immer manuell erfolgt, könnte diese zweite Person, wie beim Bargeld, nur das vorhandene Guthaben verwenden. 
+Daneben ist das Aufbrechen eines Aufladeautomatens möglich. Dort befindet sich zum Kartenguthaben konvertiertes Bargeld. Da diese Automaten aber in der Regel täglich geleert werden, dürfte die Menge des zu erbeutenden Bargeldes nicht besonders groß sein.  Außerdem kann eine weitere Person mit einer geklauten oder verloren gegangenen Karte das Guthaben im Namen des Besitzers ausgeben. Da die Aufladung jedoch immer manuell erfolgt, könnte diese zweite Person, wie beim Bargeld, nur das vorhandene Guthaben verwenden. 
 An dieser Stelle bietet die Mensacard einen weiteren Vorteil. Kommt eine Karte abhanden, kann unkompliziert eine Neue ausgestellt werden. Gegen eine Kaution kann die verlorene Karte gesperrt werden und das Guthaben der alten auf die neue Karte übertragen werden. Somit lässt sich im Gegensatz zum Bargeld auch Verlorenes wiederverwenden.
 
 
