@@ -38,18 +38,18 @@ ich einen bestimmten Angriff am effektivsten aus) denken.
 Lösung Aufgabe 1
 -------
 
-Die Mensacard ist eine Alternative zum Bargeld, welche gegen einen Pfand sowohl Studierenden, als auch Mitarbeitern zur Verfügung gestellt wird. Der Unterschied liegt hierbei, dass bei der Studentenkarte die Matrikelnummer verwendet wird und dadurch die Daten nicht mehr vollständig anonymisiert vorliegen. Auf sie lässt sich an verschiedenen Orten ein Guthaben aufladen, welches dann zum Bezahlen verwendet wird. Die Karte enthält nur die Matrikelnummer bzw. die persönliche Kennnummer und das aktuelle Guthaben der auf sie angemeldeten Person.
+Die Mensacard ist eine Alternative zum Zahlen mit Bargeld, welche gegen einen Pfand sowohl Studierenden, als auch Mitarbeitern zur Verfügung gestellt wird. Die Karten unterscheiden sich in der Hinsicht, dass bei der Studentenkarte die Matrikelnummer verwendet wird und dadurch die Daten nicht mehr vollständig anonymisiert vorliegen. Auf die Mensacard lässt sich an verschiedenen Orten ein Guthaben aufladen, welches dann zum Bezahlen verwendet wird. Die Karte enthält nur die Matrikelnummer bzw. die persönliche Kennnummer und das aktuelle Guthaben der auf sie angemeldeten Person.
 
-Sie ermöglicht einen gegenüber dem Bargeld effektiveren Zahlungsvorgang. In der Theorie sorgt die für einen individuell schnelleres Bezahlen und somit insgesamt für kürzere Wartezeiten. Damit dieses Konzept jedoch wirklich funktioniert, muss es genug Auflademöglichkeiten geben, da sich ansonsten dort lange Wartezeiten ergeben. 
+Sie ermöglicht gegenüber dem Bezahlen mit Bargeld einen effektiveren Zahlungsvorgang. In der Theorie sorgt dies für einen individuell schnelleres Bezahlen und somit insgesamt für kürzere Wartezeiten. Damit dieses Konzept jedoch wirklich funktioniert, muss es genug Auflademöglichkeiten geben, da sich ansonsten dort lange Wartezeiten ergeben. 
 
 
 
 **Wer könnte der/die Angreifende sein?**
 
 Durch die geringe Informationsdichte sind bereits einige Sicherheitsrisiken ausgeschlossen. 
-Einem Hacker/Cracker wäre es möglich das Guthaben auf dem Chipsatz der Karte ändern.
-Weiterhin möglich ist ein klassischer Raubüberfall auf eine der Auflademöglichkeiten, denn dort befindet sich viel zum Kartenguthaben konvertiertes Bargeld und das Verlorengehen bzw. Beklauen der Karte. Bei letzterem kann eine weitere Person das Guthaben im Namen des Besitzers ausgeben. Da die Aufladung jedoch immer manuell erfolgt, könnte diese zweite Person, wie beim Bargeld, nur das vorhandene Guthaben kostenfrei verwenden. 
-An dieser Stelle bietet die Mensacard einen weiteren Vorteil, welcher in der unkomplizierten Neuausstellung einer Karte liegt, falls diese abhanden kommt. Gegen eine Kaution kann die verlorene Karte gesperrt werden und das Guthaben der alten auf diese neue Karte übertragen werden. Somit lässt sich im Gegensatz zum Bargeld auch Verlorenes wiederverwenden.
+Einem Hacker/Cracker wäre es möglich das Guthaben auf dem Chipsatz der Karte zu ändern.
+Daneben ist das Aufbrechen eines Aufladeautomatens möglich. Dort befindet sich viel zum Kartenguthaben konvertiertes Bargeld. Da diese Automaten aber in der Regel täglich geleert werden, dürfte die Menge des zu erbeutenden Bargeldes nicht besonders groß sein.  Außerdem kann eine weitere Person mit einer geklauten oder verloren gegangenen Karte das Guthaben im Namen des Besitzers ausgeben. Da die Aufladung jedoch immer manuell erfolgt, könnte diese zweite Person, wie beim Bargeld, nur das vorhandene Guthaben verwenden. 
+An dieser Stelle bietet die Mensacard einen weiteren Vorteil. Kommt eine Karte abhanden, kann unkompliziert eine Neue ausgestellt werden. Gegen eine Kaution kann die verlorene Karte gesperrt werden und das Guthaben der alten auf die neue Karte übertragen werden. Somit lässt sich im Gegensatz zum Bargeld auch Verlorenes wiederverwenden.
 
 
 
@@ -57,7 +57,7 @@ An dieser Stelle bietet die Mensacard einen weiteren Vorteil, welcher in der unk
 (Geschäfts-)Abläufe, die verteidigt werden müssen?**
 
 
-Dazu zählt die Lehre, denn lange Wartezeiten innerhalb der Mensa können eine kettenartige Auswirkungen auf diese haben und dort zu Verspätungen führen. Wenn weitere Funktionalitäten (bspw. die Bedienung von Waschmaschinen) der Mensacard wegfallen, würde dies zu viel Ärger bei Studierenden/ Mitarbeiter*innen führen und es müsste eventuell Zeit und Geld für eine Techniker*in aufgewendet werden. 
+Dazu zählt die Lehre, denn lange Wartezeiten innerhalb der Mensa können eine kettenartige Auswirkung auf diese haben und dort zu Verspätungen führen. Wenn weitere Funktionalitäten (bspw. die Bedienung von Waschmaschinen) der Mensacard wegfallen, würde dies zu viel Ärger bei Studierenden/ Mitarbeiter*innen führen und es müsste eventuell Zeit und Geld für eine Techniker*in aufgewendet werden. 
 
 
 **Welche anderen Abläufe (außerhalb der Mensa) könnten durch das
@@ -76,7 +76,7 @@ Vertraulichkeit: Die personenbezogenen Daten und das Guthaben auf der Karte müs
 Integrität: Die Daten auf der Mensacard müssen vor Veränderungen geschützt sein. 
 Verfügbarkeit: Alle zur Mensacard gehörenden Dienste sollten einwandfrei funktionieren. 
 Der Ablauf des Bezahlens muss gewährleistet werden (ansonsten ist die Mensacard unnötig bzw. Geldverschwendung).
-Zurechenbarkeit/Verbindlichkeit: Dies ist nur beim Ausstellen der Karte gewährleistet, da hier die Personalien abgeglichen werden. Beim Zahlen mit einer geklauten Karte erfolgt keine Autorisierung mit dem Eigentümer der Karte.
+Zurechenbarkeit/Verbindlichkeit: Dies ist nur beim Ausstellen der Karte gewährleistet, da hier die Personalien abgeglichen werden. Beim Zahlen mit einer geklauten Karte erfolgt keine Autorisierung durch den Eigentümer der Karte.
 
 **Was haltet Ihr allgemein von der Vorgehensweise?**
 
@@ -85,7 +85,7 @@ Wir finden diese Vorgehensweise ziemlich praktisch, da das Bezahlen aus eigener 
 
 **Was würdet Ihr als Betreiber anders machen?**
 
-Eine Möglichkeit wäre, die Mensacard zu digitalisieren und auf dem Smartphone zugänglich zu machen. Die birgt allerdings viele neue potenzielle Risiken und Herausforderungen, weswegen die Wirtschaftlichkeit überprüft werden muss. Eine Online-Aufladung der Mensacard kann ebenfalls sinnvoll sein und (verbunden mit der ersten Möglichkeit) Aufladeautomaten entlasten oder sogar überflüssig machen. Um den Fremdzugriff weiter einzuschränken, könnte (optional ab einer gewissen Summe) z.B. die Eingabe einer Pin verlangt werden. Dadurch müssten jedoch weitere Daten auf der Karte gespeichert werden und die Wartezeiten könnten sich verlängern.
+Eine Möglichkeit wäre, die Mensacard zu digitalisieren und auf dem Smartphone zugänglich zu machen. Dies birgt allerdings viele neue potenzielle Risiken und Herausforderungen, weswegen die Wirtschaftlichkeit überprüft werden muss. Eine Online-Aufladung der Mensacard kann ebenfalls sinnvoll sein und (verbunden mit der ersten Möglichkeit) die Anzahl der Aufladeautomaten reduzieren oder sogar überflüssig machen. Um den Fremdzugriff weiter einzuschränken, könnte (optional ab einer gewissen Summe) z.B. die Eingabe einer Pin verlangt werden. Dadurch müssten jedoch weitere Daten auf der Karte gespeichert werden und die Wartezeiten könnten sich verlängern.
 
 
 
