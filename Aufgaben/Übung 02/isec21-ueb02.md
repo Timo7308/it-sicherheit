@@ -30,8 +30,10 @@ Zunächst kannst nur Du darauf zugreifen.
 
 Lege darin ein Unterverzeichnis `isec-ueb2` an.
 
-<details><summary>Click to expand</summary>
+<details><summary>Lösung</summary>
+
 Mit `mkdir isec-ueb2` haben wir ein Unterverzeichnis erstellt. Die Rechte haben wir später geändert. Siehe unten.
+
 </details>
 
 Sorge mit ACLs dafür (aufgerufene Kommandos samt Parametern und Erklärung angeben),
@@ -49,17 +51,25 @@ dass:
   Zugriffsrechte besitzen.
 
 <details><summary>Lösung</summary>
+
 `setfacl -m g::--- isec-ueb2/` - keine Rechte für Gruppe
+
 `setfacl -m o:--- isec-ueb2/` - keine Rechte für Other
+
 `setfacl -m u:GRUPPENMITGLIED:rwx isec-ueb2` -für die Gruppenmitglieder alle Rechte
+
 `setfacl -m u:TUTOR:r-x isec-ueb2` - für die Tutoren nur Lese- und Ausführungsrechte 
 
 `cd isec-ueb2` - wechseln in das erstellte Verzeichnis
+
 `echo 'lesbar' > isec-read; chmod 700 isec-read` - es wird eine Datei 'isec-read' erstellt mit dem Inhalt 'lesbar'. Auf diese Datei hat nur der user alle Rechte(rwx) und alle anderen keinen Zugriff.
+
 `setfacl -m u:rieckers:r isec-read` - der Tutor kann die Datei lesen.
+
 `setfacl -m u:gerdes:r isec-read`- der Tutor kann die Datei lesen.
 
-`echo 'nicht lesbar' > isec-read; chmod 700 isec-read` - es wird eine Datei 'isec-read' erstellt mit dem Inhalt 'lesbar'. Auf diese Datei hat nur der user alle Rechte(rwx) und alle anderen keinen Zugriff.
+`echo 'nicht lesbar' > isec-read; chmod 700 isec-read` - es wird eine Datei 'isec-read' erstellt mit dem Inhalt 'nicht lesbar'. Auf diese Datei hat nur der user alle Rechte(rwx) und alle anderen keinen Zugriff.
+
 </details>
 
 Arbeitet für diese Aufgabe auf dem Rechner
@@ -87,10 +97,14 @@ mindestens hier setzen? Welche Konsequenzen hat es, wenn Ihr die Rechte
 für "Other" setzt?
 
 <details><summary>Lösung</summary>
+
 Alle Gruppenmitglieder haben alle Rechte für das Verzeichnis `/home/wwwu/USER`.
 Auch die Tutoren haben Zugriff auf dieses Verzeichnis. Sie dürfen aber keine Dateien erstellen oder löschen/ändern. 
+
 `cd /home/wwwu`
+
 `setfacl -m u:GRUPPENMITGLIED:rwx USER`
+
 `setfacl -m u:TUTOR:r-x USER`
 
 Die Rechte für 'Other' sind alle anderen Benutzer. Hierzu zählen auch die Teilnehmer dieser Veranstaltung. 
