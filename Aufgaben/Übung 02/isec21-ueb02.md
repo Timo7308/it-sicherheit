@@ -1,9 +1,13 @@
 Informationssicherheit, 2. Übung
 ================================
 
-**FB3 LOGIN DATEN:**
+**FB3 LOGIN DATEN der Gruppe g35**
 
-timo5, borrmann, lindloff
+Timo Schuchmann: timo5
+
+Philias Borrmann: borrmann,
+
+Adrian Lindloff: lindloff
 
 
 * * * * *
