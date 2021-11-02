@@ -1,6 +1,11 @@
 Informationssicherheit, 2. Übung
 ================================
 
+**FB3 LOGIN DATEN:**
+
+timo5, borrmann, lindloff
+
+
 * * * * *
 
 Vorbereitung, Gruppe/einzeln
