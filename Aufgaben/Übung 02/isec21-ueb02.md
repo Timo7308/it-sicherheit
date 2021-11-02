@@ -21,7 +21,7 @@ Web-Verzeichnisses auf
 die Schritte für die Aktivierung aus.
 
 Aufgabe 1, 4 Punkte, Gruppe/einzeln
------------------------------------
+-------------------------
 
 Nach der Aktivierung des Web-Verzeichnisses (*Webspace*) hast Du nun auch
 im Dateisystem unter `/home/wwwu/USER`
@@ -29,9 +29,11 @@ im Dateisystem unter `/home/wwwu/USER`
 Zunächst kannst nur Du darauf zugreifen.
 
 Lege darin ein Unterverzeichnis `isec-ueb2` an.
--------------------------
-Mit `mkdir isec-ueb2` haben wir ein Unterverzeichnis erstellt.
--------------------------
+
+<details><summary>Click to expand</summary>
+Mit `mkdir isec-ueb2` haben wir ein Unterverzeichnis erstellt. Die Rechte haben wir später geändert. Siehe unten.
+</details>
+
 Sorge mit ACLs dafür (aufgerufene Kommandos samt Parametern und Erklärung angeben),
 dass:
 
@@ -46,8 +48,7 @@ dass:
   kein Zugriff möglich ist. Weitere (Test-)Dateien dürfen beliebige
   Zugriffsrechte besitzen.
 
-
--------------------------
+<details><summary>Lösung</summary>
 `setfacl -m g::--- isec-ueb2/` - keine Rechte für Gruppe
 `setfacl -m o:--- isec-ueb2/` - keine Rechte für Other
 `setfacl -m u:GRUPPENMITGLIED:rwx isec-ueb2` -für die Gruppenmitglieder alle Rechte
@@ -59,17 +60,19 @@ dass:
 `setfacl -m u:gerdes:r isec-read`- der Tutor kann die Datei lesen.
 
 `echo 'nicht lesbar' > isec-read; chmod 700 isec-read` - es wird eine Datei 'isec-read' erstellt mit dem Inhalt 'lesbar'. Auf diese Datei hat nur der user alle Rechte(rwx) und alle anderen keinen Zugriff.
--------------------------
+</details>
+
 Arbeitet für diese Aufgabe auf dem Rechner
 `fido.informatik.uni-bremen.de`.  Der ist von außerhalb des FB3-Netzes nicht direkt zu erreichen; geht erst einmal per SSH auf `login.informatik.uni-bremen.de` und von da aus weiter.
 
--------------------------
+<details><summary>Lösung</summary>
 Erst die ssh Verbinung zur Uni herstellen, 
 `ssh USER@login.informatik.uni-bremen.de`
 
 dann auf den fido-Rechner wechseln.
 `ssh USER@fido.informatik.uni-bremen.de`
--------------------------
+</details>
+
 Testet Eure Berechtigungen untereinander.
 Dokumentiert Euer Vorgehen zum Vergeben der Berechtigungen und zum
 Testen.
@@ -82,13 +85,17 @@ Für die Bearbeitung des Blatts ist es erforderlich, dass Ihr auch Rechte
 auf dem Verzeichnis `/home/wwwu/USER` selbst setzt. Welche Rechte müsst Ihr
 mindestens hier setzen? Welche Konsequenzen hat es, wenn Ihr die Rechte
 für "Other" setzt?
--------------------------
+
+<details><summary>Lösung</summary>
 Alle Gruppenmitglieder haben alle Rechte für das Verzeichnis `/home/wwwu/USER`.
 Auch die Tutoren haben Zugriff auf dieses Verzeichnis. Sie dürfen aber keine Dateien erstellen oder löschen/ändern. 
 `cd /home/wwwu`
 `setfacl -m u:GRUPPENMITGLIED:rwx USER`
 `setfacl -m u:TUTOR:r-x USER`
--------------------------
+
+Die Rechte für 'Other' sind alle anderen Benutzer. Hierzu zählen auch die Teilnehmer dieser Veranstaltung. 
+</details>
+
 Dies ist eine Einzelaufgabe, ist also von jeder/m Teilnehmenden einzeln
 zu bearbeiten.
 Ihr könnt die Aufgabe gern in der Gruppe gemeinsam dokumentieren.
