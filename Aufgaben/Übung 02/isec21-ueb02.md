@@ -5,7 +5,7 @@ Informationssicherheit, 2. Übung
 
 Timo Schuchmann: timo5
 
-Philias Borrmann: borrmann,
+Philias Borrmann: borrmann
 
 Adrian Lindloff: lindloff
 
