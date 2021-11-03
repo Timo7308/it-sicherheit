@@ -61,6 +61,13 @@ dass:
 
 <details><summary>Lösung</summary>
 
+mit disem Befehl haben wir die Vergabe der Rechte überprüft.
+
+`getfacl FILE`
+
+Wir sind wie folgt vorgegangen: 
+
+
 `setfacl -m g::--- isec-ueb2/` - keine Rechte für Gruppe
 
 `setfacl -m o:--- isec-ueb2/` - keine Rechte für Other
@@ -85,10 +92,13 @@ Arbeitet für diese Aufgabe auf dem Rechner
 `fido.informatik.uni-bremen.de`.  Der ist von außerhalb des FB3-Netzes nicht direkt zu erreichen; geht erst einmal per SSH auf `login.informatik.uni-bremen.de` und von da aus weiter.
 
 <details><summary>Lösung</summary>
+
 Erst die ssh Verbinung zur Uni herstellen, 
+
 `ssh USER@login.informatik.uni-bremen.de`
 
 dann auf den fido-Rechner wechseln.
+
 `ssh USER@fido.informatik.uni-bremen.de`
 </details>
 
