@@ -112,9 +112,9 @@ gesetzten Rechte auch überprüfen können müssen.
 
 `/home/wwwu/lindloff/permission_test` als Testordner mit `string_test` als Datei.
 
-`user:borrmann:--x`kann den Ordner und die Datei nicht sehen. Nachdem der Name gedoch genannt wurde, ist es möglich in das Verzeichnis zu wechseln und dann auch in `permission_test` mit `cat string_test` die Datei auslesen. 
+`user:borrmann:--x`kann den Ordner und die Datei nicht sehen. Nachdem der Name jedoch genannt wurde (bzw. der Pfad bekannt ist), ist es möglich in das Verzeichnis zu wechseln und auch in `permission_test` mit `cat string_test` die Datei auslesen. 
 
-`user:timo5:--x`kann sich mithilfe der Leserechte durch den Befehl `ls` auch die Inhalte des Verzeichnisses `permission_test` anzeigen lassen. Die Datei `string_test` wird dort nun gelistet und kann dank der Ausführungsrechte ebenfalls geöffnet werden.
+`user:timo5:r-x`kann sich mithilfe der Leserechte durch den Befehl `ls` auch die Inhalte des Verzeichnisses `permission_test` anzeigen lassen. Die Datei `string_test` wird dort nun gelistet und kann dank der Ausführungsrechte ebenfalls geöffnet werden.
 
 </details>
 
