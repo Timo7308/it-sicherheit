@@ -133,7 +133,7 @@ Auch die Tutoren haben Zugriff auf dieses Verzeichnis. Sie dürfen aber keine Da
 
 Es reicht auch den Tutoren nur das Execute-Recht(x) zu geben, da diese ja schon wissen (durch die Aufgabenstellung), dass es ein Verzeichniss `isec-ueb2` gibt. 
 
-Die Rechte für 'Other' sind alle anderen Benutzer. Hierzu zählen auch die Teilnehmer dieser Veranstaltung. 
+Die Rechte für 'Other' sind alle anderen Benutzer. Hierzu zählen auch die Teilnehmer dieser Veranstaltung. Sind die Rechte für 'Other' gesetzt, hätte jeder Zugriff auf dieses Verzeichniss.
 </details>
 
 Dies ist eine Einzelaufgabe, ist also von jeder/m Teilnehmenden einzeln
