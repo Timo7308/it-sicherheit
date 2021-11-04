@@ -84,7 +84,7 @@ Wir sind wie folgt vorgegangen:
 
 `setfacl -m u:gerdes:r-- isec-read`- der Tutor kann die Datei lesen.
 
-`echo 'nicht lesbar' > isec-noread; chmod 700 isec-noread` - es wird eine Datei 'isec-read' erstellt mit dem Inhalt 'nicht lesbar'. Auf diese Datei hat nur der user alle Rechte(rwx) und alle anderen keinen Zugriff.
+`echo 'nicht lesbar' > isec-noread; chmod 600 isec-noread` - es wird eine Datei 'isec-noread' erstellt mit dem Inhalt 'nicht lesbar'. Auf diese Datei hat nur der user alle Rechte(rwx) und alle anderen keinen Zugriff. Mit `chmod 600` ist die Datei nur für den User zugänglich.
 
 </details>
 
@@ -130,6 +130,8 @@ Auch die Tutoren haben Zugriff auf dieses Verzeichnis. Sie dürfen aber keine Da
 `setfacl -m u:GRUPPENMITGLIED:rwx USER`
 
 `setfacl -m u:TUTOR:r-x USER`
+
+Es reicht auch den Tutoren nur das Execute-Recht(x) zu geben, da diese ja schon wissen (durch die Aufgabenstellung), dass es ein Verzeichniss `isec-ueb2` gibt. 
 
 Die Rechte für 'Other' sind alle anderen Benutzer. Hierzu zählen auch die Teilnehmer dieser Veranstaltung. 
 </details>
