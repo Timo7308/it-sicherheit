@@ -80,9 +80,7 @@ Wir sind wie folgt vorgegangen:
 
 `echo 'lesbar' > isec-read; chmod 600 isec-read` - es wird eine Datei 'isec-read' erstellt mit dem Inhalt 'lesbar'. Auf diese Datei hat nur der user Lese- und Schreib-Rechte(rw-) und alle anderen keinen Zugriff. 
 
-`setfacl -m u:rieckers:r-- isec-read` - der Tutor kann die Datei lesen.
-
-`setfacl -m u:gerdes:r-- isec-read`- der Tutor kann die Datei lesen.
+`setfacl -m u:TUTOR:r-- isec-read` - der Tutor kann die Datei lesen.
 
 `echo 'nicht lesbar' > isec-noread; chmod 600 isec-noread` - es wird eine Datei 'isec-noread' erstellt mit dem Inhalt 'nicht lesbar'. Auf diese Datei hat nur der user alle Rechte(rwx) und alle anderen keinen Zugriff. Mit `chmod 600` ist die Datei nur für den User zugänglich.
 
