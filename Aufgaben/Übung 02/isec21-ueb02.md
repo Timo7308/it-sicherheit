@@ -108,10 +108,16 @@ wir die Berechtigungen überprüfen können.
 Achtet bei der Vergabe der Rechte auch darauf, dass die Tutoren die
 gesetzten Rechte auch überprüfen können müssen.
 
+<details><summary>Tests</summary>
+
 `/home/wwwu/lindloff/permission_test` als Testordner mit `string_test` als Datei.
+
 `user:borrmann:--x`kann den Ordner und die Datei nicht sehen. Nachdem der Name gedoch genannt wurde, ist es möglich in das Verzeichnis zu wechseln und dann auch in `permission_test` mit `cat string_test` die Datei auslesen. 
 
 `user:timo5:--x`kann sich mithilfe der Leserechte durch den Befehl `ls` auch die Inhalte des Verzeichnisses `permission_test` anzeigen lassen. Die Datei `string_test` wird dort nun gelistet und kann dank der Ausführungsrechte ebenfalls geöffnet werden.
+
+</details>
+
 
 Für die Bearbeitung des Blatts ist es erforderlich, dass Ihr auch Rechte
 auf dem Verzeichnis `/home/wwwu/USER` selbst setzt. Welche Rechte müsst Ihr
@@ -125,7 +131,7 @@ Auch die Tutoren haben Zugriff auf dieses Verzeichnis. Sie dürfen aber keine Da
 
 `cd /home/wwwu`
 
-`setfacl -m u:GRUPPENMITGLIED:rwx USER`
+`setfacl -m u:GRUPPENMITGLIED:rwx USER` - die Schreibrechte müssen hier nicht unbedingt gesetzt werden.
 
 `setfacl -m u:TUTOR:r-x USER`
 
