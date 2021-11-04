@@ -78,7 +78,7 @@ Wir sind wie folgt vorgegangen:
 
 `cd isec-ueb2` - wechseln in das erstellte Verzeichnis
 
-`echo 'lesbar' > isec-read` - es wird eine Datei 'isec-read' erstellt mit dem Inhalt 'lesbar'. Auf diese Datei hat nur der user alle Rechte(rwx) und alle anderen keinen Zugriff. Standardmäßig werden Dateien mit rw-r--r erstellt. So kann auch jeder die Datei lesen ohne diese extra hinzufügen zu müssen.
+`echo 'lesbar' > isec-read; chmod 600 isec-read` - es wird eine Datei 'isec-read' erstellt mit dem Inhalt 'lesbar'. Auf diese Datei hat nur der user Lese- und Schreib-Rechte(rw-) und alle anderen keinen Zugriff. 
 
 `setfacl -m u:rieckers:r-- isec-read` - der Tutor kann die Datei lesen.
 
