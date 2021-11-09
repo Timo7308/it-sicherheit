@@ -38,7 +38,10 @@ d.h. welche Berechtigungen sind zu vergeben?
 <details><summary>Lösung</summary>
 
 
-- Patientendaten aufnehmen oder ändern 
+- Patientendaten aufnehmen oder ändern (Eindeutige Kennung, Name, Adresse, Geburtsdatum, Station, Zimmer, Krankenkasse, Blutgruppe)
+- Bisherige Befunde und Therapien einsehen oder hinzufügen
+- Allergien und Unverträglichkeiten einsehen oder hinzufügen
+- Medikamente zur Behandlung hinzufügen oder entfernen
 - Diagnosen stellen oder ändern 
 - Abrechnungen erstellen 
 - 
@@ -58,7 +61,7 @@ menschlichen und organisatorischen Problemen rechnet Ihr?
 <details><summary>Lösung</summary>
 
 
-Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und medizinischem Personal kommen. Oder Mtarbeiter vom medizinischen Personal sind noch unsicher oder nicht vertraut mit dem System der digitalen Krankenakte und machen möglicherweise Fehler. Daneben stellt sich die Frage, welchen Zugriff der Verwaltungsmitarbeiter auf die Krankenakte hat. Was passiert wenn das System für die digitalen Krankenakten nicht funktioniert? Worauf bekommt der Techniker Zugriff? Darf er die Krankenakten einsehen? 
+Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und medizinischem Personal kommen. Oder Mtarbeiter vom medizinischen Personal sind noch unsicher oder nicht vertraut mit dem System der digitalen Krankenakte und machen möglicherweise Fehler. Daneben stellt sich die Frage, welchen Zugriff der Verwaltungsmitarbeiter auf die Krankenakte hat. Was passiert wenn das System für die digitalen Krankenakten nicht funktioniert? Worauf bekommt der Techniker Zugriff? Darf er die Krankenakten einsehen? Wie werden bisherige Befunde und Therapien eines anderen Arztes übernommen, der möglicherweise analoge Patientenakten hat? 
 
 </details>
 
@@ -68,7 +71,7 @@ Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und med
 <details><summary>Lösung</summary>
 
 
-Mögliche Gegenmaßnahmen wären z.B. das alle Mitarbeiter des medizinischen Personals und alle Ärzte eine Schulung erhalten, in der der Umgang mit der digitalen Krankenakte erklärt wird. Dadurch könnten mögliche Fehler bei der Verwaltung von Patientendaten vermieden werden. Damit der Verwaltungsmitarbeiter Abrechnungen erstellen kann wird es nötig sein, das dieser Zugriff auf die Krankenakten bekommt. Es ist aber ausreichend, das der Verwaltungsmitarbeiter nur lesenden Zugriff bekommt und Einträge in den Akten nicht verändern kann. Für die technische Wartung würde es Sinn machen, einen Mitarbeiter des Karankenhauses heranzuziehen. Das könnte jemand sein, der bereits für weitere Technik im Krankenhaus zuständig ist. Wenn es nötig ist, kann der Techniker wie der Verwaltungsmitarbeiter die Krankenakten einsehen aber nicht verändern. 
+Mögliche Gegenmaßnahmen wären z.B. das alle Mitarbeiter des medizinischen Personals und alle Ärzte eine Schulung erhalten, in der der Umgang mit der digitalen Krankenakte erklärt wird. Dadurch könnten mögliche Fehler bei der Verwaltung von Patientendaten vermieden werden. Damit der Verwaltungsmitarbeiter Abrechnungen erstellen kann wird es nötig sein, das dieser Zugriff auf die Krankenakten bekommt. Es ist aber ausreichend, das der Verwaltungsmitarbeiter nur lesenden Zugriff bekommt und Einträge in den Akten nicht verändern kann. Für die technische Wartung würde es Sinn machen, einen Mitarbeiter des Karankenhauses heranzuziehen. Das könnte jemand sein, der bereits für weitere Technik im Krankenhaus zuständig ist. Wenn es nötig ist, kann der Techniker wie der Verwaltungsmitarbeiter die Krankenakten einsehen aber nicht verändern. Bisherige Befunde von anderen Ärzten sollten vom medizinischen Personal in die Krankenakte aufgenommen werden und zur Sicherheit einmal mit dem Patienten kommuniziert werden. 
 
 </details>
 
