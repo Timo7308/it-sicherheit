@@ -20,14 +20,58 @@ herangezogen, um Abrechnungen zu erstellen.
 
 - Nennt mindestens drei Rollen, die bezüglich des Zugriffs auf die
 Krankenakte zu unterscheiden sind.
+
+<details><summary>Lösung</summary>
+
+- Ärzte 
+- Medizinisches Personal 
+- Verwaltungsmitarbeiter 
+- Mitarbeiter für technische Wartung 
+- 
+
+
+</details>
+
+
 - Welche Aktionen können auf der Krankenakte ausgeführt werden,
 d.h. welche Berechtigungen sind zu vergeben?
+
+<details><summary>Lösung</summary>
+
+- Patientendaten aufnehmen oder ändern 
+- Diagnosen stellen oder ändern 
+- Abrechnungen erstellen 
+- 
+
+
+</details>
+
+
+
 - Erstellt eine geeignete Relation entsprechend des RBAC-Modells,
 die die von Euch genannten Rollen mit den Aktionen verknüpft. Wo
 kann hier vielleicht Vererbung helfen?
+
+
+
 - Ihr übernehmt Eure Berechtigungen in die Praxis. Mit welchen
 menschlichen und organisatorischen Problemen rechnet Ihr?
+
+<details><summary>Lösung</summary>
+
+Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und medizinischem Personal kommen. Oder Mtarbeiter vom medizinischen Personal sind noch unsicher oder nicht vertraut mit dem System der digitalen Krankenakte und machen möglicherweise Fehler. Daneben stellt sich die Frage, welchen Zugriff der Verwaltungsmitarbeiter auf die Krankenakte hat. Was passiert wenn das System für die digitalen Krankenakten nicht funktioniert? Worauf bekommt der Techniker Zugriff? Darf er die Krankenakten einsehen? 
+
+</details>
+
+
 - Welche Gegenmaßnahmen würdet Ihr für diese Probleme vorschlagen?
+
+<details><summary>Lösung</summary>
+
+Mögliche Gegenmaßnahmen wären z.B. das alle Mitarbeiter des medizinischen Personals und alle Ärzte eine Schulung erhalten, in der der Umgang mit der digitalen Krankenakte erklärt wird. Dadurch könnten mögliche Fehler bei der Verwaltung von Patientendaten vermieden werden. Damit der Verwaltungsmitarbeiter Abrechnungen erstellen kann wird es nötig sein, das dieser Zugriff auf die Krankenakten bekommt. Es ist aber ausreichend, das der Verwaltungsmitarbeiter nur lesenden Zugriff bekommt und Einträge in den Akten nicht verändern kann. Für die technische Wartung würde es Sinn machen, einen Mitarbeiter des Karankenhauses heranzuziehen. Das könnte jemand sein, der bereits für weitere Technik im Krankenhaus zuständig ist. Wenn es nötig ist, kann der Techniker wie der Verwaltungsmitarbeiter die Krankenakten einsehen aber nicht verändern. 
+
+</details>
+
 
 Hinweis: Wenn wir den Patienten ebenfalls (begrenzten) Zugriff auf ihre
 Krankenakte geben wollen, stoßen wir unvermeidlich auf eine Beschränkung des grundlegenden RBAC-Mechanismus.  Dieses Problem müsst Ihr in dieser Aufgabe nicht lösen, aber es schadet sicher nicht, auch darüber einmal nachzudenken.
