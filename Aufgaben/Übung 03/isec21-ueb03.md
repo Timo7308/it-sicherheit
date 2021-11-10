@@ -1,9 +1,9 @@
 Informationssicherheit, 3. Übung
 ================================
-Wir sind in Gruppe "G35".
-Philias Borrmann borrmann@uni-bremen.de
-Adrian Lindloff lindloff@uni-bremen.de
-Timo Schuchmann timo5@uni-bremen.de
+Wir sind in Gruppe "**G35**". <br />
+Philias Borrmann borrmann@uni-bremen.de <br />
+Adrian Lindloff lindloff@uni-bremen.de <br />
+Timo Schuchmann timo5@uni-bremen.de <br />
 
 * * * * *
 
