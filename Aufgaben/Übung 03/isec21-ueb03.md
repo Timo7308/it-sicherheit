@@ -28,7 +28,7 @@ Krankenakte zu unterscheiden sind.
 - Medizinisches Personal 
 - Verwaltungsmitarbeiter 
 - Mitarbeiter für technische Wartung 
-- 
+
 </details>
 
 
@@ -37,14 +37,23 @@ d.h. welche Berechtigungen sind zu vergeben?
 
 <details><summary>Lösung</summary>
 
+Berechtigungen auf unterschiedlichen Ebenen (höhere Berechtigungen haben alle tieferen Berechtigungen):
 
-- Patientendaten aufnehmen oder ändern (Eindeutige Kennung, Name, Adresse, Geburtsdatum, Station, Zimmer, Krankenkasse, Blutgruppe)
-- Bisherige Befunde und Therapien einsehen oder hinzufügen
-- Allergien und Unverträglichkeiten einsehen oder hinzufügen
 - Medikamente zur Behandlung hinzufügen oder entfernen
 - Diagnosen stellen oder ändern 
+
+- Patientendaten aufnehmen oder ändern (Eindeutige Kennung, Name, Adresse, Geburtsdatum, Station, Zimmer, Krankenkasse, Blutgruppe)
+- Bisherige Befunde und Therapien bearbeiten oder hinzufügen
+- Allergien und Unverträglichkeiten einsehen/ bearbeiten oder hinzufügen
+- Zusätzliche Dokumentation
+
+- Patientendaten aufnehmen oder ändern (Eindeutige Kennung, Name, Adresse, Geburtsdatum, Station, Zimmer, Krankenkasse)
+- Bisherige Befunde und Therapien einsehen
+- Medikamente zur Behandlung einsehen
 - Abrechnungen erstellen 
-- 
+
+- Patientendaten anzeigen (Eindeutige Kennung, Name, Geburtsdatum, Station, Zimmer)
+
 </details>
 
 
@@ -58,10 +67,16 @@ kann hier vielleicht Vererbung helfen?
 - Ihr übernehmt Eure Berechtigungen in die Praxis. Mit welchen
 menschlichen und organisatorischen Problemen rechnet Ihr?
 
+
 <details><summary>Lösung</summary>
 
-
 Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und medizinischem Personal kommen. Oder Mtarbeiter vom medizinischen Personal sind noch unsicher oder nicht vertraut mit dem System der digitalen Krankenakte und machen möglicherweise Fehler. Daneben stellt sich die Frage, welchen Zugriff der Verwaltungsmitarbeiter auf die Krankenakte hat. Was passiert wenn das System für die digitalen Krankenakten nicht funktioniert? Worauf bekommt der Techniker Zugriff? Darf er die Krankenakten einsehen? Wie werden bisherige Befunde und Therapien eines anderen Arztes übernommen, der möglicherweise analoge Patientenakten hat? 
+
+- Problem der Konfliktklassen: Inwiefern kann ein Arzt die Diagnose oder verschriebenen Medikamente eines Patienten beeinflussen,
+  für welchen er gar nicht zuständig ist; ist bspw. die Diagnose nachvollziehbar und ausreichend dokumentiert --> können dort Fehler      entstehen, wenn ein anderer Arzt den Patienten behandelt. 
+
+- 
+
 
 </details>
 
