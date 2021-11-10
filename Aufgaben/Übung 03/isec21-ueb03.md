@@ -31,8 +31,8 @@ Krankenakte zu unterscheiden sind.
 - Ärzte 
 - Medizinisches Personal 
 - Verwaltungsmitarbeiter 
-- _Mitarbeiter für technische Wartung (ausgedachte Rolle)_
-- _Admin_
+- _Mitarbeiter für technische Wartung ()_
+- _Admin(alle Rechte: hätte zu viele Rechte und könnte ggf. Patienten löschen. Könnte auf Anfrage des Patienten seine Akte löschen)_ 
 </details>
 
 -------------
