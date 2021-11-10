@@ -40,19 +40,19 @@ d.h. welche Berechtigungen sind zu vergeben?
 Berechtigungen auf unterschiedlichen Ebenen (höhere Berechtigungen haben alle tieferen Berechtigungen):
 
 - Medikamente zur Behandlung hinzufügen oder entfernen
-- Diagnosen stellen oder ändern 
+- Diagnosen stellen oder ändern <br />
 
 - Patientendaten aufnehmen oder ändern (Eindeutige Kennung, Name, Adresse, Geburtsdatum, Station, Zimmer, Krankenkasse, Blutgruppe)
 - Bisherige Befunde und Therapien bearbeiten oder hinzufügen
 - Allergien und Unverträglichkeiten einsehen/ bearbeiten oder hinzufügen
-- Zusätzliche Dokumentation
+- Zusätzliche Dokumentation <br />
 
 - Patientendaten aufnehmen oder ändern (Eindeutige Kennung, Name, Adresse, Geburtsdatum, Station, Zimmer, Krankenkasse)
 - Bisherige Befunde und Therapien einsehen
 - Medikamente zur Behandlung einsehen
-- Abrechnungen erstellen 
+- Abrechnungen erstellen <br />
 
-- Patientendaten anzeigen (Eindeutige Kennung, Name, Geburtsdatum, Station, Zimmer)
+- Patientendaten anzeigen (Eindeutige Kennung, Name, Geburtsdatum, Station, Zimmer) <br />
 
 </details>
 
