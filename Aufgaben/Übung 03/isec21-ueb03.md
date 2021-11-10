@@ -57,7 +57,7 @@ Berechtigungen auf unterschiedlichen Ebenen (höhere Berechtigungen haben alle t
 - Patientendaten aufnehmen oder ändern (Eindeutige Kennung, Name, Adresse, Geburtsdatum, Station, Zimmer, Krankenkasse)
 - Bisherige Befunde und Therapien einsehen
 - Medikamente zur Behandlung einsehen
-- Abrechnungen erstellen <br />
+- Abrechnungen erstellen (Ausnahme: nur für diese Rolle) <br />
 <br />
 
 - Patientendaten anzeigen (Eindeutige Kennung, Name, Geburtsdatum, Station, Zimmer) <br />
