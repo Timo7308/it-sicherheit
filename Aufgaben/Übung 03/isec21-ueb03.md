@@ -10,18 +10,6 @@ Timo Schuchmann timo5@uni-bremen.de <br />
 Aufgabe 1, 5 Punkte, Gruppe
 -----------------------------------
 
-Ein Krankenhaus hat eine digitale Krankenakte eingeführt. Diese
-enthält folgende Informationen: eindeutige Kennung, Name, Adresse,
-Geburtsdatum, Station, Zimmer, Krankenkasse, Blutgruppe,
-Allergien/Unverträglichkeiten, verschriebene Medikamente, bisherige
-Befunde und verordnete Therapien.
-
-Nur Ärzte dürfen Diagnosen stellen oder verändern. Alle vorgenommenen
-Maßnahmen müssen vom medizinischen Personal in der Akte dokumentiert
-werden. Ein entsprechendes Terminal steht in jedem Zimmer. Die
-digitale Akte wird auch vom zuständigen Verwaltungsmitarbeiter
-herangezogen, um Abrechnungen zu erstellen.
-
 - Nennt mindestens drei Rollen, die bezüglich des Zugriffs auf die
 Krankenakte zu unterscheiden sind.
 
@@ -51,7 +39,7 @@ Berechtigungen auf unterschiedlichen Ebenen (höhere Berechtigungen haben alle t
 - Patientendaten aufnehmen oder ändern (Eindeutige Kennung, Name, Adresse, Geburtsdatum, Station, Zimmer, Krankenkasse, Blutgruppe)
 - Bisherige Befunde und Therapien bearbeiten oder hinzufügen
 - Allergien und Unverträglichkeiten einsehen/ bearbeiten oder hinzufügen
-- Zusätzliche Dokumentation <br />
+- Zusätzliche Dokumentation und Verwaltungshistorie <br />
 <br />
 
 - Patientendaten aufnehmen oder ändern (Eindeutige Kennung, Name, Adresse, Geburtsdatum, Station, Zimmer, Krankenkasse)
