@@ -35,6 +35,7 @@ Krankenakte zu unterscheiden sind.
 - _Admin_
 </details>
 
+-------------
 
 - Welche Aktionen können auf der Krankenakte ausgeführt werden,
 d.h. welche Berechtigungen sind zu vergeben?
@@ -45,49 +46,65 @@ Berechtigungen auf unterschiedlichen Ebenen (höhere Berechtigungen haben alle t
 
 - Medikamente zur Behandlung hinzufügen oder entfernen
 - Diagnosen stellen oder ändern <br />
+<br />
 
 - Patientendaten aufnehmen oder ändern (Eindeutige Kennung, Name, Adresse, Geburtsdatum, Station, Zimmer, Krankenkasse, Blutgruppe)
 - Bisherige Befunde und Therapien bearbeiten oder hinzufügen
 - Allergien und Unverträglichkeiten einsehen/ bearbeiten oder hinzufügen
 - Zusätzliche Dokumentation <br />
+<br />
 
 - Patientendaten aufnehmen oder ändern (Eindeutige Kennung, Name, Adresse, Geburtsdatum, Station, Zimmer, Krankenkasse)
 - Bisherige Befunde und Therapien einsehen
 - Medikamente zur Behandlung einsehen
 - Abrechnungen erstellen <br />
+<br />
 
 - Patientendaten anzeigen (Eindeutige Kennung, Name, Geburtsdatum, Station, Zimmer) <br />
 
 </details>
 
+-------------
 
 
 - Erstellt eine geeignete Relation entsprechend des RBAC-Modells,
 die die von Euch genannten Rollen mit den Aktionen verknüpft. Wo
 kann hier vielleicht Vererbung helfen?
+
 <details><summary>Lösung</summary>
 
--------------
-
-Rolle: lesen(l,r), schreiben(w) hinzufügen/ändern (h), entfernen (e)
+Rolle: lesen(l), schreiben(s) 
 
 | Rollen/Rechte                                 | Ärzte  | Medizinisches Personal | Verwaltungsmitarbeiter |
 | --------                                      | ------ | ------                 |------                  |
 |eindeutige Kennung (id)                        | l      | l                      | l                      |
-|Patientendaten (id, name, Krankenkasse, ...)   | l,h,e  | l,h,e                  | l                      |
-|Allergien und Unverträglichkeiten              | l,h,e  | l,h,e                  | -                      |
-|bisherige Befunde                              | l,h,e  | l,h,e                  | -                      |
-|verordnete Therapien                           | l,h,e  | l                      | l                      |
-|verschriebene Medikamente                      | l,h,e  | l                      | l                      |
-|Diagnosen                                      | l,h,e  | l                      | l                      |
+|Patientendaten (name, Krankenkasse, ...)       | l,s    | l,s                    | l                      |
+|Allergien und Unverträglichkeiten              | l,s    | l,s                    | -                      |
+|bisherige Befunde                              | l,s    | l,s                    | -                      |
+|verordnete Therapien                           | l,s    | l                      | l                      |
+|verschriebene Medikamente                      | l,s    | l                      | l                      |
+|Diagnosen                                      | l,s    | l                      | l                      |
 
 
-Vererbung/Rollenhierachie:
+_eine Änderung der eindeutigen Kennung sei nicht möglich, um Fehler in der Datenbank zu vermeiden._
 
-Ärzte, Medizinisches Personal, Verwaltungsmitarbeiter
+Da die Anzahl der Rechte mit jeder Rolle steigen und keine weggnommen werden, können diese Rollen in der gelisteten Reihenfolge vererbt werden.
+
+**Verwaltungsmitarbeiter:** 
+Der Verwaltungsmitarbeiter hat nur lesenden Zugriff auf die Aktionen, die für die Abrechnungen wichtig sind.
+Die Kennung und Patientendaten sind erforderlich um eine Rechnung an die Krankenkasse des Patienten zu stellen. Die verbundenen Kosten sind hierzu in der Therapie, Medikamenten und Diagnose zu finden. Nach unserer Meinung ist hierzu ein Zugriff auf Alergien und Befunde nicht erforderlich.
+
+
+**Medizinisches Personal:**
+Das medizinische Personal hat lesenden Zugriff auf alle Daten und kann zudem die Daten eines Patienten aufnehmen/aufschreiben.
+
+**Arzt:**
+Der Arzt hat die selben Rechte, wie das medizinischen Personal und kann zusätzlich Therapien verodnen, Medikamente verschreiben und Diagnosen erstellen. 
+
 
 </details>
 
+-------------
 
 - Ihr übernehmt Eure Berechtigungen in die Praxis. Mit welchen
 menschlichen und organisatorischen Problemen rechnet Ihr?
@@ -105,6 +122,7 @@ Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und med
 
 </details>
 
+-------------
 
 - Welche Gegenmaßnahmen würdet Ihr für diese Probleme vorschlagen?
 
@@ -115,6 +133,7 @@ Mögliche Gegenmaßnahmen wären z.B. das alle Mitarbeiter des medizinischen Per
 
 </details>
 
+------
 
 Hinweis: Wenn wir den Patienten ebenfalls (begrenzten) Zugriff auf ihre
 Krankenakte geben wollen, stoßen wir unvermeidlich auf eine Beschränkung des grundlegenden RBAC-Mechanismus.  Dieses Problem müsst Ihr in dieser Aufgabe nicht lösen, aber es schadet sicher nicht, auch darüber einmal nachzudenken.
