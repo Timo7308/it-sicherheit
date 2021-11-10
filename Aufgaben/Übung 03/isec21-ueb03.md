@@ -27,8 +27,8 @@ Krankenakte zu unterscheiden sind.
 - Ärzte 
 - Medizinisches Personal 
 - Verwaltungsmitarbeiter 
-- Mitarbeiter für technische Wartung 
-
+- _Mitarbeiter für technische Wartung (ausgedachte Rolle)_
+- _Admin_
 </details>
 
 
@@ -61,7 +61,28 @@ Berechtigungen auf unterschiedlichen Ebenen (höhere Berechtigungen haben alle t
 - Erstellt eine geeignete Relation entsprechend des RBAC-Modells,
 die die von Euch genannten Rollen mit den Aktionen verknüpft. Wo
 kann hier vielleicht Vererbung helfen?
+<details><summary>Lösung</summary>
 
+-------------
+
+Rolle: lesen(l,r), schreiben(w) hinzufügen/ändern (h), entfernen (e)
+
+| Rollen/Rechte                                 | Ärzte  | Medizinisches Personal | Verwaltungsmitarbeiter |
+| --------                                      | ------ | ------                 |------                  |
+|eindeutige Kennung (id)                        | l      | l                      | l                      |
+|Patientendaten (id, name, Krankenkasse, ...)   | l,h,e  | l,h,e                  | l                      |
+|Allergien und Unverträglichkeiten              | l,h,e  | l,h,e                  | -                      |
+|bisherige Befunde                              | l,h,e  | l,h,e                  | -                      |
+|verordnete Therapien                           | l,h,e  | l                      | l                      |
+|verschriebene Medikamente                      | l,h,e  | l                      | l                      |
+|Diagnosen                                      | l,h,e  | l                      | l                      |
+
+
+Vererbung/Rollenhierachie:
+
+Ärzte, Medizinisches Personal, Verwaltungsmitarbeiter
+
+</details>
 
 
 - Ihr übernehmt Eure Berechtigungen in die Praxis. Mit welchen
@@ -75,7 +96,7 @@ Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und med
 - Problem der Konfliktklassen: Inwiefern kann ein Arzt die Diagnose oder verschriebenen Medikamente eines Patienten beeinflussen,
   für welchen er gar nicht zuständig ist; ist bspw. die Diagnose nachvollziehbar und ausreichend dokumentiert --> können dort Fehler      entstehen, wenn ein anderer Arzt den Patienten behandelt. 
 
-- 
+- an/abmelden von medizinischem Personal am Terminal, damit der Arzt eine Diagnose stellen kann, da nur ein Terminal im Zimmer vorhanden ist. (umständlich)
 
 
 </details>
@@ -94,6 +115,9 @@ Mögliche Gegenmaßnahmen wären z.B. das alle Mitarbeiter des medizinischen Per
 Hinweis: Wenn wir den Patienten ebenfalls (begrenzten) Zugriff auf ihre
 Krankenakte geben wollen, stoßen wir unvermeidlich auf eine Beschränkung des grundlegenden RBAC-Mechanismus.  Dieses Problem müsst Ihr in dieser Aufgabe nicht lösen, aber es schadet sicher nicht, auch darüber einmal nachzudenken.
 
+<details><summary>Gedanken</summary>
+ Seperation of Duty
+</details>
 
 * * * * *
 
