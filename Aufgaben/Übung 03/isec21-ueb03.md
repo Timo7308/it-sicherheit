@@ -110,7 +110,7 @@ menschlichen und organisatorischen Problemen rechnet Ihr?
 -------------
 
 
-Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und medizinischem Personal kommen. Vor allem zur Einführung sind alle involvierten Mitarbeiter noch nicht vertraut mit dem System der digitalen Krankenakte und machen möglicherweise Fehler. Was passiert wenn das System für die digitalen Krankenakten nicht funktioniert? Gibt es im Falle von Ausfällen oder systemgefährdeten Fehlfunktionen eine spontane Alternative? Ein weiteres Problem ist die Digitalisierung der analogen Patientenakten. Bisherige Therapien oder Diagnosen müssten nach den aktuellen Berechtigungen unseres RBAC-Modells von einem Arzt eingetragen werden. Jedoch haben Ärtze wichtigere Aufgaben zu erledigen, als alte schriftliche Daten zu digitalisieren. <br />
+Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und medizinischem Personal kommen. Vor allem zur Einführung sind alle involvierten Mitarbeiter noch nicht vertraut mit dem System der digitalen Krankenakte und machen möglicherweise Fehler. Was passiert wenn das System für die digitalen Krankenakten nicht funktioniert? Gibt es im Falle von Ausfällen oder systemgefährdeten Fehlfunktionen eine spontane Alternative? Ein weiteres Problem ist die Digitalisierung der analogen Patientenakten. Bisherige Therapien oder Diagnosen müssten nach den aktuellen Berechtigungen unseres RBAC-Modells von einem Arzt eingetragen werden. Jedoch haben Ärzte wichtigere Aufgaben zu erledigen, als alte schriftliche Daten zu digitalisieren. <br />
 <br />
 Hinzu kommt das Problem der Konfliktklassen. Inwiefern kann ein Arzt die Diagnose oder verschriebenen Medikamente eines Patienten beeinflussen,
 für welchen er gar nicht zuständig ist. Dies betrifft zwei Ebenen. Einerseits muss es genug Möglichkeiten geben bspw. die Diagnose nachvollziehbar und gut dokumentiert zu gestalten, denn sonst könnten an dieser Stelle Fehler entstehen, wenn ein anderer Arzt den Patienten behandelt. Andererseits beziehen sich die Konfliktklassen auch auf die Vertraulichkeit der Patienten. Soll jeder Arzt auf die privaten Daten eines jeden Patienten zugreifen können? Die persönliche Informationen könnten an einen zu großen Adressatenkreis gelangen. Dem gegenüber steht die Behandlung im Falle eines Arztwechsels, denn dann muss der neue Arzt auf jene Informationen zugreifen können, um die bestmögliche Behandlung gewährleisten zu können. <br />
@@ -131,6 +131,9 @@ Welche Gegenmaßnahmen würdet Ihr für diese Probleme vorschlagen?
 
 Mögliche Gegenmaßnahmen wären z.B. das alle Mitarbeiter des medizinischen Personals und alle Ärzte eine Schulung erhalten, in der der Umgang mit der digitalen Krankenakte erklärt wird. Dadurch könnten mögliche Fehler bei der Verwaltung von Patientendaten vermieden werden. Damit der Verwaltungsmitarbeiter Abrechnungen erstellen kann wird es nötig sein, das dieser Zugriff auf die Krankenakten bekommt. Es ist aber ausreichend, das der Verwaltungsmitarbeiter nur lesenden Zugriff bekommt und Einträge in den Akten nicht verändern kann. Bisherige Befunde von anderen Ärzten sollten vom medizinischen Personal in die Krankenakte aufgenommen werden und zur Sicherheit einmal mit dem Patienten kommuniziert werden. 
 
+Die Digitalisierung der analogen Patientenakten sollte von einer neuen zuständigen Rolle übernommen werden, sodass sich die Ärzte um diese nicht auch noch kümmern müssen.
+
+Für die Lösungen des Problems mit der An-/Abmeldung und der Ferndiagose, könnte jeder Arzt und medizinisches Personal ein eigenes Terminal(Smartphone) mit sich rumtragen.
 
 * * * * *
 
