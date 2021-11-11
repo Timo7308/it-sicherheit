@@ -75,7 +75,7 @@ Rolle: lesen(l), schreiben(s)
 |verordnete Therapien                           | l,s    | l                      | l                      |
 |verschriebene Medikamente                      | l,s    | l                      | l                      |
 |Diagnosen                                      | l,s    | l                      | l                      |
-|Abrechnungen                                      | l    | l                      | l,s                      |
+|Abrechnungen                                      | -    | -                      | l,s                      |
 |Dokumentation                                      | l,s    | l,s                      | -                      |
 |Verwaltungs -und Änderungshistorie                                      | l    | l                      | -                      |
 
@@ -90,7 +90,7 @@ Die Kennung und Patientendaten sind erforderlich um eine Rechnung an die Kranken
 
 
 **Medizinisches Personal:**
-Das medizinische Personal hat lesenden Zugriff auf alle Daten und kann zudem die Daten eines Patienten aufnehmen/aufschreiben. Zusätzlich können sie Vorgänge oder weitere wichtige Informationen dokumentieren und auf die Verwaltungs -und Änderungshistorie zugreifen, um zusehen, wer für welche Änderungen verantwortlich ist und dort gegebenenfalls nachzufragen.
+Das medizinische Personal hat lesenden Zugriff auf alle Daten und kann zudem die Daten eines Patienten aufnehmen/aufschreiben. Zusätzlich können sie Vorgänge oder weitere wichtige Informationen dokumentieren und auf die automatisch generierte Verwaltungs -und Änderungshistorie zugreifen, um zusehen, wer für welche Änderungen verantwortlich ist und dort gegebenenfalls nachfragen zu können.
 
 **Arzt:**
 Der Arzt hat die selben Rechte, wie das medizinischen Personal und kann zusätzlich Therapien verodnen, Medikamente verschreiben und Diagnosen erstellen. 
