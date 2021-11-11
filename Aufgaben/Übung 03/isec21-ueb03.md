@@ -86,7 +86,7 @@ Rolle: lesen(l), schreiben(s)
 
 _Eine Änderung der eindeutigen Kennung sei nicht möglich, um Fehler in der Datenbank zu vermeiden._
 
-Da die Anzahl der Rechte mit jeder Rolle steigen und (bis auf Ausnahmen) keine weggnommen werden, können diese Rollen in der gelisteten Reihenfolge vererbt werden.
+Da die Anzahl der Rechte mit jeder Rolle steigen und (bis auf Ausnahmen) keine weggnommen werden, können diese Rollen in der gelisteten Reihenfolge vererbt werden. Wenn wir die Rolle des Arztes in einzelnen Fachbereiche unterteilen, könnte die Rolle des Aztes an diese vererbt werden.
 
 **Verwaltungsmitarbeiter:** 
 Der Verwaltungsmitarbeiter hat nur lesenden Zugriff auf die Aktionen, die für die Abrechnungen wichtig sind. Wenn es möglich ist die Abrechnungen direkt am Terminal durchzuführen, dann steht diese Funktionalität nur den Verwaltungsmitarbeitern zu (geht aus der Aufgabenstellung nicht klar hervor).
@@ -111,7 +111,7 @@ menschlichen und organisatorischen Problemen rechnet Ihr?
 
 
 Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und medizinischem Personal kommen. Vor allem zur Einführung der Terminals sind alle involvierten Mitarbeiter noch nicht vertraut mit dem System der digitalen Krankenakte und machen möglicherweise Fehler. Was würde passieren, wenn das System der digitalen Krankenakten nicht funktioniert? Gibt es im Falle von Ausfällen oder systemgefährdeten Fehlfunktionen eine spontane Alternative? <br />
-<br /> Ein weiteres Problem ist die Digitalisierung der analogen Patientenakten. Bisherige Therapien oder Diagnosen müssten nach den aktuellen Berechtigungen unseres RBAC-Modells von einem Arzt eingetragen werden. Jedoch haben Ärtze wichtigere Aufgaben zu erledigen, als alte schriftliche Daten zu digitalisieren. Wenn die Akten von anderen Mitarbeitern in das neue System übernommen werden ist die Vertraulichkeit der Patientendaten gefährdet.<br />
+<br /> Ein weiteres Problem ist die Digitalisierung der analogen Patientenakten. Bisherige Therapien oder Diagnosen müssten nach den aktuellen Berechtigungen unseres RBAC-Modells von einem Arzt eingetragen werden. Jedoch haben Ärzte wichtigere Aufgaben zu erledigen, als alte schriftliche Daten zu digitalisieren. Wenn die Akten von anderen Mitarbeitern in das neue System übernommen werden ist die Vertraulichkeit der Patientendaten gefährdet.<br />
 <br />
 Hinzu kommt das Problem der Konfliktklassen der Ärzte und deren Patienten. Inwiefern kann ein Arzt die Diagnose oder verschriebenen Medikamente eines Patienten beeinflussen,
 für welchen er gar nicht zuständig ist. Dies betrifft zwei Ebenen. Einerseits könnten Fehler entstehen, wenn ein neuer Arzt einen Patienten behandelt und anhand der vorhandenen Eintragungen fehlgeleitet wird. Andererseits beziehen sich die Konfliktklassen auch auf die Vertraulichkeit der Patienten. Soll jeder Arzt auf die privaten Daten eines jeden Patienten zugreifen können? Die persönliche Informationen könnten an einen zu großen Adressatenkreis gelangen. Dem gegenüber steht die Behandlung im Falle eines Arztwechsels, denn dann muss der neue Arzt auf jene Informationen zugreifen können, um die bestmögliche Behandlung gewährleisten zu können. 
@@ -142,7 +142,7 @@ Die Digitalisierung der analogen Patientenakten sollte von einer neuen zuständi
 
 Für die Lösungen des Problems mit der An-/Abmeldung und der Ferndiagose, könnte jeder Arzt und medizinisches Personal ein eigenes Terminal(Smartphone) mit sich rumtragen.
 
-Um die Konfliktklassen bestehend aus den Ärzten mit meist unterschiedlichen Patienten anzugehen, muss es möglich sein, die erstellten Diagnosen oder Verschreibungen so deutlich mit notwendigen Informationen auszuschmücken, dass nicht involvierte Ärtze die Behandlung ohne Probleme fortsetzten können. Hinzu kommt die Historie, mit welcher die Verantwortungsfrage einer Änderung immer geklärt ist und nachgefragt werden kann. Die Vertraulichkeit der Patientendaten muss sorgfältig abgewogen werden. Ein Artz sollte nicht in der Lage auf sämtliche Patientendaten zuzugreifen, sondern nur auf seinen Fachbereich oder seine Station. 
+Um die Konfliktklassen bestehend aus den Ärzten mit meist unterschiedlichen Patienten anzugehen, muss es möglich sein, die erstellten Diagnosen oder Verschreibungen so deutlich mit notwendigen Informationen auszuschmücken, dass nicht involvierte Ärzte die Behandlung ohne Probleme fortsetzten können. Hinzu kommt die Historie, mit welcher die Verantwortungsfrage einer Änderung immer geklärt ist und nachgefragt werden kann. Die Vertraulichkeit der Patientendaten muss sorgfältig abgewogen werden. Ein Arzt sollte nicht in der Lage auf sämtliche Patientendaten zuzugreifen, sondern nur auf seinen Fachbereich oder seine Station. 
 
 Eine Löschung der Daten könnte nach einer gesetzlichen vorgeschriebenen Zeit automatisch passieren. Eine neue Rollen einzuführen die Daten löschen darf, würde zu viele andere Probleme bezüglich der Berechtigungen mit sich ziehen, dass wir uns aus Konfiktgründen dagegen entschieden haben.
 * * * * *
