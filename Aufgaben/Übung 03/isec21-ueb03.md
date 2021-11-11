@@ -135,7 +135,7 @@ Mögliche Gegenmaßnahmen wären z.B. das alle Mitarbeiter des medizinischen Per
 
 Die Digitalisierung der analogen Patientenakten sollte von einer neuen zuständigen Rolle übernommen werden, sodass sich die Ärzte um diese nicht auch noch kümmern müssen.
 
-Für die Lösungen des Problems mit der An-/Abmeldung und der Ferndiagose, könnte jeder Arzt und medizinisches Personal ein eigenes Terminal(Smartphone) mit sich rumtragen.
+Für die Lösungen des Problems mit der An-/Abmeldung und der Ferndiagose, könnte jeder Arzt und medizinisches Personal ein eigenes Terminal (Smartphone) mit sich rumtragen.
 
 * * * * *
 
