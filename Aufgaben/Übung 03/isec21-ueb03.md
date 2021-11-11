@@ -129,8 +129,9 @@ Welche Gegenmaßnahmen würdet Ihr für diese Probleme vorschlagen?
 -------------
 
 
-
 Mögliche Gegenmaßnahmen wären z.B. das alle Mitarbeiter des medizinischen Personals und alle Ärzte eine Schulung erhalten, in welcher der Umgang mit der digitalen Krankenakte erklärt wird. Dadurch könnten mögliche Fehler bei der Verwaltung von Patientendaten vermieden werden.  Bisherige Befunde von anderen Ärzten sollten vom medizinischen Personal in die Krankenakte aufgenommen werden und zur Sicherheit einmal mit dem Patienten kommuniziert werden. Die Digitalisierung der analogen Patientenakten kann von einer neuen, dafür zuständigen Rolle übernommen werden, sodass sich die Ärzte nicht darum kümmern müssen. Die Mitarbeiter in dieser Rolle müssen sich gesetzlich zur Verschwiegenheit verpflichten.
+
+Im Falle von Ausfalls oder systemgefährdeten Fehlfunktionen müssen die Patientendaten trotzdem immer verfügbar sein. Dies lässt sich durch häufige Backups beheben, denn Krankenhäuser haben für Notfällsituationen Notstromgeneratoren, weshalb die Daten weiterhin digital einsehbar wären.
 
 Für die Lösungen des Problems mit der An-/Abmeldung und der Ferndiagose, könnte jeder Arzt und medizinisches Personal ein eigenes Terminal (Smartphone) mit sich rumtragen.
 
