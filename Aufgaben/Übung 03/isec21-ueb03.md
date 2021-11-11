@@ -115,7 +115,7 @@ Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und med
 
 - An/abmelden von medizinischem Personal am Terminal, damit der Arzt eine Diagnose stellen kann, da nur ein Terminal im Zimmer vorhanden ist. (umständlich)
 
-- 
+- Bei einer Ferndiagose durch den Arzt, kann das medizinische Personal keine Änderungen bezüglich der Diagnose oder der verschriebenen Medikamente vornehmen. Ein Arzt muss für diese Änderungen immer vor Ort am Terminal sein.
 
 </details>
 
