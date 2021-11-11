@@ -108,10 +108,11 @@ menschlichen und organisatorischen Problemen rechnet Ihr?
 
 <details><summary>Lösung</summary>
 
-Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und medizinischem Personal kommen. Vor allem zu Beginn können Mitarbeiter vom medizinischen Personal sind noch unsicher oder nicht vertraut mit dem System der digitalen Krankenakte und machen möglicherweise Fehler. Daneben stellt sich die Frage, welchen Zugriff der Verwaltungsmitarbeiter auf die Krankenakte hat. Was passiert wenn das System für die digitalen Krankenakten nicht funktioniert? Darf er die Krankenakten einsehen? Wie werden bisherige Befunde und Therapien eines anderen Arztes übernommen, der möglicherweise analoge Patientenakten hat? 
-
-- Problem der Konfliktklassen: Inwiefern kann ein Arzt die Diagnose oder verschriebenen Medikamente eines Patienten beeinflussen,
-  für welchen er gar nicht zuständig ist; ist bspw. die Diagnose nachvollziehbar und ausreichend dokumentiert --> können dort Fehler      entstehen, wenn ein anderer Arzt den Patienten behandelt. 
+Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und medizinischem Personal kommen. Vor allem zur Einführung sind alle involvierten Mitarbeiter noch nicht vertraut mit dem System der digitalen Krankenakte und machen möglicherweise Fehler. Was passiert wenn das System für die digitalen Krankenakten nicht funktioniert? Gibt es im Falle von Ausfällen oder systemgefährdeten Fehlfunktionen eine spontane Alternative? Ein weiteres Problem ist die Digitalisierung der analogen Patientenakten. Bisherige Therapien oder Diagnosen müssten nach den aktuellen Berechtigungen unseres RBAC-Modells von einem Arzt eingetragen werden. Jedoch haben Ärtze wichtigere Aufgaben zu erledigen, als alte schriftliche Daten zu digitalisieren. <br />
+<br />
+Hinzu kommt das Problem der Konfliktklassen. Inwiefern kann ein Arzt die Diagnose oder verschriebenen Medikamente eines Patienten beeinflussen,
+für welchen er gar nicht zuständig ist. Dies betrifft zwei Ebenen. Einerseits muss es genug Möglichkeiten geben bspw. die Diagnose nachvollziehbar und gut dokumentiert zu gestalten, denn sonst könnten an dieser Stelle Fehler entstehen, wenn ein anderer Arzt den Patienten behandelt. Andererseits beziehen sich die Konfliktklassen auch auf die Vertraulichkeit der Patienten. Soll jeder Arzt auf die privaten Daten eines jeden Patienten zugreifen können? Die persönliche Informationen könnten an einen zu großen Adressatenkreis gelangen. Dem gegenüber steht die Behandlung im Falle eines Arztwechsels, denn dann muss der neue Arzt auf jene Informationen zugreifen können, um die bestmögliche Behandlung gewährleisten zu können. <br />
+<br />
 
 - An/abmelden von medizinischem Personal am Terminal, damit der Arzt eine Diagnose stellen kann, da nur ein Terminal im Zimmer vorhanden ist. (umständlich)
 
