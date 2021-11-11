@@ -144,6 +144,7 @@ Für die Lösungen des Problems mit der An-/Abmeldung und der Ferndiagose, könn
 
 Um die Konfliktklassen bestehend aus den Ärzten mit meist unterschiedlichen Patienten anzugehen, muss es möglich sein, die erstellten Diagnosen oder Verschreibungen so deutlich mit notwendigen Informationen auszuschmücken, dass nicht involvierte Ärtze die Behandlung ohne Probleme fortsetzten können. Hinzu kommt die Historie, mit welcher die Verantwortungsfrage einer Änderung immer geklärt ist und nachgefragt werden kann. Die Vertraulichkeit der Patientendaten muss sorgfältig abgewogen werden. Ein Artz sollte nicht in der Lage auf sämtliche Patientendaten zuzugreifen, sondern nur auf seinen Fachbereich oder seine Station. 
 
+Eine Löschung der Daten könnte nach einer gesetzlichen vorgeschriebenen Zeit automatisch passieren. Eine neue Rollen einzuführen die Daten löschen darf, würde zu viele andere Probleme bezüglich der Berechtigungen mit sich ziehen, dass wir uns aus Konfiktgründen dagegen entschieden haben.
 * * * * *
 
 Abgabe
