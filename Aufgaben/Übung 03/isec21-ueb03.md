@@ -10,11 +10,12 @@ Timo Schuchmann timo5@uni-bremen.de <br />
 Aufgabe 1, 5 Punkte, Gruppe
 -----------------------------------
 
-- Nennt mindestens drei Rollen, die bezüglich des Zugriffs auf die
+* * * * *
+Nennt mindestens drei Rollen, die bezüglich des Zugriffs auf die
 Krankenakte zu unterscheiden sind.
+-------------
 
 
-<details><summary>Lösung</summary>
 
 - Ärzte 
 - Medizinisches Personal 
@@ -23,14 +24,13 @@ Krankenakte zu unterscheiden sind.
 
  - _Admin(alle Rechte: hätte zu viele Rechte und könnte ggf. Patienten löschen. Könnte auf Anfrage des Patienten seine Akte löschen)_ 
 
-</details>
 
--------------
+* * * * *
 
-- Welche Aktionen können auf der Krankenakte ausgeführt werden,
+Welche Aktionen können auf der Krankenakte ausgeführt werden,
 d.h. welche Berechtigungen sind zu vergeben?
+-----------
 
-<details><summary>Lösung</summary>
 
 Berechtigungen auf unterschiedlichen Ebenen (höhere Berechtigungen haben alle tieferen Berechtigungen):
 
@@ -55,16 +55,18 @@ Berechtigungen auf unterschiedlichen Ebenen (höhere Berechtigungen haben alle t
 
 Ausnahmen: Die eindeutige Kennnummer wird einmalig erstellt (bspw. automatisch oder durch einen Admin) und danach nicht mehr verändert.
 
-</details>
 
+
+
+
+* * * * *
+
+Erstellt eine geeignete Relation entsprechend des RBAC-Modells,
+die die von Euch genannten Rollen mit den Aktionen verknüpft. Wo
+kann hier vielleicht Vererbung helfen?
 -------------
 
 
-- Erstellt eine geeignete Relation entsprechend des RBAC-Modells,
-die die von Euch genannten Rollen mit den Aktionen verknüpft. Wo
-kann hier vielleicht Vererbung helfen?
-
-<details><summary>Lösung</summary>
 
 Rolle: lesen(l), schreiben(s) 
 
@@ -98,15 +100,15 @@ Das medizinische Personal hat lesenden Zugriff auf alle Daten und kann zudem die
 Der Arzt hat die selben Rechte, wie das medizinischen Personal und kann zusätzlich Therapien verodnen, Medikamente verschreiben und Diagnosen erstellen. 
 
 
-</details>
 
+
+
+* * * * *
+
+Ihr übernehmt Eure Berechtigungen in die Praxis. Mit welchen
+menschlichen und organisatorischen Problemen rechnet Ihr?
 -------------
 
-- Ihr übernehmt Eure Berechtigungen in die Praxis. Mit welchen
-menschlichen und organisatorischen Problemen rechnet Ihr?
-
-
-<details><summary>Lösung</summary>
 
 Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und medizinischem Personal kommen. Vor allem zur Einführung sind alle involvierten Mitarbeiter noch nicht vertraut mit dem System der digitalen Krankenakte und machen möglicherweise Fehler. Was passiert wenn das System für die digitalen Krankenakten nicht funktioniert? Gibt es im Falle von Ausfällen oder systemgefährdeten Fehlfunktionen eine spontane Alternative? Ein weiteres Problem ist die Digitalisierung der analogen Patientenakten. Bisherige Therapien oder Diagnosen müssten nach den aktuellen Berechtigungen unseres RBAC-Modells von einem Arzt eingetragen werden. Jedoch haben Ärtze wichtigere Aufgaben zu erledigen, als alte schriftliche Daten zu digitalisieren. <br />
 <br />
@@ -120,27 +122,15 @@ für welchen er gar nicht zuständig ist. Dies betrifft zwei Ebenen. Einerseits 
 
 - Es fehlt eine geignete Rolle welche Krankenakten wieder entfernen kann, da ein Patient normalerweise das Recht hat seine eigene Daten löschen zu lassen.
 
-</details>
+* * * * *
 
+Welche Gegenmaßnahmen würdet Ihr für diese Probleme vorschlagen?
 -------------
 
-- Welche Gegenmaßnahmen würdet Ihr für diese Probleme vorschlagen?
-
-<details><summary>Lösung</summary>
 
 
 Mögliche Gegenmaßnahmen wären z.B. das alle Mitarbeiter des medizinischen Personals und alle Ärzte eine Schulung erhalten, in der der Umgang mit der digitalen Krankenakte erklärt wird. Dadurch könnten mögliche Fehler bei der Verwaltung von Patientendaten vermieden werden. Damit der Verwaltungsmitarbeiter Abrechnungen erstellen kann wird es nötig sein, das dieser Zugriff auf die Krankenakten bekommt. Es ist aber ausreichend, das der Verwaltungsmitarbeiter nur lesenden Zugriff bekommt und Einträge in den Akten nicht verändern kann. Bisherige Befunde von anderen Ärzten sollten vom medizinischen Personal in die Krankenakte aufgenommen werden und zur Sicherheit einmal mit dem Patienten kommuniziert werden. 
 
-</details>
-
-------
-
-Hinweis: Wenn wir den Patienten ebenfalls (begrenzten) Zugriff auf ihre
-Krankenakte geben wollen, stoßen wir unvermeidlich auf eine Beschränkung des grundlegenden RBAC-Mechanismus.  Dieses Problem müsst Ihr in dieser Aufgabe nicht lösen, aber es schadet sicher nicht, auch darüber einmal nachzudenken.
-
-<details><summary>Gedanken</summary>
- Seperation of Duty
-</details>
 
 * * * * *
 
