@@ -130,9 +130,7 @@ Welche Gegenmaßnahmen würdet Ihr für diese Probleme vorschlagen?
 
 
 
-Mögliche Gegenmaßnahmen wären z.B. das alle Mitarbeiter des medizinischen Personals und alle Ärzte eine Schulung erhalten, in der der Umgang mit der digitalen Krankenakte erklärt wird. Dadurch könnten mögliche Fehler bei der Verwaltung von Patientendaten vermieden werden. Damit der Verwaltungsmitarbeiter Abrechnungen erstellen kann wird es nötig sein, das dieser Zugriff auf die Krankenakten bekommt. Es ist aber ausreichend, das der Verwaltungsmitarbeiter nur lesenden Zugriff bekommt und Einträge in den Akten nicht verändern kann. Bisherige Befunde von anderen Ärzten sollten vom medizinischen Personal in die Krankenakte aufgenommen werden und zur Sicherheit einmal mit dem Patienten kommuniziert werden. 
-
-Die Digitalisierung der analogen Patientenakten sollte von einer neuen zuständigen Rolle übernommen werden, sodass sich die Ärzte um diese nicht auch noch kümmern müssen.
+Mögliche Gegenmaßnahmen wären z.B. das alle Mitarbeiter des medizinischen Personals und alle Ärzte eine Schulung erhalten, in welcher der Umgang mit der digitalen Krankenakte erklärt wird. Dadurch könnten mögliche Fehler bei der Verwaltung von Patientendaten vermieden werden.  Bisherige Befunde von anderen Ärzten sollten vom medizinischen Personal in die Krankenakte aufgenommen werden und zur Sicherheit einmal mit dem Patienten kommuniziert werden. Die Digitalisierung der analogen Patientenakten kann von einer neuen, dafür zuständigen Rolle übernommen werden, sodass sich die Ärzte nicht darum kümmern müssen. Die Mitarbeiter in dieser Rolle müssen sich gesetzlich zur Verschwiegenheit verpflichten.
 
 Für die Lösungen des Problems mit der An-/Abmeldung und der Ferndiagose, könnte jeder Arzt und medizinisches Personal ein eigenes Terminal (Smartphone) mit sich rumtragen.
 
@@ -142,9 +140,9 @@ Die Digitalisierung der analogen Patientenakten sollte von einer neuen zuständi
 
 Für die Lösungen des Problems mit der An-/Abmeldung und der Ferndiagose, könnte jeder Arzt und medizinisches Personal ein eigenes Terminal(Smartphone) mit sich rumtragen.
 
-Um die Konfliktklassen bestehend aus den Ärzten mit meist unterschiedlichen Patienten anzugehen, muss es möglich sein, die erstellten Diagnosen oder Verschreibungen so deutlich mit notwendigen Informationen auszuschmücken, dass nicht involvierte Ärzte die Behandlung ohne Probleme fortsetzten können. Hinzu kommt die Historie, mit welcher die Verantwortungsfrage einer Änderung immer geklärt ist und nachgefragt werden kann. Die Vertraulichkeit der Patientendaten muss sorgfältig abgewogen werden. Ein Arzt sollte nicht in der Lage auf sämtliche Patientendaten zuzugreifen, sondern nur auf seinen Fachbereich oder seine Station. 
+Um die Konfliktklassen im Allgemeinen (bspw. Ärzte mit oft eigenen Patienten) anzugehen, muss es möglich sein, die erstellten Diagnosen oder Verschreibungen so deutlich mit notwendigen Informationen auszuschmücken, dass nicht involvierte Ärzte die Behandlung ohne Probleme fortsetzten können. Hinzu kommt die Historie, mit welcher die Verantwortungsfrage einer Änderung immer geklärt ist und nachgefragt werden kann. Die Vertraulichkeit der Patientendaten muss sorgfältig abgewogen werden. Ein Artz sollte nicht in der Lage auf sämtliche Patientendaten zuzugreifen, sondern nur auf seinen Fachbereich oder seine Station. Das bedeutet aber auch, dass seine Rechte normalerweise über die ihm direkt zugewiesenen Patienten hinausgehen, damit dort geholfen werden kann.
 
-Eine Löschung der Daten könnte nach einer gesetzlichen vorgeschriebenen Zeit automatisch passieren. Eine neue Rollen einzuführen die Daten löschen darf, würde zu viele andere Probleme bezüglich der Berechtigungen mit sich ziehen, dass wir uns aus Konfiktgründen dagegen entschieden haben.
+Eine Löschung der Daten könnte nach einer gesetzlichen vorgeschriebenen Zeit automatisch passieren. Eine neue Rollen einzuführen, die Daten löschen darf, wäre sehr komplex und würde zu viele andere Probleme bezüglich der Berechtigungen verursachen, weshalb wir uns aus Konfliktgründen dagegen entschieden haben.
 * * * * *
 
 Abgabe
