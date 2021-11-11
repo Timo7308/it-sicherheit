@@ -20,7 +20,9 @@ Krankenakte zu unterscheiden sind.
 - Medizinisches Personal 
 - Verwaltungsmitarbeiter <br />
 <br />
-- _Admin(alle Rechte: hätte zu viele Rechte und könnte ggf. Patienten löschen. Könnte auf Anfrage des Patienten seine Akte löschen)_ 
+
+ - _Admin(alle Rechte: hätte zu viele Rechte und könnte ggf. Patienten löschen. Könnte auf Anfrage des Patienten seine Akte löschen)_ 
+
 </details>
 
 -------------
@@ -69,15 +71,15 @@ Rolle: lesen(l), schreiben(s)
 | Rollen/Rechte                                 | Ärzte  | Medizinisches Personal | Verwaltungsmitarbeiter |
 | --------                                      | ------ | ------                 |------                  |
 |eindeutige Kennung (id)                        | l      | l                      | l                      |
-|Patientendaten (name, Krankenkasse, ...)       | l,s    | l,s                    | l(begrenzt)                      |
+|Patientendaten (name, Krankenkasse, ...)       | l,s    | l,s                    | l(begrenzt)            |
 |Allergien und Unverträglichkeiten              | l,s    | l,s                    | -                      |
 |bisherige Befunde                              | l,s    | l,s                    | l                      |
 |verordnete Therapien                           | l,s    | l                      | l                      |
 |verschriebene Medikamente                      | l,s    | l                      | l                      |
 |Diagnosen                                      | l,s    | l                      | l                      |
-|Abrechnungen                                      | -    | -                      | l,s                      |
-|Dokumentation                                      | l,s    | l,s                      | -                      |
-|Verwaltungs -und Änderungshistorie                                      | l    | l                      | -                      |
+|Abrechnungen                                   | -      | -                      | l,s                    |
+|Dokumentation                                  | l,s    | l,s                    | -                      |
+|Verwaltungs -und Änderungshistorie             | l      | l                      | -                      |
 
 
 _Eine Änderung der eindeutigen Kennung sei nicht möglich, um Fehler in der Datenbank zu vermeiden._
@@ -106,13 +108,14 @@ menschlichen und organisatorischen Problemen rechnet Ihr?
 
 <details><summary>Lösung</summary>
 
-Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und medizinischem Personal kommen. Oder Mtarbeiter vom medizinischen Personal sind noch unsicher oder nicht vertraut mit dem System der digitalen Krankenakte und machen möglicherweise Fehler. Daneben stellt sich die Frage, welchen Zugriff der Verwaltungsmitarbeiter auf die Krankenakte hat. Was passiert wenn das System für die digitalen Krankenakten nicht funktioniert? Darf er die Krankenakten einsehen? Wie werden bisherige Befunde und Therapien eines anderen Arztes übernommen, der möglicherweise analoge Patientenakten hat? 
+Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und medizinischem Personal kommen. Oder Mitarbeiter vom medizinischen Personal sind noch unsicher oder nicht vertraut mit dem System der digitalen Krankenakte und machen möglicherweise Fehler. Daneben stellt sich die Frage, welchen Zugriff der Verwaltungsmitarbeiter auf die Krankenakte hat. Was passiert wenn das System für die digitalen Krankenakten nicht funktioniert? Darf er die Krankenakten einsehen? Wie werden bisherige Befunde und Therapien eines anderen Arztes übernommen, der möglicherweise analoge Patientenakten hat? 
 
 - Problem der Konfliktklassen: Inwiefern kann ein Arzt die Diagnose oder verschriebenen Medikamente eines Patienten beeinflussen,
   für welchen er gar nicht zuständig ist; ist bspw. die Diagnose nachvollziehbar und ausreichend dokumentiert --> können dort Fehler      entstehen, wenn ein anderer Arzt den Patienten behandelt. 
 
-- an/abmelden von medizinischem Personal am Terminal, damit der Arzt eine Diagnose stellen kann, da nur ein Terminal im Zimmer vorhanden ist. (umständlich)
+- An/abmelden von medizinischem Personal am Terminal, damit der Arzt eine Diagnose stellen kann, da nur ein Terminal im Zimmer vorhanden ist. (umständlich)
 
+- 
 
 </details>
 
