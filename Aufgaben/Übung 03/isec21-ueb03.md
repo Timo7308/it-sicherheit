@@ -118,11 +118,9 @@ für welchen er gar nicht zuständig ist. Dies betrifft zwei Ebenen. Einerseits 
 So eine Konfliktklasse könnte auch vorkommen, wenn ein Arzt selbst Patient in dem Krankenhaus wird. Hierbei könnte der Arzt sich selbst Medikamente verschreiben für die er als Patient eigentlich kein Zugriff drauf hat.<br />
 <br />
 
-Inwiefern kann ein Arzt aus einer gewissen Distanz auf die Krankenakte zugreifen? Falls der Arzt immer vor Ort sein muss, gestalten sich Ferndiagnosen (bspw. per Telefon) sehr schwierig.
+Inwiefern kann ein Arzt aus einer gewissen Distanz auf die Krankenakte zugreifen? Falls der Arzt immer vor Ort sein muss, gestalten sich Ferndiagnosen (bspw. per Telefon) sehr schwierig. Bei einer solchen Ferndiagose durch den Arzt, kann das medizinische Personal keine Änderungen bezüglich der Diagnose oder der verschriebenen Medikamente vornehmen. Ein Arzt muss für diese Änderungen immer vor Ort am Terminal sein.
 
-- Bei einer Ferndiagose durch den Arzt, kann das medizinische Personal keine Änderungen bezüglich der Diagnose oder der verschriebenen Medikamente vornehmen. Ein Arzt muss für diese Änderungen immer vor Ort am Terminal sein.
-
-- Es fehlt eine geignete Rolle welche Krankenakten wieder entfernen kann, da ein Patient normalerweise das Recht hat seine eigene Daten löschen zu lassen.
+Es fehlt eine geignete Rolle, welche Krankenakten wieder entfernen kann, da ein Patient normalerweise das Recht hat seine eigene Daten löschen zu lassen.
 
 * * * * *
 
