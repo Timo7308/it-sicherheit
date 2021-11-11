@@ -86,7 +86,7 @@ Rolle: lesen(l), schreiben(s)
 
 _Eine Änderung der eindeutigen Kennung sei nicht möglich, um Fehler in der Datenbank zu vermeiden._
 
-Da die Anzahl der Rechte mit jeder Rolle steigen und (bis auf Ausnahmen) keine weggnommen werden, können diese Rollen in der aufgelisteten Reihenfolge vererbt werden. Wenn wir zum Beispiel die Rolle des Arztes in einzelnen Fachbereiche unterteilen, könnten alle als Elternrolle die eines Arztes vererbt bekommen, da die Funktionalität der Kindrollen sehr ähnlich sind. Dies funktioniert auch bei den direkt von uns genannten Rollen, denn (wie sich in der vorherigen Lösung anhand der Absätze bereits andeutet) haben höhergelegene Rollen meistens auch alle Rechte von niedrigeren Rollen. Dies lässt sich mit Vererbungsstrukturen sehr gut generalisieren.
+Da die Anzahl der Rechte mit jeder Rolle steigen und (bis auf Ausnahmen) keine weggnommen werden, können diese Rollen in der aufgelisteten Reihenfolge vererbt werden. Wenn wir zum Beispiel die Rolle des Arztes in einzelne Fachbereiche unterteilen, könnten alle als Elternrolle die eines Arztes vererbt bekommen, da die Funktionalität der Kindrollen sehr ähnlich sind. Dies funktioniert auch bei den direkt von uns genannten Rollen, denn (wie sich in der vorherigen Lösung anhand der Absätze bereits andeutet) haben höher gelegene Rollen meistens auch alle Rechte von niedrigeren Rollen. Dies lässt sich mit Vererbungsstrukturen sehr gut generalisieren.
 
 **Verwaltungsmitarbeiter:** 
 Der Verwaltungsmitarbeiter hat nur lesenden Zugriff auf die Aktionen, die für die Abrechnungen wichtig sind. Wenn es möglich ist die Abrechnungen direkt am Terminal durchzuführen, dann steht diese Funktionalität nur den Verwaltungsmitarbeitern zu (geht aus der Aufgabenstellung nicht klar hervor).
@@ -94,7 +94,7 @@ Die Kennung und Patientendaten sind erforderlich um eine Rechnung an die Kranken
 
 
 **Medizinisches Personal:**
-Das medizinische Personal hat lesenden Zugriff auf alle Daten und kann zudem die Daten eines Patienten aufnehmen/aufschreiben. Zusätzlich können sie Vorgänge oder weitere wichtige Informationen dokumentieren und auf die automatisch generierte Verwaltungs -und Änderungshistorie zugreifen, um zusehen, wer für welche Änderungen verantwortlich ist und dort gegebenenfalls nachfragen zu können.
+Das medizinische Personal hat lesenden Zugriff auf alle Daten und kann zudem die Daten eines Patienten aufnehmen/aufschreiben. Zusätzlich können sie Vorgänge oder weitere wichtige Informationen dokumentieren und auf die automatisch generierte Verwaltungs -und Änderungshistorie zugreifen, um zu sehen, wer für welche Änderungen verantwortlich ist und dort gegebenenfalls nachfragen zu können.
 
 **Arzt:**
 Der Arzt hat die selben Rechte, wie das medizinischen Personal und kann zusätzlich Therapien verodnen, Medikamente verschreiben und Diagnosen erstellen. 
@@ -110,11 +110,11 @@ menschlichen und organisatorischen Problemen rechnet Ihr?
 -------------
 
 
-Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und medizinischem Personal kommen. Vor allem zur Einführung der Terminals sind alle involvierten Mitarbeiter noch nicht vertraut mit dem System der digitalen Krankenakte und machen möglicherweise Fehler. Was würde passieren, wenn das System der digitalen Krankenakten nicht funktioniert? Gibt es im Falle von Ausfällen oder systemgefährdeten Fehlfunktionen eine spontane Alternative? <br />
+Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und medizinischem Personal kommen. Vor allem zur Einführung der Terminals sind alle involvierten Mitarbeiter noch nicht mit dem System der digitalen Krankenakte vertraut und machen möglicherweise Fehler. Was würde passieren, wenn das System der digitalen Krankenakten nicht funktioniert? Gibt es im Falle von Ausfällen oder systemgefährdeten Fehlfunktionen eine spontane Alternative? <br />
 <br /> Ein weiteres Problem ist die Digitalisierung der analogen Patientenakten. Bisherige Therapien oder Diagnosen müssten nach den aktuellen Berechtigungen unseres RBAC-Modells von einem Arzt eingetragen werden. Jedoch haben Ärzte wichtigere Aufgaben zu erledigen, als alte schriftliche Daten zu digitalisieren. Wenn die Akten von anderen Mitarbeitern in das neue System übernommen werden ist die Vertraulichkeit der Patientendaten gefährdet.<br />
 <br />
 Hinzu kommt das Problem der Konfliktklassen der Ärzte und deren Patienten. Inwiefern kann ein Arzt die Diagnose oder verschriebenen Medikamente eines Patienten beeinflussen,
-für welchen er gar nicht zuständig ist. Dies betrifft zwei Ebenen. Einerseits könnten Fehler entstehen, wenn ein neuer Arzt einen Patienten behandelt und anhand der vorhandenen Eintragungen fehlgeleitet wird. Andererseits beziehen sich die Konfliktklassen auch auf die Vertraulichkeit der Patienten. Soll jeder Arzt auf die privaten Daten eines jeden Patienten zugreifen können? Die persönliche Informationen könnten an einen zu großen Adressatenkreis gelangen. Dem gegenüber steht die Behandlung im Falle eines Arztwechsels, denn dann muss der neue Arzt auf jene Informationen zugreifen können, um die bestmögliche Behandlung gewährleisten zu können. 
+für welchen er gar nicht zuständig ist. Dies betrifft zwei Ebenen. Einerseits könnten Fehler entstehen, wenn ein neuer Arzt einen Patienten behandelt und anhand der vorhandenen Eintragungen fehlgeleitet wird. Andererseits beziehen sich die Konfliktklassen auch auf die Vertraulichkeit der Patienten. Soll jeder Arzt auf die privaten Daten eines jeden Patienten zugreifen können? Die persönlichen Informationen könnten an einen zu großen Adressatenkreis gelangen. Dem gegenüber steht die Behandlung im Falle eines Arztwechsels, denn dann muss der neue Arzt auf jene Informationen zugreifen können, um die bestmögliche Behandlung gewährleisten zu können. 
 
 So eine Konfliktklasse könnte auch vorkommen, wenn ein Arzt selbst Patient in dem Krankenhaus wird. Hierbei könnte der Arzt sich selbst Medikamente verschreiben, für welche er als Patient normalerweise kein Zugriff hat.<br />
 <br />
@@ -131,9 +131,9 @@ Welche Gegenmaßnahmen würdet Ihr für diese Probleme vorschlagen?
 
 Mögliche Gegenmaßnahmen wären z.B. das alle Mitarbeiter des medizinischen Personals und alle Ärzte eine Schulung erhalten, in welcher der Umgang mit der digitalen Krankenakte erklärt wird. Dadurch könnten mögliche Fehler bei der Verwaltung von Patientendaten vermieden werden.  Bisherige Befunde von anderen Ärzten sollten vom medizinischen Personal in die Krankenakte aufgenommen werden und zur Sicherheit einmal mit dem Patienten kommuniziert werden. Die Digitalisierung der analogen Patientenakten kann von einer neuen, dafür zuständigen Rolle übernommen werden, sodass sich die Ärzte nicht darum kümmern müssen. Die Mitarbeiter in dieser Rolle müssen sich gesetzlich zur Verschwiegenheit verpflichten.
 
-Im Falle von Ausfalls oder systemgefährdeten Fehlfunktionen müssen die Patientendaten trotzdem immer verfügbar sein. Dies lässt sich durch häufige Backups beheben, denn Krankenhäuser haben für Notfällsituationen Notstromgeneratoren, weshalb die Daten weiterhin digital einsehbar wären.
+Bei Ausfällen oder systemgefährdenden Fehlfunktionen müssen die Patientendaten trotzdem immer verfügbar sein. Dies lässt sich durch häufige Backups beheben, denn Krankenhäuser haben für Notfällsituationen Notstromgeneratoren, weshalb die Daten weiterhin digital einsehbar wären.
 
-Für die Lösungen des Problems mit der An-/Abmeldung und der Ferndiagose, könnte jeder Arzt und medizinisches Personal ein eigenes Terminal (Smartphone) mit sich rumtragen.
+Für die Lösungen des Problems mit der An-/Abmeldung und der Ferndiagose, könnte jeder Arzt und medizinisches Personal ein eigenes Terminal (Tablet) mit sich rumtragen.
 
 Mögliche Gegenmaßnahmen wären z.B. das alle Mitarbeiter des medizinischen Personals und alle Ärzte eine Schulung erhalten, in der der Umgang mit der digitalen Krankenakte erklärt wird. Dadurch könnten mögliche Fehler bei der Verwaltung von Patientendaten vermieden werden. Damit der Verwaltungsmitarbeiter Abrechnungen erstellen kann wird es nötig sein, das dieser Zugriff auf die Krankenakten bekommt. Es ist aber ausreichend, das der Verwaltungsmitarbeiter nur lesenden Zugriff bekommt und Einträge in den Akten nicht verändern kann. Bisherige Befunde von anderen Ärzten sollten vom medizinischen Personal in die Krankenakte aufgenommen werden und zur Sicherheit einmal mit dem Patienten kommuniziert werden. 
 
