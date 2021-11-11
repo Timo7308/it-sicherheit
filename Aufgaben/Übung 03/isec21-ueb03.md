@@ -108,7 +108,7 @@ menschlichen und organisatorischen Problemen rechnet Ihr?
 
 <details><summary>Lösung</summary>
 
-Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und medizinischem Personal kommen. Oder Mitarbeiter vom medizinischen Personal sind noch unsicher oder nicht vertraut mit dem System der digitalen Krankenakte und machen möglicherweise Fehler. Daneben stellt sich die Frage, welchen Zugriff der Verwaltungsmitarbeiter auf die Krankenakte hat. Was passiert wenn das System für die digitalen Krankenakten nicht funktioniert? Darf er die Krankenakten einsehen? Wie werden bisherige Befunde und Therapien eines anderen Arztes übernommen, der möglicherweise analoge Patientenakten hat? 
+Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und medizinischem Personal kommen. Vor allem zu Beginn können Mitarbeiter vom medizinischen Personal sind noch unsicher oder nicht vertraut mit dem System der digitalen Krankenakte und machen möglicherweise Fehler. Daneben stellt sich die Frage, welchen Zugriff der Verwaltungsmitarbeiter auf die Krankenakte hat. Was passiert wenn das System für die digitalen Krankenakten nicht funktioniert? Darf er die Krankenakten einsehen? Wie werden bisherige Befunde und Therapien eines anderen Arztes übernommen, der möglicherweise analoge Patientenakten hat? 
 
 - Problem der Konfliktklassen: Inwiefern kann ein Arzt die Diagnose oder verschriebenen Medikamente eines Patienten beeinflussen,
   für welchen er gar nicht zuständig ist; ist bspw. die Diagnose nachvollziehbar und ausreichend dokumentiert --> können dort Fehler      entstehen, wenn ein anderer Arzt den Patienten behandelt. 
