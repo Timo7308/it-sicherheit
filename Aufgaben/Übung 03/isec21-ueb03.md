@@ -18,7 +18,8 @@ Krankenakte zu unterscheiden sind.
 
 - Ärzte 
 - Medizinisches Personal 
-- Verwaltungsmitarbeiter 
+- Verwaltungsmitarbeiter <br />
+<br />
 - _Admin(alle Rechte: hätte zu viele Rechte und könnte ggf. Patienten löschen. Könnte auf Anfrage des Patienten seine Akte löschen)_ 
 </details>
 
@@ -32,22 +33,25 @@ d.h. welche Berechtigungen sind zu vergeben?
 Berechtigungen auf unterschiedlichen Ebenen (höhere Berechtigungen haben alle tieferen Berechtigungen):
 
 - Medikamente zur Behandlung hinzufügen oder entfernen
-- Diagnosen stellen oder ändern <br />
+- Diagnosen stellen oder ändern 
+- Therapien verordnen (hinzufügen) <br />
 <br />
 
-- Patientendaten aufnehmen oder ändern (Eindeutige Kennung, Name, Adresse, Geburtsdatum, Station, Zimmer, Krankenkasse, Blutgruppe)
+- Patientendaten aufnehmen oder ändern (Name, Adresse, Geburtsdatum, Station, Zimmer, Krankenkasse, Blutgruppe)
 - Bisherige Befunde und Therapien bearbeiten oder hinzufügen
 - Allergien und Unverträglichkeiten einsehen/ bearbeiten oder hinzufügen
 - Zusätzliche Dokumentation und Verwaltungshistorie <br />
 <br />
 
-- Patientendaten aufnehmen oder ändern (Eindeutige Kennung, Name, Adresse, Geburtsdatum, Station, Zimmer, Krankenkasse)
+- Patientendaten aufnehmen oder ändern (Name, Adresse, Geburtsdatum, Station, Zimmer, Krankenkasse)
 - Bisherige Befunde und Therapien einsehen
 - Medikamente zur Behandlung einsehen
-- Abrechnungen erstellen (Ausnahme: nur für diese Rolle) <br />
+- Abrechnungen erstellen (Sonderfall: nur für diese Rolle) <br />
 <br />
 
 - Patientendaten anzeigen (Eindeutige Kennung, Name, Geburtsdatum, Station, Zimmer) <br />
+
+Ausnahmen: Die eindeutige Kennnummer wird einmalig erstellt (bspw. automatisch oder durch einen Admin) und danach nicht mehr verändert.
 
 </details>
 
@@ -65,25 +69,28 @@ Rolle: lesen(l), schreiben(s)
 | Rollen/Rechte                                 | Ärzte  | Medizinisches Personal | Verwaltungsmitarbeiter |
 | --------                                      | ------ | ------                 |------                  |
 |eindeutige Kennung (id)                        | l      | l                      | l                      |
-|Patientendaten (name, Krankenkasse, ...)       | l,s    | l,s                    | l                      |
+|Patientendaten (name, Krankenkasse, ...)       | l,s    | l,s                    | l(begrenzt)                      |
 |Allergien und Unverträglichkeiten              | l,s    | l,s                    | -                      |
-|bisherige Befunde                              | l,s    | l,s                    | -                      |
+|bisherige Befunde                              | l,s    | l,s                    | l                      |
 |verordnete Therapien                           | l,s    | l                      | l                      |
 |verschriebene Medikamente                      | l,s    | l                      | l                      |
 |Diagnosen                                      | l,s    | l                      | l                      |
+|Abrechnungen                                      | l    | l                      | l,s                      |
+|Dokumentation                                      | l,s    | l,s                      | -                      |
+|Verwaltungs -und Änderungshistorie                                      | l    | l                      | -                      |
 
 
-_eine Änderung der eindeutigen Kennung sei nicht möglich, um Fehler in der Datenbank zu vermeiden._
+_Eine Änderung der eindeutigen Kennung sei nicht möglich, um Fehler in der Datenbank zu vermeiden._
 
-Da die Anzahl der Rechte mit jeder Rolle steigen und keine weggnommen werden, können diese Rollen in der gelisteten Reihenfolge vererbt werden.
+Da die Anzahl der Rechte mit jeder Rolle steigen und (bis auf Ausnahmen) keine weggnommen werden, können diese Rollen in der gelisteten Reihenfolge vererbt werden.
 
 **Verwaltungsmitarbeiter:** 
-Der Verwaltungsmitarbeiter hat nur lesenden Zugriff auf die Aktionen, die für die Abrechnungen wichtig sind.
-Die Kennung und Patientendaten sind erforderlich um eine Rechnung an die Krankenkasse des Patienten zu stellen. Die verbundenen Kosten sind hierzu in der Therapie, Medikamenten und Diagnose zu finden. Nach unserer Meinung ist hierzu ein Zugriff auf Alergien und Befunde nicht erforderlich.
+Der Verwaltungsmitarbeiter hat nur lesenden Zugriff auf die Aktionen, die für die Abrechnungen wichtig sind. Wenn es möglich ist die Abrechnungen direkt am Terminal durchzuführen, dann steht diese Funktionalität nur den Verwaltungsmitarbeitern zu (geht aus der Aufgabenstellung nicht klar hervor).
+Die Kennung und Patientendaten sind erforderlich um eine Rechnung an die Krankenkasse des Patienten zu stellen. Die verbundenen Kosten sind hierzu in der Therapie, Medikamenten und Diagnose zu finden. Nach unserer Meinung ist hierzu ein Zugriff auf Alergien und Befunde oder die Blutgruppe nicht erforderlich.
 
 
 **Medizinisches Personal:**
-Das medizinische Personal hat lesenden Zugriff auf alle Daten und kann zudem die Daten eines Patienten aufnehmen/aufschreiben.
+Das medizinische Personal hat lesenden Zugriff auf alle Daten und kann zudem die Daten eines Patienten aufnehmen/aufschreiben. Zusätzlich können sie Vorgänge oder weitere wichtige Informationen dokumentieren und auf die Verwaltungs -und Änderungshistorie zugreifen, um zusehen, wer für welche Änderungen verantwortlich ist und dort gegebenenfalls nachzufragen.
 
 **Arzt:**
 Der Arzt hat die selben Rechte, wie das medizinischen Personal und kann zusätzlich Therapien verodnen, Medikamente verschreiben und Diagnosen erstellen. 
