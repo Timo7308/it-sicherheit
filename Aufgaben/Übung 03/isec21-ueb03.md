@@ -86,7 +86,7 @@ Rolle: lesen(l), schreiben(s)
 
 _Eine Änderung der eindeutigen Kennung sei nicht möglich, um Fehler in der Datenbank zu vermeiden._
 
-Da die Anzahl der Rechte mit jeder Rolle steigen und (bis auf Ausnahmen) keine weggnommen werden, können diese Rollen in der aufgelisteten Reihenfolge vererbt werden. Wenn wir zum Beispiel die Rolle des Arztes in einzelnen Fachbereiche unterteilen, könnten alle als Elternrolle die eines Arztes vererbt bekommen, da die Funktionalität der Kindrollen sehr ähnlich sind.
+Da die Anzahl der Rechte mit jeder Rolle steigen und (bis auf Ausnahmen) keine weggnommen werden, können diese Rollen in der aufgelisteten Reihenfolge vererbt werden. Wenn wir zum Beispiel die Rolle des Arztes in einzelnen Fachbereiche unterteilen, könnten alle als Elternrolle die eines Arztes vererbt bekommen, da die Funktionalität der Kindrollen sehr ähnlich sind. Dies funktioniert auch bei den direkt von uns genannten Rollen, denn (wie sich in der vorherigen Lösung anhand der Absätze bereits andeutet) haben höhergelegene Rollen meistens auch alle Rechte von niedrigeren Rollen. Dies lässt sich mit Vererbungsstrukturen sehr gut generalisieren.
 
 **Verwaltungsmitarbeiter:** 
 Der Verwaltungsmitarbeiter hat nur lesenden Zugriff auf die Aktionen, die für die Abrechnungen wichtig sind. Wenn es möglich ist die Abrechnungen direkt am Terminal durchzuführen, dann steht diese Funktionalität nur den Verwaltungsmitarbeitern zu (geht aus der Aufgabenstellung nicht klar hervor).
