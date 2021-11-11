@@ -117,6 +117,8 @@ Es könnte zu Missverständnissen bei der Kommunikation zwischen Ärzten und med
 
 - Bei einer Ferndiagose durch den Arzt, kann das medizinische Personal keine Änderungen bezüglich der Diagnose oder der verschriebenen Medikamente vornehmen. Ein Arzt muss für diese Änderungen immer vor Ort am Terminal sein.
 
+- Es fehlt eine geignete Rolle die Krankenakten wieder entfernen kann, da ein Patient normalerweise das Recht hat seine eigene Daten löschen zu lassen.
+
 </details>
 
 -------------
