@@ -137,6 +137,14 @@ Die Digitalisierung der analogen Patientenakten sollte von einer neuen zuständi
 
 Für die Lösungen des Problems mit der An-/Abmeldung und der Ferndiagose, könnte jeder Arzt und medizinisches Personal ein eigenes Terminal (Smartphone) mit sich rumtragen.
 
+Mögliche Gegenmaßnahmen wären z.B. das alle Mitarbeiter des medizinischen Personals und alle Ärzte eine Schulung erhalten, in der der Umgang mit der digitalen Krankenakte erklärt wird. Dadurch könnten mögliche Fehler bei der Verwaltung von Patientendaten vermieden werden. Damit der Verwaltungsmitarbeiter Abrechnungen erstellen kann wird es nötig sein, das dieser Zugriff auf die Krankenakten bekommt. Es ist aber ausreichend, das der Verwaltungsmitarbeiter nur lesenden Zugriff bekommt und Einträge in den Akten nicht verändern kann. Bisherige Befunde von anderen Ärzten sollten vom medizinischen Personal in die Krankenakte aufgenommen werden und zur Sicherheit einmal mit dem Patienten kommuniziert werden. 
+
+Die Digitalisierung der analogen Patientenakten sollte von einer neuen zuständigen Rolle übernommen werden, sodass sich die Ärzte um diese nicht auch noch kümmern müssen.
+
+Für die Lösungen des Problems mit der An-/Abmeldung und der Ferndiagose, könnte jeder Arzt und medizinisches Personal ein eigenes Terminal(Smartphone) mit sich rumtragen.
+
+Um die Konfliktklassen bestehend aus den Ärzten mit meist unterschiedlichen Patienten anzugehen, muss es möglich sein, die erstellten Diagnosen oder Verschreibungen so deutlich mit notwendigen Informationen auszuschmücken, dass nicht involvierte Ärtze die Behandlung ohne Probleme fortsetzten können. Hinzu kommt die Historie, mit welcher die Verantwortungsfrage einer Änderung immer geklärt ist und nachgefragt werden kann. Die Vertraulichkeit der Patientendaten muss sorgfältig abgewogen werden. Ein Artz sollte nicht in der Lage auf sämtliche Patientendaten zuzugreifen, sondern nur auf seinen Fachbereich oder seine Station. 
+
 * * * * *
 
 Abgabe
