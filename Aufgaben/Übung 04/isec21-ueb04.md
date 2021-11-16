@@ -52,6 +52,11 @@ Plattformen/Compilern zu beobachtende Verhalten.
 
 Benutzt statt `gets` eine geeignetere Bibliotheksfunktion, und
 überzeugt Euch, dass das Programm sich sinnvoller verhält.
+--> `fgets(input, 8, stdin)`
+
+1. Parameter: Zeiger auf das Char-Array, welches die Zeichenkette speichert.
+2. Parameter: Maximale Anzahl an Chars (inklusive Null-Terminierung); verhindert Buffer-Overflow.
+3. Parameter: Zeiger auf das FILE-Objekt, aus welchem gelesen wird.
 
 
 * * * * *
