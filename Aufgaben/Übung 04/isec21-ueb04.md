@@ -53,6 +53,8 @@ Ausführung: clang | version 12.0.0 | option
 . <br />
 <br />
 
+* * * * *
+
 Benutzt statt `gets` eine geeignetere Bibliotheksfunktion, und
 überzeugt Euch, dass das Programm sich sinnvoller verhält. <br />
 <br />
