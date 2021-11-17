@@ -3,7 +3,7 @@ Informationssicherheit, 4. Übung
 
 * * * * *
 
-Aufgabe 1, 4 Punkte, Gruppe
+Aufgabe 1, 4 Punkte, Gruppe 
 ---------------------------
 
 Das folgende C-Programm ist
@@ -48,7 +48,34 @@ Nennt in eurer Abgabe auch das benutzte Betriebssystem, den Compiler
 (inklusive Versionsnummern) und die Compiler-Optionen.
 
 Erklärt das bei verschiedenen Eingabelängen und verschiedenen
-Plattformen/Compilern zu beobachtende Verhalten.
+Plattformen/Compilern zu beobachtende Verhalten. <br />
+<br />
+
+
+**Dokumentation:**
+Alle folgenden Beobachtungen wurden auf dem Apple m0-Rechner durchgeführt. <br />
+
+Ausführung: ggc | version ... | option standard (gcc -o standard buffer.c)
+
+- Bei Eingaben mit einer Zeichenkette von sieben Chars oder weniger terminiert das Programm wie im Code erwartet
+- Bei Eingaben mit einer längeren Zeichenkette wird ein: `abort trap: 6` ausgegeben
+
+  Beispielausgabe: 
+       "Your input number %d was '%s'.\n", 1, 'xxx'.
+       "Your input number %d was '%s'.\n", 2, 'xxxxxxx'.
+       "Your input number %d was '%s'.\n", 3, 'xxxxxxxx'. <br />
+  Die ersten beiden Eingaben wurden ohne Probleme kompiliert. Nach der letzten Eingabe wird der Fehler `abort trap: 6` geworfen, da die Eingabe länger als das   Char-Array ist. In diesem Fall wird versucht auf unautorisierten Speicher zu schreiben. Es ist zu beachten, dass immer ein Character als Nullterminierung hinzugefügt wird, weswegen die Eingabe aus acht Charactern nicht mehr in das Array mit der Größe Acht passt. 
+<br />
+
+Ausführung: ggc | version ... | option standard
+
+
+
+Ausführung: clang | version 12.0.0 | option
+
+
+. <br />
+<br />
 
 Benutzt statt `gets` eine geeignetere Bibliotheksfunktion, und
 überzeugt Euch, dass das Programm sich sinnvoller verhält. <br />
