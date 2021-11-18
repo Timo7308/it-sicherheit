@@ -71,6 +71,19 @@ Ausführung: clang | version 6.0.0
 <br />
 
 
+Ausführung: clang | version 8.0
+
+- Bei Eingaben mit einer Zeichenkette von sieben Chars oder weniger terminiert das Programm wie im Code erwartet
+- Bei Eingaben mit einer längeren Zeichenkette wird **kein** Fehler geworfen.
+
+  Beispielausgabe: <br />
+       "Your input number %d was '%s'.\n", 1, 'xxx'. <br />
+       "Your input number %d was '%s'.\n", 2, 'xxxxxxx'. <br />
+       "Your input number %d was '%s'.\n", 3, 'xxxxxxxx'. <br />
+  Es liegt das gleiche Verhalten vor, wie schon bei dem Test mit clang version 6.0.0
+<br />
+
+
 Ausführung: vc | version 
 
 
