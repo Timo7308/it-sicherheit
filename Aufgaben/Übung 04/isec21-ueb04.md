@@ -44,6 +44,7 @@ Ausführung: gcc | version ... | option standard (gcc -o standard buffer.c)
 Alle noch längeren Eingaben mit einigen Dutzend Chars führen zum selben Ergebnis.
 <br />
 
+
 Ausführung: gcc | version 7.4.0
 
 - Bei Eingaben mit einer Zeichenkette von sieben Chars oder weniger terminiert das Programm wie im Code erwartet
@@ -54,7 +55,6 @@ Ausführung: gcc | version 7.4.0
        "Your input number %d was '%s'.\n", 2, 'xxxxxxx'. <br />
        "Your input number %d was '%s'.\n", 3, 'xxxxxxxx'. <br />
   Für dieses Beispiel wurden die selben Zeichenketten verwendet wie in der oberen Version. Die dritte Eingabe führt dies mal zu dem anderen Fehler.     
-  
 <br />
 
 
@@ -68,6 +68,7 @@ Ausführung: clang | version 6.0.0
        "Your input number %d was '%s'.\n", 2, 'xxxxxxx'. <br />
        "Your input number %d was '%s'.\n", 3, 'xxxxxxxx'. <br />
   In diesem Beispiel wird keine Fehlermeldung geworfen. Es ist sehr anfällig für Buffer-Overflows, weil anliegender Speicher mit den Chars überschrieben wird, welche die Größe des Arrays überschreiten.      
+<br />
 
 
 Ausführung: vc | version 
