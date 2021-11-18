@@ -2,7 +2,7 @@ Informationssicherheit, 4. Übung
 ================================
 
 von Gruppe **G35** 
-Adrian Lindloff, Timo Schuchmann und Philias Borrmann
+Adrian Lindloff (lindloff), Timo Schuchmann (timo5) und Philias Borrmann (borrmann)
 
 * * * * *
 
