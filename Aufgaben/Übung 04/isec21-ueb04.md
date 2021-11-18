@@ -64,6 +64,13 @@ Lösung: `fgets(input, 8, stdin)`
 2. Parameter: Maximale Anzahl an Chars (inklusive Null-Terminierung); verhindert Buffer-Overflow.
 3. Parameter: Zeiger auf das FILE-Objekt, aus welchem gelesen wird.
 
-Nach dieser Änderung terminiert das Programm immer. 
+Nach dieser Änderung terminiert das Programm immer. Es werden pro Schleifendurchlauf (pro Einleisung in das Char-Array) nur maximal sieben Chars + Nullterminierung dafür verwendet, weil ansonsten nicht nur im Speicherbereich des Char-Arrays geschrieben werden würde. Außerdem wird immer nur bis zu einem '\n' (newline) eingelesen.
+
+Datei: 'xxxxxxxxxxxf
+       ffffffffffffw'
+Beispielausgabe mit i < 3: <br />
+       "Your input number %d was '%s'.\n", 1, 'xxxxxxx'. <br />
+       "Your input number %d was '%s'.\n", 2, 'xxxxf'. <br />
+       "Your input number %d was '%s'.\n", 3, 'fffffff'. <br />
 
 * * * * *
