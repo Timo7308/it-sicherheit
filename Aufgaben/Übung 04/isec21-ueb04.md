@@ -19,13 +19,18 @@ Ausführung: mit gcc version 12.0.0 ohne Optionen.
 - Bei Eingaben mit einer Zeichenkette von sieben Chars oder weniger terminiert das Programm wie im Code erwartet.
 - Bei Eingaben mit einer längeren Zeichenkette wird ein: `abort trap: 6` ausgegeben.
 
-  Beispielausgabe: 
-       "Your input number 1 was 'xxx'.
-       "Your input number 2 was 'xxxxxxx'.
-       "Your input number 3 was 'xxxxxxxx'. <br />
+  Beispielausgabe:
+  ``` 
+   "Your input number 1 was 'xxx'.
+   "Your input number 2 was 'xxxxxxx'.
+   "Your input number 3 was 'xxxxxxxx'.
+  ``` 
+  <br />
   Die ersten beiden Eingaben wurden ohne Probleme ausgeführt. Nach der letzten Eingabe wird der Fehler `abort trap: 6` geworfen, da die Eingabe länger als das Char-Array ist. In diesem Fall wird versucht auf unautorisierten Speicher zu schreiben. Es ist zu beachten, dass immer ein Character als Nullterminierung hinzugefügt wird, weswegen die Eingabe aus acht Charactern nicht mehr in das Array mit der Größe Acht passt. 
 <br />
+
 ---
+
 Ausführung: gcc version 12.0.0  option -fno-stack-protector
 
 Aus der Dokumentation geht hervor, dass der `fno-stack-protector` den Stack Schutz aufhebt und somit einen Buffer-Overflow ermöglicht. 
@@ -63,6 +68,7 @@ borrmann@m01 /home/borrmann/isec-ueb4
 
 
 ---
+
 Benutzt statt `gets` eine geeignetere Bibliotheksfunktion, und
 überzeugt Euch, dass das Programm sich sinnvoller verhält.
 <br />
