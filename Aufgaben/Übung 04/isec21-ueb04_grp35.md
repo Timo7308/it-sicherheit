@@ -76,6 +76,9 @@ borrmann@m01 /home/borrmann/isec-ueb4
 ---
 
 <br />
+
+**Dokumentation** weiterer Tests (nicht auf dem Apple m0-Rechner): <br />
+<br />
 Ausführung: gcc | version 7.4.0 <br />
 Bemerkung: Ausgeführt über die Website rextester (https://rextester.com/l/c_online_compiler_gcc)
 
@@ -92,7 +95,6 @@ Beispielausgabe: <br />
        "Your input number %d was '%s'.\n", 2, 'xxxxxxx'. <br />
        "Your input number %d was '%s'.\n", 3, 'xxxxxxxx'. <br />
   Für dieses Beispiel wurden die selben Zeichenketten verwendet wie in der oberen Version. Die dritte Eingabe führt dies mal zu einem: `*** buffer overflow detected ***: 43517400/a.out terminated Abort signal from abort(3) (SIGABRT)`.     
-<br />
 
 ---
 
@@ -112,8 +114,7 @@ Beispielausgabe: <br />
        "Your input number %d was '%s'.\n", 1, 'xxx'. <br />
        "Your input number %d was '%s'.\n", 2, 'xxxxxxx'. <br />
        "Your input number %d was '%s'.\n", 3, 'xxxxxxxx'. <br />
-  In diesem Beispiel wird keine Fehlermeldung geworfen. Es ist sehr anfällig für Buffer-Overflows, weil anliegender Speicher mit den Chars überschrieben wird, welche die Größe des Arrays überschreiten. Umso länger der Eingabestring ist, desto mehr Speicher wird überschrieben und dementsprechend fataler können die Folgen sein.   
-<br />
+  In diesem Beispiel wird keine Fehlermeldung geworfen. Es ist sehr anfällig für Buffer-Overflows, weil die überschreitenden Chars dennoch ohne Warnung geschrieben werden. Umso länger der Eingabestring ist, desto mehr Speicher wird überschrieben.   
 
 ---
 
@@ -133,7 +134,7 @@ Beispielausgabe: <br />
        "Your input number %d was '%s'.\n", 1, 'xxx'. <br />
        "Your input number %d was '%s'.\n", 2, 'xxxxxxx'. <br />
        "Your input number %d was '%s'.\n", 3, 'xxxxxxxx'. <br />
-  Es liegt das gleiche Verhalten vor, wie schon bei dem Test mit clang version 6.0.0.
+  Es liegt das gleiche Verhalten vor wie schon bei dem Test mit clang version 6.0.0.
 <br />
 
 ---
