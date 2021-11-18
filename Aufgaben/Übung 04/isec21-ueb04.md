@@ -88,11 +88,6 @@ Ausführung: vc | version
 
 
 
-Rechner: x01 | Betriebssystem: Ubuntu | Ausführung: gcc | version 10.3.0 | option standard 
-
-- Bei einer Eingabe von acht chars oder weniger terminiert das Programm wie im Code erwartet. 
-- Bei Eingaben mit einer längeren Zeichenkette wird: `*** stack smashing detected ***: <unknown> terminated Aborted (core dumped)` ausgegeben. 
-
 
 
 
