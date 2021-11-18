@@ -41,10 +41,13 @@ Aus der Dokumentation geht hervor, dass der `fno-stack-protector` den Stack Schu
 - Bei Eingaben mit einer längeren Zeichenkette wird folgendes ausgegeben.
 
   Beispielausgabe: 
-       "Your input number 1 was 'xxx'.
-       "Your input number 2 was 'xxxxxxx'.
-       "Your input number 0 was 'xxxxxxxx'.
-       "Your input number 4 was 'a'.<br />
+  ```
+    "Your input number 1 was 'xxx'.
+    "Your input number 2 was 'xxxxxxx'.
+    "Your input number 0 was 'xxxxxxxx'.
+    "Your input number 4 was 'a'.
+  ```
+    <br />
   Die ersten beiden Eingaben wurden ohne Probleme ausgeführt. Auch bei der vorletzten Eingabe mit einer      Zeichenkette der Länge 8 läuft das Programm weiter, aber der Zähler wurde nicht wie erwartet auf 3 gesetzt, sondern gibt eine 0 aus. Hier kam es also vermutlich zu einem Buffer-Overflow und der letzte Char, der nicht mehr in das input-Array passte, wurde in den Speicherbereich von `number` geschrieben. Dieser Zugriff auf eine andere lokale Variable in dem Call-Stack wurde durch die Compiler-Option freigegben. Bei weiteren Eingaben mit einer Länge < 8 wird der Zähler wie erwartet erhöht und zeigt bei der 4. Eingabe eine 4. 
 
 - Ist die Eingabelänge sogar viel größer, wird das Program durch ein Segmentation Fault beendet. Hierbei wird auf ein Speicherbereich zugegriffen der nun sogar außerhalb des Program-Stacks liegt. 
@@ -139,23 +142,3 @@ Quellen:
 --
 https://stackoverflow.com/questions/44469372/exploiting-buffer-overflow-using-gets-in-a-simple-c-program
 * * * * *
-
-Abgabe
-------
-
-bis 2021-11-18 23:59 UTC, digital in Stud.IP (und im
-Fachbereichsnetz). Dabei bitte in der Markdown-Datei alle
-Gruppenmitglieder namentlich (und mit FB3-Login) nennen. Ebenso die
-Nummer Eurer Gruppe in Stud.IP.
-
-Bitte steckt die Energie ins Denken und Schreiben, nicht in eine
-wunderschöne Formatierung — lesbar darf es allerdings sein. Die
-Lösungswege sollten ggf. nachvollziehbar sein.
-
-Wenn Ihr Euch irgendwelcher Quellen bedient (Anleitungen, Howtos,
-andere Gruppe, etc), gebt diese bitte an (Quellen aus dem Netz bitte
-gleich als URI).
-
-*Carsten Bormann, Karsten Sohr, Stefanie Gerdes, Jan-Frederik
-Rieckers, Hugo Damer ·
-<isec@tzi.org>*, WS 2021/22
