@@ -67,7 +67,7 @@ Ausführung: clang | version 6.0.0
        "Your input number %d was '%s'.\n", 1, 'xxx'. <br />
        "Your input number %d was '%s'.\n", 2, 'xxxxxxx'. <br />
        "Your input number %d was '%s'.\n", 3, 'xxxxxxxx'. <br />
-  In diesem Beispiel wird keine Fehlermeldung geworfen. Es ist sehr anfällig für Buffer-Overflows, weil anliegender Speicher mit den Chars überschrieben wird, welche die Größe des Arrays überschreiten.      
+  In diesem Beispiel wird keine Fehlermeldung geworfen. Es ist sehr anfällig für Buffer-Overflows, weil anliegender Speicher mit den Chars überschrieben wird, welche die Größe des Arrays überschreiten. Umso länger der Eingabestring ist, desto mehr Speicher wird überschrieben und dementsprechend fataler können die Folgen sein.   
 <br />
 
 
