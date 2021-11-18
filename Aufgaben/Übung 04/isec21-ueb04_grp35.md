@@ -176,7 +176,7 @@ int main() {
 Ausführung: gcc version 12.0.0 ohne option
 `gcc -o fstandard buffer.c`
  
-- Eingaben der Länge < 7 geben eine fast erwartete Ausgabe. Am Ende der Eingabe wird ein Zeilenumbruch `\n` angehängt (Wir haben keine Ahnung, warum hinter jeder Eingabe nun ein `\n` eingefügt wird).
+- Eingaben der Länge < 7 geben eine fast erwartete Ausgabe. Am Ende der Eingabe wird ein Zeilenumbruch `\n` angehängt (Wir haben nicht herausgefunden, warum hinter jeder Eingabe nun ein `\n` eingefügt wird).
 ```
 Your input number 1 was '1
 '.
@@ -214,6 +214,7 @@ Ausgabe: <br />
        "Your input number %d was '%s'.\n", 1, 'xxxxxxx'. <br />
        "Your input number %d was '%s'.\n", 2, 'xxxxf'. <br />
        "Your input number %d was '%s'.\n", 3, 'fffffff'. <br />
+Wie bereits beschrieben, werden in jedem Schleifendurchlauf maximal sieben Chars benutzt/ ausgegeben. Wenn es bis zum nächsten `\n` nur noch weniger als sieben Chars gibt, werden von den restlichen alle verwendet.
 
 ---
 Quellen: <br />
