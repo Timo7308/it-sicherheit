@@ -94,7 +94,7 @@ Beispielausgabe: <br />
        "Your input number %d was '%s'.\n", 1, 'xxx'. <br />
        "Your input number %d was '%s'.\n", 2, 'xxxxxxx'. <br />
        "Your input number %d was '%s'.\n", 3, 'xxxxxxxx'. <br />
-  Für dieses Beispiel wurden die selben Zeichenketten verwendet wie in der oberen Version. Die dritte Eingabe führt dies mal zu einem: `*** buffer overflow detected ***: 43517400/a.out terminated Abort signal from abort(3) (SIGABRT)`.     
+  Für dieses Beispiel wurden dieselben Zeichenketten verwendet wie in der oberen Version. Die dritte Eingabe führt dies mal zu einem: `*** buffer overflow detected ***: 43517400/a.out terminated Abort signal from abort(3) (SIGABRT)`.     
 
 ---
 
@@ -203,12 +203,20 @@ Type a string: Your input number 3 was '123
 ```
 
 - Das Programm terminiert wie erwartet und stürzt nicht mehr ab. Das Kompilieren mit `gcc -o fstandard buffer.c -fno-stack-protector` hat keine Unterschiede gezeigt.
-- Mit der Verwendung von `fgets()` findet kein Buffer-Overflow mehr statt.
+- Mit der Verwendung von `fgets()` findet kein Buffer-Overflow mehr statt. <br />
 
+Anschauliches Beispiel mit dem unveränderten Programm aus der Aufgabenstellung (for-Schleifen-Bedingung: i < 3): gcc version 12.0.0 ohne option <br />
+Eingabe:<br />
+xxxxxxxxxxxf<br />
+ffffffffffffw<br />
 
+Ausgabe: <br />
+       "Your input number %d was '%s'.\n", 1, 'xxxxxxx'. <br />
+       "Your input number %d was '%s'.\n", 2, 'xxxxf'. <br />
+       "Your input number %d was '%s'.\n", 3, 'fffffff'. <br />
 
-Quellen: 
---
-https://stackoverflow.com/questions/44469372/exploiting-buffer-overflow-using-gets-in-a-simple-c-program
+---
+Quellen: <br />
+https://stackoverflow.com/questions/44469372/exploiting-buffer-overflow-using-gets-in-a-simple-c-program <br />
 https://www.tutorialspoint.com/c_standard_library/c_function_fgets.htm
 * * * * *
