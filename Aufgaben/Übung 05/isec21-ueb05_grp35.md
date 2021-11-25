@@ -10,7 +10,7 @@ Anmerkung: Jegliche durch die Nmap Scriping Engine ermöglichten Scripts (für d
 
 Nutzt bei `nmap`, sofern es Euch sinnvoll erscheint, die Optionen
 `-sV`, `-O` und `-p`. Wie arbeiten diese intern ungefähr? 
-- nmap nutzt standardmäßig ein TCP-scan welcher in der Vorlesung unter RST-Attacks genannt wurde. Hierbei wird der Three-Way-Handshake abgeschlossen und die Verbindung wird sofort wieder geschlossen um DoS zu vermeiden. 
+- Nmap nutzt standardmäßig ein TCP-scan welcher in der Vorlesung unter RST-Attacks genannt wurde. Hierbei wird der Three-Way-Handshake abgeschlossen und die Verbindung wird sofort wieder geschlossen um DoS zu vermeiden. 
 - `-sV` Service Version: Mit dieser Option können Softwareversionen erkannt werden. Erst wird der Service des angegebenen Ports ermittelt, dann die konkrete Software dieses Services und dessen Version. Mithilfe der Datenbank nmap-services wird ein Service für den Port ermittelt. Die Datenbank nmap-service-probes enthält Proben, mit welchen verschiedene Services abgefragt und dort diverse Ausdrücke miteinander abgeglichen werden, um Antworten zu untersuchen und an genauere Informationen zu gelangen.
   `-O` Operating System detection: Die Hauptfunktionalität dieser Option ist die "Schätzung" des Betriebsystems eines Hosts. Die unterschiedlichen Betriebssysteme benutzen verschiedene Netzwerkprotokolle und Netzwerkdienste. Während dem Scan sucht Nmap nach solch spezifischen Merkmalen des Hosts und gleicht sie mit einer Datenbank ab.
   `-p` for specific Ports: Die anzusprechenden Ports spezifizieren. Es können sowohl einzelne Ports, ein Bereich zwischen Ports (z.B. -p 5000-8000) oder alle Ports mit -p- gescannt werden.
@@ -146,7 +146,7 @@ PORT   STATE SERVICE
 22/tcp open  ssh
 ```
 
-Eine traceroute könnte wegen fehlender Root-Rechte nicht durchgeführt werden.
+Eine traceroute konnte wegen fehlender Root-Rechte nicht durchgeführt werden.
 * * * * *
 
 
