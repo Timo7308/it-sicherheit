@@ -10,9 +10,9 @@ Anmerkung: Jegliche durch die Nmap Scriping Engine ermöglichten Scripts (für d
 
 Nutzt bei `nmap`, sofern es Euch sinnvoll erscheint, die Optionen
 `-sV`, `-O` und `-p`. Wie arbeiten diese intern ungefähr? 
-- Nmap nutzt standardmäßig ein TCP-scan welcher in der Vorlesung unter RST-Attacks genannt wurde. Hierbei wird der Three-Way-Handshake abgeschlossen und die Verbindung wird sofort wieder geschlossen um DoS zu vermeiden. 
-- `-sV` Service Version: Mit dieser Option können Softwareversionen erkannt werden. Erst wird der Service des angegebenen Ports ermittelt, dann die konkrete Software dieses Services und dessen Version. Mithilfe der Datenbank nmap-services wird ein Service für den Port ermittelt. Die Datenbank nmap-service-probes enthält Proben, mit welchen verschiedene Services abgefragt und dort diverse Ausdrücke miteinander abgeglichen werden, um Antworten zu untersuchen und an genauere Informationen zu gelangen.
-  `-O` Operating System detection: Die Hauptfunktionalität dieser Option ist die "Schätzung" des Betriebsystems eines Hosts. Die unterschiedlichen Betriebssysteme benutzen verschiedene Netzwerkprotokolle und Netzwerkdienste. Während dem Scan sucht Nmap nach solch spezifischen Merkmalen des Hosts und gleicht sie mit einer Datenbank ab.
+- Nmap nutzt standardmäßig ein TCP-scan welcher in der Vorlesung unter RST-Attacks genannt wurde. Hierbei wird der Three-Way-Handshake abgeschlossen und die Verbindung wird sofort wieder geschlossen um DoS zu vermeiden. <br />
+- `-sV` Service Version: Mit dieser Option können Softwareversionen erkannt werden. Erst wird der Service des angegebenen Ports ermittelt, dann die konkrete Software dieses Services und dessen Version. Mithilfe der Datenbank nmap-services wird ein Service für den Port ermittelt. Die Datenbank nmap-service-probes enthält Proben, mit welchen verschiedene Services abgefragt und dort diverse Ausdrücke miteinander abgeglichen werden, um Antworten zu untersuchen und an genauere Informationen zu gelangen. <br />
+  `-O` Operating System detection: Die Hauptfunktionalität dieser Option ist die "Schätzung" des Betriebsystems eines Hosts. Die unterschiedlichen Betriebssysteme benutzen verschiedene Netzwerkprotokolle und Netzwerkdienste. Während dem Scan sucht Nmap nach solch spezifischen Merkmalen des Hosts und gleicht sie mit einer Datenbank ab. <br />
   `-p` for specific Ports: Die anzusprechenden Ports spezifizieren. Es können sowohl einzelne Ports, ein Bereich zwischen Ports (z.B. -p 5000-8000) oder alle Ports mit -p- gescannt werden.
 - Ein Port hat entweder den Status `open, closed` oder `filtered`. Bei `open, closed` ist der Service auf dem Port aktiv, aber bei `closed` wird zusätzlich die Verbindung abgelehnt. Bei `filtered` gibt es keine Antwort von dem Host auf dem Port und somit auch keine Sicherheitsbedenken. Ein offener oder auch geschlossener Port kann für Angriffe auf das Netz genutzt werden. Dabei ist die Verwundbarkeit dieses Ports abhänging von dem Betriebssystem und dem Service, welcher diesen Dienst bereitstellt. Bei einem Scan mit `-sV` oder auch `-O` erlangen wir Erkenntnisse über diesen Service und können ggf. Sicherheitslücken dieser Version ausnutzen.
 
@@ -124,7 +124,7 @@ No exact OS matches for host (test conditions non-ideal).
 ---
 Welche zusätzlichen Erkenntnisse gewinnt Ihr, wenn Ihr `-p 5000-8000` angebt?
 
-- Der Dienst auf dem Port 5638 ist das Constrained Application Protocol (CoAP),welches ein Web-Transfer-Protokoll für das Internet of Things von Carsten Borrmann ist.
+- Der Dienst auf dem Port 5638 ist das Constrained Application Protocol (CoAP), welches ein Web-Transfer-Protokoll für das Internet of Things von Carsten Borrmann ist.
 
 Rechner aus dem Uni-Netz
 --
