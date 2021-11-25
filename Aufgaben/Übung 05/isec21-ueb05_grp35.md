@@ -105,7 +105,7 @@ PORT     STATE  SERVICE    VERSION
 ```
 - Die Dienste http/https können zu einem Webserver gehören.
 - Ein Scan mit `-A` gibt ein Https-title an mit griecheschen Zeichen als UTF-8 Kodierung. Decoded: `κήπος` übersetzt: Garten. Es handelt sich somit um einen Webserver.
-- CoAP und CoAPs sind auch passende Dienste für ein Webserver. Diese sind ein Web-Transfer-Protokoll welche für IoT genutzt werden.
+- CoAP und CoAPs sind auch passende Dienste für ein Webserver. Diese sind Web-Transfer-Protokolle, welche für IoT genutzt werden.
 - Der ssh-Dienst sollte vielleicht auch nur innerhalb des Uni-Netzes angeboten werden, wie es auch bei dem Mailserver ist.  
 
 ---
