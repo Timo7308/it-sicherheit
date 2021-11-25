@@ -50,7 +50,7 @@ over a maximum of 30 hops:
 
 Trace complete.
 ```
-- Ein traceroute von dem x01 Rechner in dem Uni-Netz führte bei uns zu keinem Ergebnis. Keiner der Hops konnte aufgelöst werden.
+- Eine traceroute von dem x01 Rechner in dem Uni-Netz führte bei uns zu keinem Ergebnis. Keiner der Hops konnte aufgelöst werden.
 ---
 **Option** `-sV` auf IPv4-Adresse 134.102.50.15:
 ```
@@ -146,7 +146,7 @@ PORT   STATE SERVICE
 22/tcp open  ssh
 ```
 
-Ein traceroute könnte wegen fehlender Root-Rechte nicht durchgeführt werden.
+Eine traceroute könnte wegen fehlender Root-Rechte nicht durchgeführt werden.
 * * * * *
 
 
