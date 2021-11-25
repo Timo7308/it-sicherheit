@@ -153,7 +153,11 @@ Ein traceroute könnte wegen fehlender Root-Rechte nicht durchgeführt werden.
 Quellen
 ------
 https://www.elektronik-kompendium.de/sites/net/2103021.htm
+
 https://linuxhint.com/nmap_version_scan/
+
 https://nmap.org/book/man-version-detection.html
+
 https://coap.technology/
+
 https://en.wikipedia.org/wiki/Port_scanner
