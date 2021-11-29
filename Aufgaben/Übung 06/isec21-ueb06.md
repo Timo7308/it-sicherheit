@@ -34,6 +34,8 @@ int main() {
 (Die Probleme sind bei diesem kurzen Programm recht offensichtlich,
 aber ein langes Programm wäre für diese Übungsaufgabe zu aufwendig.)
 
+----
+
 Probiert dieses Programm zunächst ohne weitere Benutzung von Analysewerkzeugen
 aus; benutzt dabei auch verschiedene Eingabelängen und Zeichen (z.B. auch mal
 100 Zeichen und verschiedene Anfangszeichen).
@@ -64,6 +66,8 @@ mal wieder freigegeben. (in Zeile 7 und in Zeile 19)
 
 - auch mal 100 Zeichen. Gab bei mir keine Auffälligkeiten.
 
+---
+
 Was hat der *clang analyzer* dazu zu sagen?  (Aufruf mit einer
 modernen llvm/clang-Installation, z.B. auf den x-Rechnern
 in der Ebene 0: `scan-build -V ` *...compiler-aufruf...*)
@@ -86,16 +90,31 @@ scan-build: 2 bugs found.
   Stimmt Ihr mit der
 Analyse überein, oder seht Ihr ein *false positive*?
 
-- Die warning: `Use of memory after it is freed` konnte ich nicht nachstellen. (vlt mit langen Eingaben??)
+- Die warning: `Use of memory after it is freed` konnte ich nicht nachstellen. (vlt mit langen Eingaben??
+ oder dies ist der false positive)
+
+---
 
 Kompiliert dann das Programm mit dem *Address Sanitizer* (gcc auf
 x-Rechnern, clang auf m-Rechnern), und probiert das Ergebnis wieder
-mit verschiedenen Eingabelängen.  Was sagt uns das Ergebnis?
+mit verschiedenen Eingabelängen.  
+
+Was sagt uns das Ergebnis?
+
+-
+
 
 Welche Probleme findet der einfache manuelle Test?
+
+-
+
 Welche die statische Analyse, welche die Laufzeit-Überprüfung?
+
+-
+
 Welche Unterschiede gibt es daher in der Erkennungsfähigkeit?
 
+-
 
 * * *
 
