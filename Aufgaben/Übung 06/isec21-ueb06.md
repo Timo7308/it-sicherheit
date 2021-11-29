@@ -38,10 +38,55 @@ Probiert dieses Programm zunächst ohne weitere Benutzung von Analysewerkzeugen
 aus; benutzt dabei auch verschiedene Eingabelängen und Zeichen (z.B. auch mal
 100 Zeichen und verschiedene Anfangszeichen).
 
+Mit `gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0` ohne Optionen
+
+```
+$ ./a.out
+a
+97 97
+
+$ ./a.out
+!
+33 0
+free(): double free detected in tcache 2
+Aborted
+
+$ ./a.out
+0
+free(): double free detected in tcache 2
+Aborted
+```
+- mit der Eingabe `0` gibt es keine Ausgabe (siehe Zeile 16)
+
+- Nach der ASCII value Tabelle führt eine Eingabe wie `!` dazu, dass 
+in Zeile 6 `if(c<50){` zu `true` auswertet. Somit wird der Speicher zwei
+mal wieder freigegeben. (in Zeile 7 und in Zeile 19)
+
+- auch mal 100 Zeichen. Gab bei mir keine Auffälligkeiten.
+
 Was hat der *clang analyzer* dazu zu sagen?  (Aufruf mit einer
 modernen llvm/clang-Installation, z.B. auf den x-Rechnern
-in der Ebene 0: `scan-build -V ` *...compiler-aufruf...*)  Stimmt Ihr mit der
+in der Ebene 0: `scan-build -V ` *...compiler-aufruf...*)
+
+```
+$ scan-build -V gcc prog.c
+scan-build: Using '/usr/lib/llvm-10/bin/clang' for static analysis
+prog.c:17:29: warning: Use of memory after it is freed
+                            printf("%d %d\n", c, buf[0]);
+                                                 ^~~~~~
+prog.c:19:5: warning: Attempt to free released memory
+                  free(buf);
+                  ^~~~~~~~~
+2 warnings generated.
+scan-build: 2 bugs found.
+...
+
+```
+
+  Stimmt Ihr mit der
 Analyse überein, oder seht Ihr ein *false positive*?
+
+- Die warning: `Use of memory after it is freed` konnte ich nicht nachstellen. (vlt mit langen Eingaben??)
 
 Kompiliert dann das Programm mit dem *Address Sanitizer* (gcc auf
 x-Rechnern, clang auf m-Rechnern), und probiert das Ergebnis wieder
