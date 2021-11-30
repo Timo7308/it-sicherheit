@@ -142,7 +142,7 @@ Shadow byte legend (one shadow byte represents 8 application bytes):
 
 
 
-- Eingabe: 0000
+- Eingabe: 0
 - Fehler: ```double-free```  
 
 ```
