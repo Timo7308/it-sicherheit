@@ -118,6 +118,7 @@ Was sagt uns das Ergebnis?
 ```
 SUMMARY: AddressSanitizer: heap-use-after-free (/home/timo5/isec-ueb6/runme+0xba3) in main
 Shadow bytes around the buggy address:
+
   0x0c067fff7fb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
   0x0c067fff7fc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
   0x0c067fff7fd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -134,35 +135,10 @@ Shadow byte legend (one shadow byte represents 8 application bytes):
   Partially addressable: 01 02 03 04 05 06 07 
   Heap left redzone:       fa
   Freed heap region:       fd
-  Stack left redzone:      f1
-  Stack mid redzone:       f2
-  Stack right redzone:     f3
-  Stack after return:      f5
-  Stack use after scope:   f8
-  Global redzone:          f9
-  Global init order:       f6
-  Poisoned by user:        f7
-  Container overflow:      fc
-  Array cookie:            ac
-  Intra object redzone:    bb
-  ASan internal:           fe
-  Left alloca redzone:     ca
-  Right alloca redzone:    cb
-  Shadow gap:              cc
+
 ==1509==ABORTING
 
-
-
-
-
-
-
-
-
 ```
-
-
-
 
 Welche Probleme findet der einfache manuelle Test?
 
