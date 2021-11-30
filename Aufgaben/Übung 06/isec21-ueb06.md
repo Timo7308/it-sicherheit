@@ -151,7 +151,7 @@ SUMMARY: AddressSanitizer: double-free (/usr/lib/x86_64-linux-gnu/libasan.so.6+0
 
 - Eingabe: 31 mal a 
 - Fehler: ```heap-buffer-overflow``` 
-- Ab einer Eingabelänge von 31 kompiliert das Programm nicht mehr fehlerfrei. 
+
 
 ``` 
 SUMMARY: AddressSanitizer: heap-buffer-overflow (/usr/lib/x86_64-linux-gnu/libasan.so.6+0x3f726) 
@@ -176,7 +176,7 @@ Shadow byte legend (one shadow byte represents 8 application bytes):
 ==2299==ABORTING
 
 ```  
-
+- Ab einer Eingabelänge von 31 kompiliert das Programm nicht mehr fehlerfrei. Befinden sich am Anfang der Eingabe ````0 ,1 oder !``` kommt es schon vorher zu Fehlermeldungen. 
 
 
 Welche Probleme findet der einfache manuelle Test?
