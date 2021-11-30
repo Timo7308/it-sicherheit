@@ -141,6 +141,7 @@ Shadow byte legend (one shadow byte represents 8 application bytes):
 ```
 
 
+
 - Eingabe: 0000
 - Fehler: ```double-free```  
 
@@ -149,9 +150,36 @@ SUMMARY: AddressSanitizer: double-free (/usr/lib/x86_64-linux-gnu/libasan.so.6+0
 ==2719==ABORTING
 ```
 
+
+
+- Eingabe: 1
+- Fehler: ```heap-use-after-free``` 
+
+```
+SUMMARY: AddressSanitizer: heap-use-after-free /home/timo5/isec-ueb6/test.c:17 in main
+Shadow bytes around the buggy address:
+  0x0c067fff7fb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7fc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7fd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7fe0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7ff0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x0c067fff8000: fa fa[fd]fd fd fd fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff8010: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff8020: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff8030: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff8040: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff8050: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+``` 
+
+
+
 - Eingabe: 31 mal a 
 - Fehler: ```heap-buffer-overflow``` 
-
 
 ``` 
 SUMMARY: AddressSanitizer: heap-buffer-overflow (/usr/lib/x86_64-linux-gnu/libasan.so.6+0x3f726) 
