@@ -116,7 +116,7 @@ Was sagt uns das Ergebnis?
 - Fehler: ```heap-use-after-free``` 
 
 ```
-SUMMARY: AddressSanitizer: heap-use-after-free (/home/timo5/isec-ueb6/runme+0xba3) in main
+SUMMARY: AddressSanitizer: AddressSanitizer: heap-use-after-free /home/timo5/isec-ueb6/test.c:17 in main
 Shadow bytes around the buggy address:
 
   0x0c067fff7fb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
