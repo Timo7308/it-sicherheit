@@ -140,9 +140,18 @@ Shadow byte legend (one shadow byte represents 8 application bytes):
 
 ```
 
+
+- Eingabe: 0000
+- Fehler: ```double-free```  
+
+```
+SUMMARY: AddressSanitizer: double-free (/usr/lib/x86_64-linux-gnu/libasan.so.6+0xb2a7f) in __interceptor_free
+==2719==ABORTING
+```
+
 - Eingabe: 31 mal a 
 - Fehler: ```heap-buffer-overflow``` 
-- Ab einer Eingabelänge von 31 kompiliert das Programm nicht mehr fehlerfrei. Dies gilt für die Buchstaben a - z und die Zahlen 2 - 9.
+- Ab einer Eingabelänge von 31 kompiliert das Programm nicht mehr fehlerfrei. 
 
 ``` 
 SUMMARY: AddressSanitizer: heap-buffer-overflow (/usr/lib/x86_64-linux-gnu/libasan.so.6+0x3f726) 
