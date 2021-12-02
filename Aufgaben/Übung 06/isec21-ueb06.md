@@ -148,6 +148,10 @@ SUMMARY: AddressSanitizer: heap-use-after-free (/home/phibo/isec/ueb6/progSan+0x
 ==1509==ABORTING
 
 ```
+
+- Es wird versucht ein Speicherbereich der Größe von 1 Byte von `0x603000000010` zu lesen. Der Speicherbereich, in dem diese Zelle erhalten ist, wurde aber schon freigegeben.
+- Es wird zusätzlich angeben, wann der Speicher zugewiesen, freigegeben und zugegriffen wurde.
+
 ---
 
 
@@ -179,6 +183,9 @@ previously allocated by thread T0 here:
 SUMMARY: AddressSanitizer: double-free (/home/phibo/isec/ueb6/progSan+0x49379d) in free
 ==305==ABORTING
 ```
+
+- Es wird versucht ein Speicherbereich freizugeben, der vorher schon freigegeben wurde.
+
 ---
 
 - Eingabe: 31 mal a (oder Länger)
@@ -207,6 +214,8 @@ SUMMARY: AddressSanitizer: heap-buffer-overflow (/home/phibo/isec/ueb6/progSan+0
 
 ```  
 - Ab einer Eingabelänge von 31 wird das Programm nicht mehr fehlerfrei ausgeführt. Befinden sich am Anfang der Eingabe ```0 ,1 oder !``` kommt es schon vorher zu den beiden oben beschriebenen Fehlermeldungen. 
+
+- Es wird auf eine Speicheradresse zugegriffen, welche nicht zugewiesen wurde. Über `malloc` wurden nur diese 32 Bytes zugewiesen `[0x603000000010,0x603000000030)`, aber durch `fgets` sollen 42 Bytes geschrieben werden. Da aber `fgets` als Parameter mitgegben wird, dass 64 Bytes geschrieben werden können, wird versucht auf nicht zugewiesenen Speicher zu schreiben `0x603000000030`.
 
 ---
 
