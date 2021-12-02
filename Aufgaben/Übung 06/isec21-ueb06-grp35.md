@@ -64,8 +64,8 @@ $ ./a.out
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 97 97
 ```
-- Bei einer Eingabe von `a` ist die Ausgabe 97 97, bei einer Eingabe von`b` 98 98 und bei der Eingabe von`z` ist die Ausgabe 122 122. Mit dem Fortschreiten im Alphabet wird die Ausgabe um 1 erhöht. Bei der Eingabe eines großen`A`ist die Ausgabe 65 65. Bei der Eingabe von `Z` ist die Ausgabe 90 90. Auch hier wird die Ausgabe jeweils um 1 erhöht (siehe ASCII-Tabelle). Die Länge und die Anordnung der Zeichenkette ändert an diesen Ausgaben nichts. Entscheidend für die Ausgabe ist der erste Buchstabe in der Zeichenkette. 
-Bei der Eingabe von 1 erscheint die oben genannte Fehlermeldung und die Ausgabe 49 0. Bei der Eingabe von 2 ist die Ausgabe 50 50. Bei der Eingabe von 9 ist die Ausgabe 57 57. Auch bei der Eingabe von Zahlen ist die Länge der Zahl nicht von Bedeutung. Entscheidend ist die erste Zahl. Ist die Zahl 1, wird eine Fehlermeldung ausgegeben. Ist die erste Zahl 0, gibt es keine Ausgabe. 
+- Bei einer Eingabe von `a` ist die Ausgabe `97 97`, bei einer Eingabe von`b` `98 98` und bei der Eingabe von`z` ist die Ausgabe `122 122`. Mit dem Fortschreiten im Alphabet wird die Ausgabe um 1 erhöht. Bei der Eingabe eines großen`A`ist die Ausgabe `65 65`. Bei der Eingabe von `Z` ist die Ausgabe `90 90`. Auch hier wird die Ausgabe jeweils um 1 erhöht (siehe ASCII-Tabelle). Die Länge und die Anordnung der Zeichenkette ändert an diesen Ausgaben nichts. Entscheidend für die Ausgabe ist der erste Buchstabe in der Zeichenkette. 
+Bei der Eingabe von `1` erscheint die oben genannte Fehlermeldung und die Ausgabe `49 0`. Bei der Eingabe von `2` ist die Ausgabe `50 50`. Bei der Eingabe von `9` ist die Ausgabe `57 57`. Auch bei der Eingabe von Zahlen ist die Länge der Zahl nicht von Bedeutung. Entscheidend ist die erste Zahl. Ist die Zahl 1, wird eine Fehlermeldung ausgegeben. Ist die erste Zahl 0, gibt es keine Ausgabe. 
 
 
 - Mit der Eingabe `0` gibt es keine Ausgabe. In Zeile 16 wird der print-Befehl übersprungen.
