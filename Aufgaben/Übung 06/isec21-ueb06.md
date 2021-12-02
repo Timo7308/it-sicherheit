@@ -64,17 +64,17 @@ $ ./a.out
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 97 97
 ```
-- Bei einer Eingabe von `a` ist die Ausgabe 97 97, bei einer Eingabe von`b` 98 98 und bei der Eingabe von`z` ist die Ausgabe 122 122. Mit dem Fortschreiten im Alphabet wird die Ausgabe um 1 erhöht. Bei der Eingabe eines großen`A`ist die Ausgabe 65 65. Bei der Eingabe von `Z` ist die Ausgabe 90 90. Auch hier wird die Ausgabe jeweils um 1 erhöht(siehe ASCII-Tabelle). Die Länge und die Anordnung der Zeichenkette ändert an diesen Ausgaben nichts. Entscheidend für die Ausgabe ist der erste Buchstabe in der Zeichenkette. 
+- Bei einer Eingabe von `a` ist die Ausgabe 97 97, bei einer Eingabe von`b` 98 98 und bei der Eingabe von`z` ist die Ausgabe 122 122. Mit dem Fortschreiten im Alphabet wird die Ausgabe um 1 erhöht. Bei der Eingabe eines großen`A`ist die Ausgabe 65 65. Bei der Eingabe von `Z` ist die Ausgabe 90 90. Auch hier wird die Ausgabe jeweils um 1 erhöht (siehe ASCII-Tabelle). Die Länge und die Anordnung der Zeichenkette ändert an diesen Ausgaben nichts. Entscheidend für die Ausgabe ist der erste Buchstabe in der Zeichenkette. 
 Bei der Eingabe von 1 erscheint die oben genannte Fehlermeldung und die Ausgabe 49 0. Bei der Eingabe von 2 ist die Ausgabe 50 50. Bei der Eingabe von 9 ist die Ausgabe 57 57. Auch bei der Eingabe von Zahlen ist die Länge der Zahl nicht von Bedeutung. Entscheidend ist die erste Zahl. Ist die Zahl 1, wird eine Fehlermeldung ausgegeben. Ist die erste Zahl 0, gibt es keine Ausgabe. 
 
 
 - Mit der Eingabe `0` gibt es keine Ausgabe. In Zeile 16 wird der print-Befehl übersprungen.
 
-- Nach der ASCII value Tabelle führt eine Eingabe wie `!` dazu, dass 
-in Zeile 6 `if(c<50){` zu `true` auswertet und daraufhin in Zeile 7 der Speicher von dem char-Pointer freigegeben wird. Der Print-Aufruf in Zeile 17 kann nur die erste Zahl(`%d`) mit der Variable `c` ausgeben. In dem Fall mit `!` als Eingabe ist dies die Zahl `33`. Aber die zweite Zahl, auf die über `buf[0]` zugegriffen wird, wird als eine `0` ausgegeben, da hier ein Speicherzugriff passiert, nachdem dieser Speicher freigegeben wurde.
-Nach dem Ausführen des `printf` wird in Zeile 19 nun erneut der Speicher von dem Char-Pointer freigegeben, wesewegen wir auch folgende Fehlermeldung erhalten: `free(): double free detected in tcache 2`
+- Nach den Werten der ASCII-Tabelle führt eine Eingabe wie `!` dazu, dass 
+in Zeile 6 `if(c<50){` zu `true` auswertet und daraufhin in Zeile 7 der Speicher von dem char-Pointer freigegeben wird. Der Print-Aufruf in Zeile 17 kann nur die erste Zahl(`%d`) mit der Variable `c` ausgeben. In dem Fall mit `!` als Eingabe ist dies die Zahl `33`. Die zweite Zahl, auf die über `buf[0]` zugegriffen wird, wird jedoch als eine `0` ausgegeben, da hier ein Speicherzugriff passiert, nachdem dieser Speicher freigegeben wurde.
+Nach dem Ausführen des `printf` wird in Zeile 19 nun erneut der Speicher von dem Char-Pointer freigegeben, weswegen wir auch folgende Fehlermeldung erhalten: `free(): double free detected in tcache 2`
 
-- Bei einer Eingabe mit einer Langen Zeichenkette gab es keine Auffälligkeiten.
+- Bei einer Eingabe mit einer langen Zeichenkette gab es keine Auffälligkeiten.
 
 ---
 
@@ -216,20 +216,20 @@ Welche Probleme findet der einfache manuelle Test?
 
 - Der einfach manuelle Test findet, wie oben beschrieben, den Fehler `double-free`. Dieser Fehler wird auch ausgegben und fällt dadurch als erstes auf: `free(): double free detected in tcache 2`
 
-- Auch der Fehler `use-after-free` kann erkannt werden, wird aber nicht von der Konsole als Fehler ausgegeben. Dieser Fehler ist nur zuerkennen, wenn man den Sourcecode liest und diesen mit der Ausgabe vergleicht. Bei einer Eingabe von `!` bekommen wir folgende Ausgabe `33 0`. Hier ist die ausgegbene `0` ein Indiz dafür, dass es sich hierbei um den Fehler `use-after-free` handeln kann.
+- Auch der Fehler `use-after-free` kann erkannt werden, wird aber nicht von der Konsole als Fehler ausgegeben. Dieser Fehler ist nur zu erkennen, wenn man den Sourcecode liest und diesen mit der Ausgabe vergleicht. Bei einer Eingabe von `!` bekommen wir folgende Ausgabe `33 0`. Hier ist die ausgegbene `0` ein Indiz dafür, dass es sich hierbei um den Fehler `use-after-free` handeln kann.
 
 ---
 Welche die statische Analyse, welche die Laufzeit-Überprüfung?
 
-- Die statische Analyse des *clang analyizer*  erkennt auch die beiden Fehler `double-free` und `use-after-free`. Es wird zusätzlich angeben in welcher Zeile des Sourcecodes diese Fehler hervorgerufen wird. Eine Datailansicht wird als HTML-Datei im temp-Verzeichnis erstellt, die das Hervorrufen des Fehlers in einzelnen Schritten beschreibt.
+- Die statische Analyse des *clang analyizer*  erkennt auch die beiden Fehler `double-free` und `use-after-free`. Es wird zusätzlich angeben, in welcher Zeile des Sourcecodes diese Fehler hervorgerufen werden. Eine Detailansicht wird als HTML-Datei im temp-Verzeichnis erstellt, die das Hervorrufen des Fehlers in einzelnen Schritten beschreibt.
 
-- Die Laufzeit-Überprüfung erkennt auch die Fehler `double-free` und `use-after-free` und zusätlich einen `heap-buffer-overflow` Fehler. Der Fehler`use-after-free`wird hier als `heap-use-after-free`ausgegeben. Auch hier wird in der Ausgabe ersichtlich, wie dieser Fehler zustande kommt, auch wenn dies nicht so schön dargestellt wird, wie beim HTML-Dokument vom *clang analyzer*.
+- Die Laufzeit-Überprüfung erkennt auch die Fehler `double-free` und `use-after-free` und zusätlich einen `heap-buffer-overflow` Fehler. Der Fehler `use-after-free` wird hier als `heap-use-after-free` ausgegeben. Auch hier wird in der Ausgabe ersichtlich, wie dieser Fehler zustande kommt, auch wenn dies nicht so schön dargestellt wird, wie beim HTML-Dokument vom *clang analyzer*.
 
 ---
 Welche Unterschiede gibt es daher in der Erkennungsfähigkeit?
 
-- Die statische Analyse mit dem *clang analyzer* ist ein gutes Tool, um überhaupt herauszufinden ob es Fehler im Code gibt. Bei diesem Tool ist keine Eingabe notwendig, die ein Fehler verursachen könnte. So kann man sich im nachhinein eine Eingabe überlegen, die diesen Fehler hervorrufen könnte. Es kann sich dabei aber auch um ein *false positive* handeln, wobei dieser Fehler gar nicht reproduzierbar ist. 
-Die Laufzeit-Überprüfung und auch die manellen Tests erfordern eine Eingabe, die ein Fehler verursachen. Dabei ist die Laufzeit-Überprüfung das eindeutig bessere Tool, da hier genau beschrieben wird, wie es zu diesem Fehler kommt und es wird z.B. der `heap-buffer-overflow` bei einer langen Eingabe erkannt.
+- Die statische Analyse mit dem *clang analyzer* ist ein gutes Tool, um überhaupt herauszufinden, ob es Fehler im Code gibt. Bei diesem Tool ist keine Eingabe notwendig, die ein Fehler verursachen könnte. So kann man sich im nachhinein eine Eingabe überlegen, welche diesen Fehler hervorrufen könnte. Es kann sich dabei aber auch um ein *false positive* handeln, wobei dieser Fehler gar nicht reproduzierbar ist. 
+Die Laufzeit-Überprüfung und auch die manellen Tests erfordern eine Eingabe, welche einen Fehler verursachen. Dabei ist die Laufzeit-Überprüfung das eindeutig bessere Tool, da hier genau beschrieben wird, wie es zu diesem Fehler kommt und es wird z.B. der `heap-buffer-overflow` bei einer langen Eingabe erkannt.
 
 
 Quellen:
