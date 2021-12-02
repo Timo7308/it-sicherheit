@@ -248,24 +248,3 @@ Quellen:
 --
 
 https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html
-
-* * *
-
-Abgabe
-------
-
-bis 2021-12-02 23:59 UTC, digital in Stud.IP als Markdown-Datei mit dem
-Dateinamen `isec21_ueb06_grpYY.(md|zip|tgz)` (das `YY` mit eurer Gruppennummer ersetzen).
-Dabei bitte in der Datei die Nummer Eurer Gruppe in Stud.IP sowie alle
-an der Abgabe beteiligten Gruppenmitglieder nennen.
-
-Bitte steckt die Energie ins Denken und Schreiben, nicht in eine
-wunderschöne Formatierung — lesbar darf es allerdings sein. Die
-Lösungswege sollten ggf. nachvollziehbar sein.
-
-Wenn Ihr Euch irgendwelcher Quellen aus dem Netz bedient (Anleitungen,
-Howtos, etc), gebt diese bitte als URI mit an.
-
-*Carsten Bormann, Karsten Sohr, Stefanie Gerdes, Jan-Frederik
-Rieckers, Hugo Damer ·
-<isec@tzi.org>*, WS 2021/22
