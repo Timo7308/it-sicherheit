@@ -118,8 +118,9 @@ Aborted
 `gcc -fsanitize=address prog.c`
 
 
-- Eingabe: ! (c<50 nach ASCII-Tabelle)
-- Fehler: ```heap-use-after-free``` 
+Eingabe: ! (c<50 nach ASCII-Tabelle)
+
+Fehler: ```heap-use-after-free``` 
 
 ```
 $ ./progSan
@@ -155,8 +156,9 @@ SUMMARY: AddressSanitizer: heap-use-after-free (/home/phibo/isec/ueb6/progSan+0x
 ---
 
 
-- Eingabe: 0
-- Fehler: ```double-free```  
+Eingabe: 0
+
+Fehler: ```double-free```  
 
 ```
 $ ./progSan
@@ -188,8 +190,9 @@ SUMMARY: AddressSanitizer: double-free (/home/phibo/isec/ueb6/progSan+0x49379d) 
 
 ---
 
-- Eingabe: 31 mal a (oder Länger)
-- Fehler: ```heap-buffer-overflow``` 
+Eingabe: 31 mal a (oder Länger)
+
+Fehler: ```heap-buffer-overflow``` 
 
 ``` 
 $ ./progSan
