@@ -9,7 +9,7 @@ Timo Schuchmann: timo5@uni-bremen.de
 Philias Borrmann: borrmann@uni-bremen.de
 Adrian Lindloff: lindloff@uni-bremen.de
 
-
+*******************
 
 Weshalb ist es sinnvoll, für die Schlüssel ein Ablaufdatum zu definieren?
 
