@@ -11,7 +11,7 @@ Adrian Lindloff: lindloff@uni-bremen.de
 
 *******************
 
-Weshalb ist es sinnvoll, für die Schlüssel ein Ablaufdatum zu definieren?
+*Weshalb ist es sinnvoll, für die Schlüssel ein Ablaufdatum zu definieren?*
 
 - Um ungenutze Schlüssel nach einer Weile automatisch zu deaktivieren.
 - Die Sicherheitsanforderungen steigen über die Jahre immer weiter an, weswegen eine Erneuerung nach einiger Jahren sinnvoll ist
