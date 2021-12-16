@@ -42,9 +42,8 @@ Wir haben uns für Stufe sig2 entschieden, da wir die Fingerabdrücke abgleichen
 
 
 
-**Beschreibung der Vorgehensweise**
+**Beschreibung der Vorgehensweise:**
 
----
 Mit Kleopatra haben wir unsere Schlüsselpaare nach den vorgegebenen Bedingungen generiert und anschließend bei https://keys.supersahnetorten.de/upload hochgeladen.
 Zur Versendung von verschlüsselten E-Mails haben wir das Mailprogramm Thunderbird verwendet. Im ersten Schritt haben wir unseren eigenen private key und public key in das Mailprogramm geladen. Danach haben wir den public key des jeweils anderen geladen. Den public key haben wir als nächstes signiert. Um sicher zu stellen, dass es sich um den richtigen key handelt, haben wir den fingerprint der public keys im Voicechat von Discord miteinander verglichen. Damit Philias eine E-Mail an Timo schicken kann, benötigt er seinen private key und den public key von Timo. Timo kann die E-Mail dann mit seinem private key entschlüsseln. Damit jemand anderes diese E-Mail lesen kann, müsste herausgefunden werden, welcher public key verwendet wurde und es müsste der PC mit dem zugehörigen private key gehackt werden. Außerdem sind die eigenen keys mit einem Passwort geschützt, welches ebenfalls geknackt werden müsste. Ein Erraten des private keys ist aufgrund dessen Länge nur in der Theorie möglich. Da wir auch nicht über vertrauliche Informationen eines Unternehmens kommunizieren, können wir mit großer Wahrscheinlichkeit davon ausgehen, dass kein anderer versucht unsere E-Mails zu lesen. Es wäre einiges an Arbeit nötig, um die eben genannten Bedingungen zu erfüllen und dies ist deshalb ohne ein Motiv sehr unwahrscheinlich.
 
