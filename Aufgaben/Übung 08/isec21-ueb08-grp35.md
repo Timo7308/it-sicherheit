@@ -11,22 +11,23 @@ Adrian Lindloff: lindloff@uni-bremen.de
 
 *******************
 
-*Weshalb ist es sinnvoll, für die Schlüssel ein Ablaufdatum zu definieren?*
+**Weshalb ist es sinnvoll, für die Schlüssel ein Ablaufdatum zu definieren?**
 
 - Um ungenutze Schlüssel nach einer Weile automatisch zu deaktivieren.
 - Die Sicherheitsanforderungen steigen über die Jahre immer weiter an, weswegen eine Erneuerung nach einiger Jahren sinnvoll ist
 
-Der Keyserver fordert die Bestätigung eurer E-Mail-Adresse, bevor der
+**Der Keyserver fordert die Bestätigung eurer E-Mail-Adresse, bevor der
 Key mit eurer User-ID veröffentlicht wird. Warum ist das grundsätzlich
-sinnvoll?  
+sinnvoll?  **
+
 
 - Per E-Mail-Adresse lassen sich Identitäten schnell verifizieren oder erreichen.
 - Im Key wird eine E-Mail-Adresse mit angegeben. Durch die Bestätigung wird sichergestellt, dass der Nutzer auch Zugriff auf diese angegebene E-Mail-Adresse hat.
 
 ---
 
-Signiert innerhalb eurer Gruppe eure Schlüssel gegenseitig.
-Welche Signierungsstufe (certification level) wählt ihr? Warum?
+**Signiert innerhalb eurer Gruppe eure Schlüssel gegenseitig.
+Welche Signierungsstufe (certification level) wählt ihr? Warum?**
 
 Es gibt vier Signierungsstufen zur Auswahl:
 
@@ -40,14 +41,8 @@ Wir haben uns für Stufe sig2 entschieden, da wir die Fingerabdrücke abgleichen
 ---
 
 
-Beschreibt und begründet die wesentliche Schritte in Eurem
-Vorgehen. Wie sicher könnt Ihr Euch sein, dass nur der ausgewählte
-Gesprächspartner Eure E-Mails lesen kann? Warum? Ist die E-Mail Eurer
-Gruppenmitglieder an euch ordnungsgemäß verschlüsselt und signiert?
-Wie habt Ihr das überprüft? Welche Software habt ihr für die Analyse
-benutzt? Dokumentiert, mit welchem Programm ihr welche Schritte
-ausgeführt habt.
 
+**Beschreibung der Vorgehensweise**
 
 ---
 Mit Kleopatra haben wir unsere Schlüsselpaare nach den vorgegebenen Bedingungen generiert und anschließend bei https://keys.supersahnetorten.de/upload hochgeladen.
@@ -58,7 +53,7 @@ Für die Analyse der E-Mails gibt es in Thunderbird die Möglichkeit bestätigt 
 ---
 
 
-Key erstellen:
+**Key erstellen:**
 --
 - https://gpg4win.org/get-gpg4win.html herunterladen und installieren
 - cleopatra starten
