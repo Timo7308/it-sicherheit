@@ -32,10 +32,11 @@ Welche Signierungsstufe (certification level) wählt ihr? Warum?**
 
 Es gibt vier Signierungsstufen zur Auswahl:
 
-  ``sig = "I will not answer"``
-  ``sig1 = "I have not checked at all"``
-  ``sig2 = "I have done casual checking"``
-  ``sig3 = "I have done very careful checking"``
+  - ``sig = "I will not answer"``
+-   ``sig1 = "I have not checked at all"``
+-   ``sig2 = "I have done casual checking"``
+-   ``sig3 = "I have done very careful checking"``
+
 
 Wir haben uns für Stufe sig2 entschieden, da wir die Fingerabdrücke abgleichen können und uns wegen der Aufgaben vertauen. Für sig3 wäre eine Überprüfung öffentlicher Dokumente sinnvoll.
 
