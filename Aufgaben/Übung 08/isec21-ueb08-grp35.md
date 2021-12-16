@@ -1,7 +1,6 @@
 Informationssicherheit, 8. Übung
 ================================
 
-*******************
 
 Namen und Email-Adressen:
 
@@ -53,7 +52,7 @@ Für die Analyse der E-Mails gibt es in Thunderbird die Möglichkeit bestätigt 
 
 
 **Key erstellen:**
---
+
 - https://gpg4win.org/get-gpg4win.html herunterladen und installieren
 - cleopatra starten
 - File-NEW KEY PAIR erstellen von einem personal OenPGP
