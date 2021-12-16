@@ -18,7 +18,7 @@ Adrian Lindloff: lindloff@uni-bremen.de
 
 **Der Keyserver fordert die Bestätigung eurer E-Mail-Adresse, bevor der
 Key mit eurer User-ID veröffentlicht wird. Warum ist das grundsätzlich
-sinnvoll?  **
+sinnvoll?**
 
 
 - Per E-Mail-Adresse lassen sich Identitäten schnell verifizieren oder erreichen.
