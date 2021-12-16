@@ -59,6 +59,6 @@ Für die Analyse der E-Mails gibt es in Thunderbird die Möglichkeit bestätigt 
 - https://gpg4win.org/get-gpg4win.html herunterladen und installieren
 - cleopatra starten
 - File-NEW KEY PAIR erstellen von einem personal OenPGP
-- Name und Email angeben und expireDate auf +5Jahre setzen
+- Name und Email angeben und expireDate auf maximal 5Jahre setzen
 - key exportieren
 - key auf den Keyserver hochladen
