@@ -8,6 +8,8 @@ Timo Schuchmann: timo5@uni-bremen.de
 Philias Borrmann: borrmann@uni-bremen.de
 Adrian Lindloff: lindloff@uni-bremen.de
 
+Gruppe: G35
+
 *******************
 
 **Weshalb ist es sinnvoll, für die Schlüssel ein Ablaufdatum zu definieren?**
