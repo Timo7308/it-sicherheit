@@ -48,10 +48,13 @@ aus?
  
 - Certificate Path (Google Chrome)
 
-  (Staging) Doctored Durian Root CA X3 
-  ----(Staging) Pretend Pear X1 
-    ------- (Staging) Artifical Apricot R3 
-     -----------isec-gruppe35.informatik.de 
+  (Staging) Doctored Durian Root CA X3
+
+  ---(Staging) Pretend Pear X1
+
+    ------- (Staging) Artifical Apricot R3
+
+     -----------isec-gruppe35.informatik.de
      
  Das untere Zertifikat wird immer von den weiter oben liegenden Zertifikaten ausgestellt.
 
