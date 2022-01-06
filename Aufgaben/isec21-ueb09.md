@@ -49,9 +49,13 @@ aus?
 - Certificate Path (Google Chrome)
 
   (Staging) Doctored Durian Root CA X3
+
   ----(Staging) Pretend Pear X1
+
     ------- (Staging) Artifical Apricot R3
+
      -----------isec-gruppe35.informatik.de
+     
  Das untere Zertifikat wird immer von den weiter oben liegenden Zertifikaten ausgestellt.
 
 - Unser Testzertifikat wird von einem Root-Zertifikat ausgestellt, welches nicht in Browser-/Client-Truststores vorhanden ist. Deshalb wird dem Testzertifikat nicht vertraut. Dieses Problem kann durch das Hinzufügen des Zertifikats (Staging) Pretend Pear X1 umgangen werden. Letsencrypt weist aber darauf hin, dass dies nur zu Testzwecken geschehen darf, da sonst nicht die nötige Sicherheit gewährleistet werden kann (siehe Quelle).
