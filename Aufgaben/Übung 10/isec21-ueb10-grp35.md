@@ -98,16 +98,6 @@ benötigt Ihr dafür?*
 
 
 **IT-Systeme:**
-- Arbeitsplatz-Computer
-- HomeOffice-Computer/Laptop
-- Mail-Server
-- (Druck-Server)
-- Domäncontroller (Anmeldung an den internem System)
-- Zentraler Server (Datenbank) mit Backup
-- Webserver (öffentliche Website/ Dokumente mit eingeschränktem Zugriff)
-- Switch
-- Firewall
-- Router (mit Internetanbindung)
 
 ![](Tabelle_IT-Systeme.png )
 
