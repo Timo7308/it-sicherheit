@@ -62,7 +62,7 @@ sinnvoll. Trefft, wo erforderlich, ergänzende Annahmen. Dokumentiert
 Euer Vorgehen.*
 
 
-![](https://hackmd.informatik.uni-bremen.de/uploads/36132e07d272621fb3752ce66.40.07.png)
+![](Netzplan.png)
 
 Um einen vollständigen Netzplan für das Unternehmen zu erstellen, haben wir die erforderlichen Web-, Mail- und den zentralen Datenbank-Server mit einem Switch angeschlossen, wodurch alle Computer verbunden sind. Die Firewall sorgt für einen geschützen Zugriff in das Intranet und der Router verbindet das Unternehmen mit dem Internet und somit auch mit dem Außendienst im Homeoffice. Der Domänencontroller ist ein Server zur  Authentifizierung von Benutzern und Computern.
 
