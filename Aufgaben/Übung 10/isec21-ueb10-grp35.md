@@ -1,12 +1,14 @@
 Informationssicherheit, 10. Übung
 ================================
 
+von Gruppe G35
+Adrian Lindloff (lindloff), Timo Schuchmann (timo5) und Philias Borrmann (borrmann)
+
 *******************
 
 Aufgabe 1, 4 Punkte, Gruppe
 ---------------------------
 
----
 
 *Angenommen, ihr solltet eine IT-Strukturanalyse durchführen. Wie
 würdet ihr vorgehen, das heißt, welche Schritte sind durchzuführen?*
@@ -14,19 +16,27 @@ würdet ihr vorgehen, das heißt, welche Schritte sind durchzuführen?*
 Grundsätzlich würden wir uns an die vom BSI empfohlene Vorgehensweise halten.
 
 **1. Informationen erheben und die vorhandene Infrastruktur analysieren** 
+
 --> wesentliche Geschäftsprozesse listen
+
 --> zu schützende IT-Anwendungen listen
+
 --> ggf. Geschäftsprozesse und dessen Anwendungen verknüpfen
 
 **2. Aktuellen Netzplan erstellen**
+
 --> IT-Systeme und dessen Vernetzungen/Verbindungen untereinander, sowie Außenverbindungen darstellen
+
 --> Komponenten ggf. bereinigen und gruppieren
 
 **3. IT-Systeme erfassen**
+
 --> Auflistung der IT-Systeme und von wem sie alles benutzt werden
+
 --> Zu den IT-Systemen gehören alle elektronischen datenverarbeitende Systeme, die im Unternehmen genutzt werden
 
 **4. Räume erfassen**
+
 --> IT-bezogene Gebäude und Raume, sowie spezielle Schutzobjekte (z.B. Schutzschrank)
 
 
@@ -99,7 +109,7 @@ benötigt Ihr dafür?*
 - Firewall
 - Router (mit Internetanbindung)
 
-
+![](Tabelle_IT-Systeme.png )
 
 ---
 
@@ -128,53 +138,3 @@ Ausführung benötigt werden.*
 |A02 | Kommunikation: Die Unternehmenskommunikation findet über Mail statt, die von einer Mail-Software(Bsp. Thunderbird) gestreuert wrid | 60 | Alle Mitarbeiter | Computer/Laptop, Router, Switch, Firewall, Mail-Server
 |A03 |Backup: ein Backup der Datenbank wird jede Nacht vorgenommen | 1  | Administrator | zentraler DB-Server 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-
-Abgabe
-------
-
-bis 2022-01-13 23:59 UTC, digital in Stud.IP als Markdown-Datei mit
-dem Dateinamen `isec21_ueb10_grpYY.(md|zip|tgz)` (das `YY` mit Eurer
-Gruppennummer ersetzen).  Dabei bitte in der Datei die Nummer Eurer
-Gruppe in Stud.IP sowie alle an der Abgabe beteiligten
-Gruppenmitglieder nennen.
-
-Bitte steckt die Energie ins Denken und Schreiben, nicht in eine
-wunderschöne Formatierung — lesbar darf es allerdings sein. Die
-Lösungswege sollten ggf. nachvollziehbar sein.
-
-Wenn Ihr Euch irgendwelcher Quellen aus dem Netz bedient (Anleitungen,
-Howtos, etc.), gebt diese bitte als URI mit an.
-
-*Carsten Bormann, Karsten Sohr, Stefanie Gerdes, Jan-Frederik
-Rieckers, Hugo Damer ·
-<isec@tzi.org>*, WS 2021/22
