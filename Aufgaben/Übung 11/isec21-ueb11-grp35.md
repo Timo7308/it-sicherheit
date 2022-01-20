@@ -25,8 +25,8 @@ Findet Alice heraus, dass ihr key gestohlen wurde, müsste sie Sam darum bitten,
 Needham-Schroeder-Protokolls mit Zeitstempel
 ---
 
- Mit dieser Änderung wird von Sam neben dem Sitzungsschlüssel nun auch ein Zeitstempel mit generiert. Die Verwendung eines alten keys wird somit von Bob im 3.Schritt abgelehnt.
- Nun muss man sich noch zusätzlich um eine gemeinsame synchrone Zeit kümmern und dabei festlegen, ab wann eine key nicht mehr gültig ist, sodass keine abgelaufene keys verwendet werden.
+Mit dieser Änderung wird von Sam neben dem Sitzungsschlüssel nun auch ein Zeitstempel T mit generiert. Der Zeitstempel gelangt im 3. Schritt mit der Nachricht an Bob, wodurch die Verwendung eines alten keys von Bob abgelehnt wird. Ohne eine klare Definition des Zeitstempels ist für Bob jedoch unklar, ab wann ein key als alt eingestuft wird.
+Dementsprechend muss man sich nun noch um eine gemeinsame synchrone Zeit kümmern und dabei festlegen, ab wann eine key nicht mehr gültig ist, sodass keine abgelaufene keys verwendet werden.
 
 Explizite Nennung der Akteure
 ---
