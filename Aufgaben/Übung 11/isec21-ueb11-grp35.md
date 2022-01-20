@@ -12,17 +12,17 @@ Adrian Lindloff (lindloff), Timo Schuchmann (timo5) und Philias Borrmann (borrma
 
 Needham-Schroeder-Protokoll
 ---
-Das Needham-Schroeder Protokoll wurde 1978 entwickelt. Bei dem Protokoll handelt es sich um ein Schlüsselverteilungsprotokoll. Es benutzt sogenannte Nonces. Dabei handelt es sich um eine Zeichenfolge, die für einen einmaligen Zweck generiert wurde. Im folgenden wird beschrieben, wie das Protokoll funktioniert. 
-Es seien die Personen Alice, Sam und Bob gegeben. Dabei wollen sich Alice und Bob geheim mit einem Sitzungsschlüssel unterhalten. Dieser Schlüssel soll von Sam bereitgestellt werden. Alice erzählt Sam, dass sie Alice ist und mit Bob reden möchte und ihre Nonce NA ist. Sam stellt Alice einen session key zur Verfügung, welcher mit dem Schlüssel, den er mit Alice teilt, verschlüsselt ist. Die geheime Nachricht enthält außerdem die Nonce von Alice, damit sie sichergehen kann, dass es eine Antwort auf ihre Anfrage ist und es sich nicht um einen Replay-Angriff handelt. Sam stellt auch ein für Bob verschlüsseltes Zertifikat zur Verfügung, damit der key an Bob übermittelt werden kann. Alice sendet den key an Bob. Dieser macht nun eine Challenge-response Authentisierung, um sicher zu gehen, das es sich auch um Alice handelt. 
+Das Needham-Schroeder Protokoll wurde 1978 entwickelt. Bei dem Protokoll handelt es sich um ein Schlüsselverteilungsprotokoll. Es benutzt sogenannte Nonces. Dabei handelt es sich um eine Zeichenfolge, die für einen einmaligen Zweck generiert wurde. Im Folgenden wird beschrieben, wie das Protokoll funktioniert. 
+Es seien die Personen Alice, Sam und Bob gegeben. Dabei wollen sich Alice und Bob geheim mit einem Sitzungsschlüssel (session key) unterhalten. Dieser Schlüssel soll von Sam bereitgestellt werden. Alice erzählt Sam, dass sie Alice ist und mit Bob reden möchte und ihre Nonce N<sub>A</sub> ist. Sam stellt Alice einen Sitzungsschlüssel zur Verfügung, welcher mit dem Schlüssel, den er mit Alice teilt, verschlüsselt ist. Die geheime Nachricht enthält außerdem die Nonce von Alice, damit sie sichergehen kann, dass es eine Antwort auf ihre Anfrage ist und es sich nicht um einen Replay-Angriff handelt. Sam stellt auch ein für Bob verschlüsseltes Zertifikat zur Verfügung, damit der key an Bob übermittelt werden kann. Alice sendet den key an Bob. Dieser macht nun eine challenge-response Authentisierung, um sicherzugehen, dass es sich auch um Alice handelt. 
 Ein Problem im Protokoll liegt darin, dass Bob annehmen muss, dass der key, den er von Sam durch Alice erhält, aktuell ist. Das muss aber nicht so sein. Wenn z.B. ein Gegner Charlie den key von Alice hat, könnte er diesen nutzen, um session keys mit vielen anderen Teilnehmern zu erstellen. 
-Alice hätte auch nach einem key fragen können, um mit Dave zu kommunizieren. Wenn Charlie den key gestolen hätte, hätte er an Sam eine Nachricht senden können, in der er vorgibt, Alice zu sein. Dadurch hätte er dann weitere keys bekommen können. 
+Alice hätte auch nach einem key fragen können, um mit Dave zu kommunizieren. Wenn Charlie den key gestohlen hätte, hätte er an Sam eine Nachricht senden können, in der er vorgibt, Alice zu sein. Dadurch hätte er dann weitere keys bekommen können. 
 Findet Alice heraus, dass ihr key gestohlen wurde, müsste sie Sam darum bitten, jeden zu kontaktieren, mit dem sie einen key ausgetauscht hat. Jeder müsste dann erfahren, dass der alte key von Alice nicht mehr gültig ist. Alice könnte dies nicht selbst tun, da sie nicht alle Kommunikationspartner kennt. Das Widerrufen von keys stellt also ein Problem dar.
 
 
 Needham-Schroeder-Protokolls mit Zeitstempel
 ---
 
- Mit dieser Änderung wird von Sam neben dem Sitzungsschlüssel nun auch ein Zeitstempel mit generiert. Eine Verwendung eines alten keys wird somit von Bob im 3.Schritt abgeleht.
+ Mit dieser Änderung wird von Sam neben dem Sitzungsschlüssel nun auch ein Zeitstempel mit generiert. Eine Verwendung eines alten keys wird somit von Bob im 3.Schritt abgelehnt.
  Nun muss man sich noch zusätzlich um eine gemeinsame synchrone Zeit kümmern und dabei festlegen, ab wann eine key nicht mehr gültig ist, sodass keine abgelaufene keys verwendet werden.
 
 Explizite Nennung der Akteure
@@ -51,14 +51,9 @@ Explizite Nennung der Akteure
 
  Wenn nun bei jeder Nachricht explizit der Akteur genannt wird, kann Charlie sich nicht unbemerkt dazwischenschalten. Im 3. Schritt kann Bob mit explizit seine Identität mit angeben und damit bestätigen, dass die Nonce N<sub>B</sub> von ihm stammt. Wenn dann Charlie im 4. Schritt die Nachricht an Alice weiterleitet, ist in dieser jedoch die Identität von Bob angegeben. Alice bemerkt die Präsenz von Charlie und gibt keine Antwort an diesen, da die Nonce N<sub>B</sub> zu Bob gehört und nicht zu Charlie.
  
----
-
-- Das genannte Prinzip wird im Protokoll von Woo und Lam verletzt. In diesem Protokoll überprüft Bob keine Nonce und hat auch keinen Zeitstempel. Alice führt außerdem keine Signierungen durch. Sie sendet ledigilich ihre verschlüsselte Nachricht an Bob. Dadurch kann Bob die Identität von Alice gegenüber einer dritten Person nicht bestätigen. Die fehlende Authentisierung macht dieses Protokoll unsicher. 
-
 
 Quellen
 ---
  https://www.cl.cam.ac.uk/~rja14/Papers/SEv2-c03.pdf
+ 
  https://www.cl.cam.ac.uk/~rja14/Papers/satan.pdf
-
-
