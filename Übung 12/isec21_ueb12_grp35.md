@@ -10,7 +10,7 @@ Adrian Lindloff (lindloff), Timo Schuchmann (timo5) und Philias Borrmann (borrma
 
 Das erste Problem besteht darin, dass der DSL-Router das Verschlüsselungsprotokoll Wired Equivalent Privacy (WEP) verwendet. Das WEP-Protokoll verwendet eine 40-Bit-RC4 Verschlüsselung. Diese Schlüssellänge ist viel zu kurz und ermöglicht Brute Force-Angriffe auf den DSL-Router. Der verwendete Schlüssel ist außerdem statisch. Das heißt, es wird immer der gleiche Schlüssel verwendet. Dies sorgt ebenfalls für eine geringere Sicherheit. WEP bietet außerdem keinen Schutz vor Bit flipping Angriffen, Replay Angriffen und FMS-Angriffen. WEP gilt heute als gebrochen und sollte unter keinen Umständen mehr verwendet werden. 
 
-Auch wenn man der "erste Gast" ist, muss davon ausgegangen werden, dass sich weitere Teilnehmer im Netzwerk des Biergartens befinden. Alle diese Teilnehmer können miteinander interagieren und sich gegenseitig hacken. Selbst für Laien ist es mithilfe von einer Reihe von Tools möglich, Schwachstellen an dem verbundenen Gerät zu identifizieren sowie diese potenziell auszunutzen. Dies gilt selbstverständlich auch für Konkurrenten und feindselige Parteien, welche im schlimmsten Fall an interne Firmendaten gelangen.
+Auch wenn man der "erste Gast" ist, muss davon ausgegangen werden, dass sich weitere Teilnehmer im Netzwerk des Biergartens befinden. Alle diese Teilnehmer können miteinander interagieren und sich gegenseitig hacken. Selbst für Laien ist es mithilfe von einer Reihe von Tools möglich, Schwachstellen an dem verbundenen Gerät zu identifizieren sowie diese potenziell auszunutzen. Dies gilt selbstverständlich auch für Konkurrenten und feindselige Parteien, welche im schlimmsten Fall Zugang zu internen Firmendaten erlangen.
 
 
 
