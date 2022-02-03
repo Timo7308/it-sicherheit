@@ -10,7 +10,7 @@ Adrian Lindloff (lindloff), Timo Schuchmann (timo5) und Philias Borrmann (borrma
 Aufgabe 1, 4 Punkte, Gruppe
 ---------------------------
 
-Wir haben die Chrome dev tools (F12) genutzt und `preserve log` aktiviert damit die logs beim Redirect. Im Folgenden haben wir nur die `Documents` betrachten. Hier werden die HTTP-Request und Response angezeigt, die für die Anmeldung ausgeführt werden.
+Wir haben die Chrome dev tools (F12) genutzt und `preserve log` aktiviert damit die logs beim Redirect erhalten bleiben. Im Folgenden haben wir nur die `Documents` betrachten. Hier werden die HTTP-Request und Response angezeigt, die für die Anmeldung ausgeführt werden.
 
 
 ![](docs.png)
