@@ -1,0 +1,135 @@
+1-------------------------------
+* Eure Beschreibung der Angreifertypen ist etwas dünn (-0.5).
+* Leider erklärt Ihr nicht, welche Gegenstände geschützt werden müssen (zum Beispiel die Mensacard selbst). Eure Beschreibung der zu schützenden Abläufe könnte zudem etwas ausführlicher sein (-1).
+
+2-------------------------------
+* Bitte verzichtet in Zukunft darauf, die Aufgabenstellung in Eurer
+Abgabe abzudrucken.
+* Sonst fein.
+
+3-----------------------------
+* Ihr schreibt leider nicht, wie die Berechtigungen genau aussehen
+(z.B. p1(lesen, Name), p2(lesen, Geburtsdatum) (-0.5).
+* Ihr schreibt: "höhere Berechtigungen haben alle tieferen
+Berechtigungen". Ich verstehe nicht, was Ihr damit
+meint.
+* Es ist unklar, welche Daten bei Euch die Patientendaten
+umfassen. Daher ist nicht klar, welche Berechtigungen Ihr den Rollen
+genau zuteilt (-0.5).
+* Ärzte und medizinisches Personal sollten nicht die Namen der
+Patienten ändern können.
+* Rollen können nicht vererbt werden, nur Berechtigungen.
+* Es ist nicht klar, welche Rolle jetzt von welcher erbt (-0.5).
+* Leider geht Ihr gar kaum auf typische Probleme der rollenbasierten
+Zugriffskontrolle ein (-0.5).
+
+4--------------------------
+* Es wäre besser gewesen, auf Eurem eigenen Rechner oder auf den
+Fachbereichsrechnern zu testen als Online-Compiler zu verwenden.
+* Bei längeren Eingaben werden der Base Pointer und die
+Rücksprungadresse überschrieben (-0.5).
+* Bitte verwendet nicht "Chars" als Einheit. Char steht für Character
+und ist ein Datentyp. Besser ist es, Längen in Bytes anzugeben.
+* Ihr erwähnt nicht, dass es bei falscher Verwendung von fgets immer
+noch Buffer Overflows geben kann (-0.25).
+
+5----------------------------
+# Aufgabe 1
+
+3.6/4
+
+Ihr habt euch nicht an das Namensschema gehalten. Bitte achtet darauf. Das macht es uns Tutoren sehr viel einfacher.
+
+* Die Erklärung zu -O stimmt nicht ganz. Nmap versucht hier anhand von Impementierungsdetails/Default-Werten von Protokollen wie ICMP/TCP/UDP die OS-Version herauszufinden.
+* Auch aufpassen bei open/closed/filtered. Bei "open" kommt eine Verbindung zustande. Bei "filtered" bekomme ich keine Antwort. Bei "closed" bekomme ich eine negative Antwort (ob TCP RST oder ICMP Port unreachable/admin-prohibited/.... ist da erstmal relativ egal). Ein "closed" bedeutet nicht zwingend, dass der Port grundsätzlich offen ist, und im Gegenzug kann ich über einen filtered Port (gerade bei UDP) auch Angriffe fahren, wenn da z.B. ein Programm läuft, dass UDP-Pakete annimmt und dann über log4j loggt.
+* CoAP ist nicht nur von Carsten (https://datatracker.ietf.org/doc/html/rfc7252)
+
+* Die Einschätzungen sind alle grundsätzlich richtig, sind aber oft sehr kurz gehalten. (-0.4P)
+* Warum sollte SSH nur von innen zugreifbar sein? Ist es evtl sinnvoll für die beiden unterschiedlichen Hosts auch unterschiedliche Sichtbarkeiten zu haben?
+* Die Klassifizierung der einzelnen Hosts ist grundsätzlich richtig, aber auch sehr knapp gehalten. Hier hätte ich mir auch ein paar Sätze mehr gewünscht.
+
+6-----------------------------
+* Wie bereits erwähnt, ist es ungünstig, wenn Ihr das Übungsblatt in
+Euren Abgaben mit abdruckt. Bitte verzichtet in Zukunft darauf.
+* Bei der Eingabe von 0 in das Programm ohne Analysewerkzeuge gibt es
+eine Fehlermeldung. Das habt Ihr in Eurer Erklärung nicht
+beschrieben.
+* Ihr beschreibt nicht, bei welchen Eingaben genau das Problem des
+Zugriffs auf einen bereits freigegebenen Speicherbereich auftritt,
+nämlich wenn der erste Eingabewert <50 und !=0 ist (-0.25).
+* Genau genommen werden bei einer Eingabelänge von 41 von fgets sogar
+43 Zeichen in den Buffer geschrieben: zusätzlich zu den von Euch
+eingegebenen "a"s das Zeilenende sowie das 0-Byte, das von fgets
+angehängt wird.
+* Ihr erklärt nicht,
+* Es fehlt das Fazit zu den Tools. Wie Ihr gesehen habt, haben alle
+Analysemöglichkeiten Vor- und Nachteile. Es ist daher eine gute
+Idee, sie miteinander zu kombinieren.
+
+7---------------------------
+Aufgabe 1:
+
+* Eigentlich hat unser Text einige Rechtschreibfehler. Die habt Ihr
+netterweise korrigiert :). Ganz korrekt ist das so dann aber nicht.
+* Leider habt Ihr nicht erklärt, wie Ihr vorgegangen seid, um darauf
+zu kommen, um welche Art der Verschlüsselung es sich handelt (-0.25).
+* Ihr habt nicht berücksichtigt, dass einen Schlüssel zu probieren
+mehr als eine Instruktion benötigt (-0.25). Hier hättet Ihr
+zumindest sagen müssen, dass es sich um eine vereinfachende Annahme
+handelt.
+* Ihr habt nicht richtig deutlich gemacht, wann eine Schlüssellänge
+von mehr als 128 Bit gewählt werden sollte, nämlich bei einem
+höheren Schutzbedarf der Daten (-0.25).
+
+Aufgabe 2:
+
+* Das erste Zeichen des Hashwertes wird aus den Stellen 0, 15 und 30
+berechnet (nicht 0 und 16). Das dritte Zeichen wird aus den Stellen
+2 und 17 gebildet. Das sind, wenn man bei 0 anfängt zu zählen,
+das 3. und 18. Byte.
+* Ihr erklärt leider nicht, was es Euch erleichtert hat, die Kollision
+zu finden (-0.5).
+
+8---------------------------------
+Anmerkungen:
+Welche Parameter habt Ihr bei der Keyerstellung verwendet? (-0.2)
+Eure abgegebenen Schlüssel haben keine Signaturen (-0.4)
+Der Keyserver entfernt beim Hochladen alle Signaturen, um bestimmte Sicherheitsprobleme zu vermeiden, die es dadurch gab (siehe https://keys.openpgp.org/about/faq#third-party-signatures). Kann es sein, dass Ihr die Schlüssel vom Keyserver genommen habt?
+Schritte zum Schreiben einer verschlüsselten E-Mail nicht beschrieben (-0.2)
+Schritte zum Signieren der E-Mail nicht beschrieben (was habt ihr in Thunderbird dafür gemacht?) (-0.4)
+Punkte: 3.8/5
+
+9--------------------------------
+Ihr könntet ruhig erwähnen, dass die ausstellende Organisation Let's Encrypt ist. Sonst fein.
+
+10--------------------------------
+* Wer ist der IT-Betrieb? Hat der keine Rechner?
+* In Eurem Netzplan fehlen die Bezeichner der Komponenten.
+* Sinvoller wäre es, wenn Ihr die Erhebung der Anwendungen und die
+Zuordnung der Anwendungen in zwei verschiedenen Tabellen macht. Eure
+Liste von Anwendungen ist zudem unvollständig (-0.25).
+* In Eurer Anwendungserhebung fehlt der Verantwortliche.
+
+11----------------------------
+* Unter Zertifikaten verstehen wir meist etwas anderes.
+* Dass Bob nicht feststellen kann, wie aktuell KAB ist, liegt daran,
+dass kein Timestamp in der Nachricht steht. Mit KAS hat das nichts
+zu tun (-0.25)
+* Ihr sagt nicht so ganz klar, welche Konsequenzen die Verwundbarkeit
+für wen hat, z.B. was das für Bob bedeutet (-0.25).
+
+12---------------------------
+# Aufgabe 1
+
+3/4
+
+* Ihr seid bei den Angriffen eher auf allgemeine Angriffe gegangen, weniger auf die Informationen, die wir euch im Übungszettel gegeben haben. (z.B. HTTP-Webseiten)
+* Was hätte hier passieren können? Gerade z.B. wenn man sich eine neue Software-Version über HTTP herunterlädt?
+* Was hat es mit dieser "sied" auf sich? Ist das sinnvoll?
+
+13-----------------------
+* Bei Euch wird nicht so richtig deutlich, wozu dieser ganze Vorgang
+dient, nämlich zur Authentisierung. Außerdem wird nicht klar, welche
+Aufgabe gitlab in dem Zusammenhang erfüllt (-0.5).
+* Bei Euch fehlt, dass mattermost im Hintergrund noch Daten von gitlab
+erfragt (-0.5).
